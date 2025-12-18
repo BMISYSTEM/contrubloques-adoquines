@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className=""
+        className="bg-[linear-gradient(-45deg,#B5BDBB_0%,#3C4642_100%)]"
       >
         {children}
       </body>
