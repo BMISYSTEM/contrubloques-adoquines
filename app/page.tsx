@@ -3,6 +3,11 @@ import Link from "next/link";
 import { LiquidGlass } from '@liquidglass/react';
 import 'animate.css';
 import { Carrousel } from "@/components/inicio/Carrousel";
+import { MdFacebook, MdHomeFilled, MdOutgoingMail } from "react-icons/md";
+import { RiInstagramFill } from "react-icons/ri";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FiMapPin } from "react-icons/fi";
+import { BsTelephonePlus } from "react-icons/bs";
 export default function Home() {
   return (
     <>
@@ -34,8 +39,8 @@ export default function Home() {
             className="animate__animated animate__fadeInRight w-60 h-60 absolute bottom-30 right-60" />
         </section>
       </header>
-      <main className="w-full flex flex-col items-center justify-center mt-20  ">
-        <section id="sect-calculadora" className="md:w-280 w-full h-full flex items-center justify-center">
+      <main className="w-full  flex flex-col items-center justify-center mt-20  ">
+        <section id="sect-calculadora" className="md:w-280 w-full  flex items-center justify-center">
           <div className=" w-160 h-150 bg-white rounded-[80px] shadow-2xl flex flex-col justify-between gap-2 px-5 py-2 ">
             <div className="flex flex-col gap-2 py-5 items-center justify-center w-full">
               <h2 className="text-2xl font-semibold ">Calculadora de precios </h2>
@@ -179,12 +184,98 @@ export default function Home() {
             <span className=" ">Descubre como nuestra empresa ha ayudado a empresas como la tuya </span>
             <Carrousel/>
         </section>
-        <section id="sect-beneficios" className="w-full h-screen flex flex-col items-center justify-center px-5 mt-10  gap-10 bg-black ">
+        <section id="sect-beneficios" className="w-full h-screen flex flex-col items-center justify-center   px-5 mt-10  gap-10 bg-[#222222] pt-20 ">
+          <div className="md:w-280 w-full flex flex-col gap-5 ">
+            <h6 className="text-lg text-slate-300">¿ Porque Nosotros ? </h6>
+            <span className="text-xl text-white ">Algunos de nuestros beneficios</span>
 
+            <div className="flex flex-row gap-10 items-center mt-10 ">
+              <div className="flex flex-col gap-5 bg-black rounded-xl shadow px-5 py-3 ">
+                <MdHomeFilled size={20} color="white"/> 
+                <span className="text-sm font-semibold text-white">+ 200 Servicios </span>
+                <span className="text-xs text-slate-100">Nuestra atencion es dedicada por cada cliente </span>
+              </div>
+              <div className="flex flex-col gap-5 bg-black rounded-xl shadow px-5 py-3 ">
+                <MdHomeFilled size={20} color="white"/> 
+                <span className="text-sm font-semibold text-white">+ 200 Servicios </span>
+                <span className="text-xs text-slate-100">Nuestra atencion es dedicada por cada cliente </span>
+              </div>
+              <div className="flex flex-col gap-5 bg-black rounded-xl shadow px-5 py-3 ">
+                <MdHomeFilled size={20} color="white"/> 
+                <span className="text-sm font-semibold text-white">+ 200 Servicios </span>
+                <span className="text-xs text-slate-100">Nuestra atencion es dedicada por cada cliente </span>
+              </div>
+              <div className="flex flex-col gap-5 bg-black rounded-xl shadow px-5 py-3 ">
+                <MdHomeFilled size={20} color="white"/> 
+                <span className="text-sm font-semibold text-white">+ 200 Servicios </span>
+                <span className="text-xs text-slate-100">Nuestra atencion es dedicada por cada cliente </span>
+              </div>
+              <div className="flex flex-col gap-5 bg-black rounded-xl shadow px-5 py-3 ">
+                <MdHomeFilled size={20} color="white"/> 
+                <span className="text-sm font-semibold text-white">+ 200 Servicios </span>
+                <span className="text-xs text-slate-100">Nuestra atencion es dedicada por cada cliente </span>
+              </div>
+              
+            </div>
+          </div>
 
         </section>
       </main>
-      <footer className="w-full h-screen ">
+      <footer className="w-full bg-[url(/fondofooter.png)] bg-cover object-cover h-screen relative ">
+        <div className="w-full h-full flex flex-col bg-black/70 backdrop-blur-sm  items-center justify-center ">
+          <div className="md:w-280 h-full flex flex-row items-center   justify-between ">
+              <div className="md:w-1/3 flex flex-col gap-5 ">
+                  <span className="text-2xl font-semibold text-white ">Construbloques y Adoquines</span>
+                  <span className="text-lg text-slate-300 ">fabricación y distribución de bloques y adoquines Vibroprensados, para la construcción basándonos en estándares de calidad y prestando un servicio oportuno a nuestros clientes.</span>
+                  <div className="flex flex-row gap-5 ">
+                    <button>
+                      <MdFacebook size={30} color="orange"/> 
+                    </button>
+                    <button>
+                      <RiInstagramFill  size={30} color="orange"/> 
+                    </button>
+                    <button>
+                      <FaSquareXTwitter   size={30} color="orange"/> 
+                    </button>
+                  </div>
+              </div>
+              <div className="md:w-1/3 flex flex-col gap-5 ">
+                  <span className="text-2xl font-semibold text-white ">Enlaces rapidos </span>
+                  <Link href={"/"}>
+                    <span className="text-slate-300">Inicio</span>
+                  </Link>
+                  <Link href={"/"}>
+                    <span className="text-slate-300">Productos</span>
+                  </Link>
+                  <Link href={"/"}>
+                    <span className="text-slate-300">Calculadora</span>
+                  </Link>
+                  <Link href={"/"}>
+                    <span className="text-slate-300">Promociones</span>
+                  </Link>
+                  <Link href={"/"}>
+                    <span className="text-slate-300">Contacto</span>
+                  </Link>
+              </div>
+              <div className="md:w-1/3 flex flex-col gap-5 ">
+                  <span className="text-2xl font-semibold text-white ">Contacto</span>
+                  <div className="flex flex-row gap-2 items-center">
+                    <FiMapPin size={30} color="orange"/>  
+                    <span className="text-slate-300">Calle 45 #23-67, Zona Industrial</span>
+                  </div>
+                  <div className="flex flex-row gap-2 items-center">
+                    <BsTelephonePlus  size={30} color="orange"/>  
+                    <span className="text-slate-300">+57 3184520627</span>
+                  </div>
+                  <div className="flex flex-row gap-2 items-center">
+                    <MdOutgoingMail   size={30} color="orange"/>  
+                    <span className="text-slate-300">info@construbloques.com</span>
+                  </div>
+              </div>
+          </div>
+          <span className="text-sm text-white my-2">&#169; Contrubloques&Adoquines</span>
+          <span className="text-sm text-white my-2">Desarrollado por: Bayron Meneses By Syprods</span>
+        </div>
       </footer>
     </>
   );

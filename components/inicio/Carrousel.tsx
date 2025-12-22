@@ -12,7 +12,6 @@ export const Carrousel = () => {
     slidesToScroll: 3,
     arrows: true,
   }
-
   return (
     <div className="w-full max-w-6xl mx-auto">
       <Slider {...settings}>
