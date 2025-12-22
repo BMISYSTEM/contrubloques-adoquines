@@ -13,7 +13,7 @@ import { Productos } from "@/components/inicio/Productos";
 import { PorqueNosotros } from "@/components/inicio/PorqueNosotros";
 export default function Home() {
   return (
-    <>
+    <section className="h-screen overflow-y-scroll snap-y snap-mandatory">
       <section className="w-full fixed  top-0 flex items-center justify-center mt-10 z-50 ">
         <section className="md:w-280">
           <LiquidGlass blur={5} contrast={1.1} brightness={1.05} saturation={1.1} className="animate__animated animate__fadeInDown w-full  flex flex-row  items-center justify-center">
@@ -36,19 +36,19 @@ export default function Home() {
           </LiquidGlass>
         </section>
       </section>
-      <header className="w-full bg-[url(/imagen-header.png)] bg-cover object-cover h-screen bg-black rounded-b-[80px] shadow-xl flex items-center justify-center px-5 ">
+      <header className="w-full bg-[url(/imagen-header.png)] bg-cover object-cover h-screen snap-start bg-black rounded-b-[80px] shadow-xl flex items-center justify-center px-5 relative ">
         <section className="md:w-280 w-full  h-full  ">
           <Image src={"/brand-header.png"} alt="Contru bloques  y adoquines, calidad y diseño" width={100} height={100}
             className="animate__animated animate__fadeInRight w-60 h-60 absolute bottom-30 right-60" />
         </section>
       </header>
-      <main className="w-full  flex flex-col items-center justify-center mt-20  ">
+      <main className="w-full  flex flex-col items-center justify-center mt-20   ">
         <Calculadora/>
         <Productos/>
-        <section id="sect-banner" className="w-full h-screen mt-20">
+        <section id="sect-banner" className="w-full h-screen mt-20 snap-start">
           <Image src={"/PromoBanner.png"} alt="Banner de promociones" width={1000} height={1000} className="w-full h-full object-fill"/>
         </section>
-        <section id="sect-nuestros-clientes" className="w-full h-screen bg-white ">
+        <section id="sect-nuestros-clientes" className="w-full h-screen bg-white snap-start">
           <div className="w-full h-full flex flex-col items-center justify-center gap-5">
             <h4 className="text-2xl font-semibold">Nuestros clientes</h4>
             <span className="text-lg text-slate-600">Empresas que confían en nuestra calidad</span>
@@ -77,14 +77,14 @@ export default function Home() {
             <span>Más de 500 clientes satisfechos en toda la región</span>
           </div>
         </section>
-        <section id="sect-resenas" className="w-full flex flex-col items-center justify-center px-5 mt-10  gap-10 ">
+        <section id="sect-resenas" className="w-full h-screen snap-start flex flex-col items-center justify-center px-5 mt-10  gap-10 ">
             <h5 className="text-2xl font-semibold ">Lo que nuestros clientes dicen</h5>
             <span className=" ">Descubre como nuestra empresa ha ayudado a empresas como la tuya </span>
             <Carrousel/>
         </section>
         <PorqueNosotros/>
       </main>
-      <footer className="w-full bg-[url(/fondofooter.png)] bg-cover object-cover h-screen relative ">
+      <footer className="w-full bg-[url(/fondofooter.png)] bg-cover object-cover h-screen relative snap-start ">
         <div className="w-full h-full flex flex-col bg-black/70 backdrop-blur-sm  items-center justify-center ">
           <div className="md:w-280 h-full flex flex-row items-center   justify-between ">
               <div className="md:w-1/3 flex flex-col gap-5 ">
@@ -140,6 +140,6 @@ export default function Home() {
           <span className="text-sm text-white my-2">Desarrollado por: Bayron Meneses By Syprods</span>
         </div>
       </footer>
-    </>
+    </section>
   );
 }

@@ -4,7 +4,7 @@ import { DivScrollLeft } from "../componenst-animate/DivScrollLeft"
 
 export const Calculadora = () => {
   return (
-    <section id="sect-calculadora" className="md:w-280 w-full  flex items-center justify-center">
+    <section id="sect-calculadora" className="md:w-280 w-full h-screen  flex items-center justify-center snap-start">
     <DivScrollLeft className=" w-160 h-150 bg-white rounded-[80px] shadow-2xl flex flex-col justify-between gap-2 px-5 py-2 ">
       <div className="flex flex-col gap-2 py-5 items-center justify-center w-full">
         <h2 className="text-2xl font-semibold ">Calculadora de precios </h2>
