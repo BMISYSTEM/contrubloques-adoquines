@@ -8,6 +8,9 @@ import { RiInstagramFill } from "react-icons/ri";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FiMapPin } from "react-icons/fi";
 import { BsTelephonePlus } from "react-icons/bs";
+import { Calculadora } from "@/components/inicio/Calculadora";
+import { Productos } from "@/components/inicio/Productos";
+import { PorqueNosotros } from "@/components/inicio/PorqueNosotros";
 export default function Home() {
   return (
     <>
@@ -40,113 +43,8 @@ export default function Home() {
         </section>
       </header>
       <main className="w-full  flex flex-col items-center justify-center mt-20  ">
-        <section id="sect-calculadora" className="md:w-280 w-full  flex items-center justify-center">
-          <div className=" w-160 h-150 bg-white rounded-[80px] shadow-2xl flex flex-col justify-between gap-2 px-5 py-2 ">
-            <div className="flex flex-col gap-2 py-5 items-center justify-center w-full">
-              <h2 className="text-2xl font-semibold ">Calculadora de precios </h2>
-              <span className="text-sm ">Calcula cuántos Bloques o Adoquines necesitas para tu proyecto</span>
-
-              <div className="flex flex-row gap-5 items-center justify-center mt-5">
-                <button className="px-3 py-1 border border-amber-500 bg-amber-500/20 rounded-sm">
-                  <span className="text-amber-700 text-sm">Bloques</span>
-                </button>
-                <button className="px-3 py-1 border border-slate-500  rounded-sm">
-                  <span className="text-slate-700 text-sm">Adoquines</span>
-                </button>
-              </div>
-            </div>
-            <form action="" className="flex flex-row gap-4 ">
-              <section className="flex flex-col gap-5 w-full">
-                <div className="flex flex-col gap-2 ">
-                  <label htmlFor="" className="text-sm">Area de pared (m2)</label>
-                  <input type="text" placeholder="Ingrese metros cuadrados" className="py-1 px-2 border border-slate-300 rounded-sm text-sm" />
-                </div>
-                <div className="flex flex-col gap-2 ">
-                  <label htmlFor="" className="text-sm">Area de puertas (m2)</label>
-                  <input type="text" placeholder="Ingrese metros cuadrados" className="py-1 px-2 border border-slate-300 rounded-sm text-sm" />
-                </div>
-              </section>
-              <section className="flex flex-col gap-5 w-full">
-                <div className="flex flex-col gap-2 ">
-                  <label htmlFor="" className="text-sm">Area de ventanas (m2)</label>
-                  <input type="text" placeholder="Ingrese metros cuadrados" className="py-1 px-2 border border-slate-300 rounded-sm text-sm" />
-                </div>
-                <div className="flex flex-col gap-2 ">
-                  <label htmlFor="" className="text-sm">Referencia de bloque</label>
-                  <select name="" id="" className="py-1 px-2 border border-slate-300 rounded-sm text-sm">
-                    <option value="1" className="text-sm">Bloque x</option>
-                    <option value="2" className="text-sm">Bloque y</option>
-                  </select>
-                </div>
-              </section>
-            </form>
-            <section className="w-full border  rounded-xl h-32 border-amber-500 mb-10 flex flex-col justify-between px-5 py-2 ">
-              <span className="text-lg font-semibold">Resultado del cálculo</span>
-              <div className="flex flex-row justify-between ">
-                <div className="flex flex-col gap-2 ">
-                  <span className="text-sm ">Área neta</span>
-                  <span className="text-xl text-amber-500">0.00 m²</span>
-                </div>
-                <div className="flex flex-col gap-2 ">
-                  <span className="text-sm ">Ladrillos necesarios</span>
-                  <span className="text-xl text-amber-500">0</span>
-                </div>
-                <div className="flex flex-col gap-2 ">
-                  <span className="text-sm ">Área neta</span>
-                  <span className="text-xl text-amber-500">Precio total </span>
-                </div>
-
-              </div>
-            </section>
-          </div>
-        </section>
-        <section id="sect-productos" className="md:w-280 w-full flex flex-col items-center justify-center gap-5 md:mt-20 " >
-          <h3 className="text-3xl font-semibold text-white">Nuestros productos</h3>
-          <span className="text-lg text-white ">Productos de cemento con la mas alta calidad para tus proyectos de construccion</span>
-          <div className="flex flex-row gap-5 items-center justify-center mt-10">
-            <div className=" w-96  h-96 relative group overflow-hidden rounded-[80px] bg-slate-300 shadow-xl">
-              <Image src={"/producto1.png"} width={100} height={100} title="Imagen de producto de bloques de cemento " alt="Imagen de producto de bloques de cemento "
-                className="w-full h-full object-cover" />
-              <div className="
-                    w-full h-full
-                    bg-black/60
-                    absolute inset-0
-                    opacity-0 translate-y-96
-                    group-hover:opacity-100
-                    group-hover:translate-y-0
-                    transition-all duration-500 ease-out
-                    flex flex-col gap-4  items-center justify-center
-                    ">
-                      <span className="text-lg text-slate-200">Bloque estructural</span>
-                <Link href={"/"} title="Conoce mas informacion sobre bloques  " 
-                className="px-5 py-1 rounded-[80px] border border-slate-200 bg-black/60 transition-all hover:bg-black hover:text-white cursor-pointer">
-                  <span className="text-sm text-slate-200">Ver mas</span>
-                </Link>
-              </div>
-            </div>
-            <div className="w-96  h-96 relative group overflow-hidden rounded-[80px] bg-slate-300 shadow-xl">
-              <Image src={"/producto2.png"} width={100} height={100} title="Imagen de producto de bloques de cemento " alt="Imagen de producto de bloques de cemento "
-                className="w-full h-full object-cover" />
-              <div className="
-                    w-full h-full
-                    bg-black/60
-                    absolute inset-0
-                    opacity-0 translate-y-96
-                    group-hover:opacity-100
-                    group-hover:translate-y-0
-                    transition-all duration-500 ease-out
-                    flex flex-col gap-4  items-center justify-center
-                    ">
-                      <span className="text-lg text-slate-200">Adoquines</span>
-                <Link href={"/"} title="Conoce mas informacion sobre Adoquines  " 
-                className="px-5 py-1 rounded-[80px] border border-slate-200 bg-black/60 transition-all hover:bg-black hover:text-white cursor-pointer">
-                  <span className="text-sm text-slate-200">Ver mas</span>
-                </Link>
-              </div>
-            </div>
-
-          </div>
-        </section>
+        <Calculadora/>
+        <Productos/>
         <section id="sect-banner" className="w-full h-screen mt-20">
           <Image src={"/PromoBanner.png"} alt="Banner de promociones" width={1000} height={1000} className="w-full h-full object-fill"/>
         </section>
@@ -184,42 +82,7 @@ export default function Home() {
             <span className=" ">Descubre como nuestra empresa ha ayudado a empresas como la tuya </span>
             <Carrousel/>
         </section>
-        <section id="sect-beneficios" className="w-full h-screen flex flex-col items-center justify-center   px-5 mt-10  gap-10 bg-[#222222] pt-20 ">
-          <div className="md:w-280 w-full flex flex-col gap-5 ">
-            <h6 className="text-lg text-slate-300">¿ Porque Nosotros ? </h6>
-            <span className="text-xl text-white ">Algunos de nuestros beneficios</span>
-
-            <div className="flex flex-row gap-10 items-center mt-10 ">
-              <div className="flex flex-col gap-5 bg-black rounded-xl shadow px-5 py-3 ">
-                <MdHomeFilled size={20} color="white"/> 
-                <span className="text-sm font-semibold text-white">+ 200 Servicios </span>
-                <span className="text-xs text-slate-100">Nuestra atencion es dedicada por cada cliente </span>
-              </div>
-              <div className="flex flex-col gap-5 bg-black rounded-xl shadow px-5 py-3 ">
-                <MdHomeFilled size={20} color="white"/> 
-                <span className="text-sm font-semibold text-white">+ 200 Servicios </span>
-                <span className="text-xs text-slate-100">Nuestra atencion es dedicada por cada cliente </span>
-              </div>
-              <div className="flex flex-col gap-5 bg-black rounded-xl shadow px-5 py-3 ">
-                <MdHomeFilled size={20} color="white"/> 
-                <span className="text-sm font-semibold text-white">+ 200 Servicios </span>
-                <span className="text-xs text-slate-100">Nuestra atencion es dedicada por cada cliente </span>
-              </div>
-              <div className="flex flex-col gap-5 bg-black rounded-xl shadow px-5 py-3 ">
-                <MdHomeFilled size={20} color="white"/> 
-                <span className="text-sm font-semibold text-white">+ 200 Servicios </span>
-                <span className="text-xs text-slate-100">Nuestra atencion es dedicada por cada cliente </span>
-              </div>
-              <div className="flex flex-col gap-5 bg-black rounded-xl shadow px-5 py-3 ">
-                <MdHomeFilled size={20} color="white"/> 
-                <span className="text-sm font-semibold text-white">+ 200 Servicios </span>
-                <span className="text-xs text-slate-100">Nuestra atencion es dedicada por cada cliente </span>
-              </div>
-              
-            </div>
-          </div>
-
-        </section>
+        <PorqueNosotros/>
       </main>
       <footer className="w-full bg-[url(/fondofooter.png)] bg-cover object-cover h-screen relative ">
         <div className="w-full h-full flex flex-col bg-black/70 backdrop-blur-sm  items-center justify-center ">
