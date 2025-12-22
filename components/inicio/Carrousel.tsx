@@ -11,9 +11,21 @@ export const Carrousel = () => {
     slidesToShow: 3,
     slidesToScroll: 3,
     arrows: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          centerPadding: "20px",
+          arrows: false,
+        },
+      }
+    ],
   }
   return (
-    <div className="w-full max-w-6xl mx-auto">
+    <div className="w-full max-w-6xl mx-auto ">
       <Slider {...settings}>
         {[1,2,3,4,5,6].map(n => (
           <div key={n} className="px-10">

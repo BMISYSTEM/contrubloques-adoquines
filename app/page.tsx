@@ -13,46 +13,49 @@ import { Productos } from "@/components/inicio/Productos";
 import { PorqueNosotros } from "@/components/inicio/PorqueNosotros";
 export default function Home() {
   return (
-    <section className="h-screen overflow-y-scroll snap-y snap-mandatory">
+    <section className="h-screen overflow-y-scroll overflow-x-hidden snap-y snap-mandatory">
       <section className="w-full fixed  top-0 flex items-center justify-center mt-10 z-50 ">
-        <section className="md:w-280">
+        <section className="md:w-280 w-full">
           <LiquidGlass blur={5} contrast={1.1} brightness={1.05} saturation={1.1} className="animate__animated animate__fadeInDown w-full  flex flex-row  items-center justify-center">
-            <nav id="navegacion-desktop" className=" flex flex-row px-5 justify-between gap-2  w-full  h-15    z-50 rounded-[80px]">
-              <div id="logo-nav" className="w-30 h-full flex items-center justify-center">
+            
+            <nav id="navegacion-desktop" className=" flex flex-row px-5 justify-between md:gap-2  w-full  h-15    z-50 rounded-[80px]">
+              <div id="logo-nav" className="hidden w-30 h-full md:flex items-center justify-center">
                 <Image src={"/logo.png"} alt="Logo contru bloques " width={100} height={100} className="object-contain" />
               </div>
-              <div id="opciones-nav" className="w-120  flex flex-row gap-10 items-center justify-end">
+              <div id="opciones-nav" className="md:w-120 w-full  flex flex-row md:gap-10 items-center md:justify-end justify-between">
                 <Link href={"/quienes-somos"}>
-                  <span className="text-slate-300">Quienes somos</span>
+                  <span className="text-slate-300 text-sm">Quienes somos</span>
                 </Link>
                 <Link href={"/quienes-somos"} >
-                  <span className="text-slate-300">Nuestros Productos</span>
+                  <span className="text-slate-300 text-sm">Nuestros Productos</span>
                 </Link>
                 <Link href={"/quienes-somos"} className="bg-[#FFD230] px-3 py-1 rounded-[80px] transition-all hover:opacity-80">
-                  <span>Contactanos</span>
+                  <span className="text-sm">Contactanos</span>
                 </Link>
               </div>
             </nav>
           </LiquidGlass>
         </section>
       </section>
-      <header className="w-full bg-[url(/imagen-header.png)] bg-cover object-cover h-screen snap-start bg-black rounded-b-[80px] shadow-xl flex items-center justify-center px-5 relative ">
-        <section className="md:w-280 w-full  h-full  ">
+      <header className="w-full bg-[url(/imagen-header.png)] bg-cover object-cover h-screen snap-start  rounded-b-[80px] shadow-xl flex items-center justify-center relative ">
+        <section className=" w-full  h-full bg-black/60 flex items-center justify-center  ">
+        <div className="md:w-280">
           <Image src={"/brand-header.png"} alt="Contru bloques  y adoquines, calidad y diseño" width={100} height={100}
-            className="animate__animated animate__fadeInRight w-60 h-60 absolute bottom-30 right-60" />
+            className="animate__animated animate__fadeInRight w-60 h-60 absolute md:bottom-30 bottom-50 md:right-60 right-30" />
+        </div>
         </section>
       </header>
-      <main className="w-full  flex flex-col items-center justify-center mt-20   ">
+      <main className="w-full  flex flex-col items-center justify-center md:mt-20   ">
         <Calculadora/>
         <Productos/>
         <section id="sect-banner" className="w-full h-screen mt-20 snap-start">
-          <Image src={"/PromoBanner.png"} alt="Banner de promociones" width={1000} height={1000} className="w-full h-full object-fill"/>
+          <Image src={"/PromoBanner.png"} alt="Banner de promociones" width={1000} height={1000} className="w-full h-full md:object-fill object-contain"/>
         </section>
         <section id="sect-nuestros-clientes" className="w-full h-screen bg-white snap-start">
           <div className="w-full h-full flex flex-col items-center justify-center gap-5">
             <h4 className="text-2xl font-semibold">Nuestros clientes</h4>
             <span className="text-lg text-slate-600">Empresas que confían en nuestra calidad</span>
-            <div className="flex flex-row gap-10 items-center mt-10 ">
+            <div className="flex md:flex-row flex-wrap gap-10 items-center justify-center mt-10 ">
               <Image src={"/emp1.png"} alt="empresa" width={100} height={100} className="w-32 h-32 object-contain"/>
               <Image src={"/emp2.png"} alt="empresa" width={100} height={100} className="w-32 h-32 object-contain"/>
               <Image src={"/emp3.png"} alt="empresa" width={100} height={100} className="w-32 h-32 object-contain"/>
@@ -84,10 +87,10 @@ export default function Home() {
         </section>
         <PorqueNosotros/>
       </main>
-      <footer className="w-full bg-[url(/fondofooter.png)] bg-cover object-cover h-screen relative snap-start ">
-        <div className="w-full h-full flex flex-col bg-black/70 backdrop-blur-sm  items-center justify-center ">
-          <div className="md:w-280 h-full flex flex-row items-center   justify-between ">
-              <div className="md:w-1/3 flex flex-col gap-5 ">
+      <footer className="w-full bg-[url(/fondofooter.png)] bg-cover object-cover h-screen relative snap-start z-[9999999999999999999999] ">
+        <div className="w-full h-full flex flex-col bg-black/70 backdrop-blur-sm  items-center justify-center px-5">
+          <div className="md:w-280 w-full md:h-full h-auto flex md:flex-row flex-col md:items-center   md:justify-between md:gap-0 gap-5 ">
+              <div className="md:w-1/3 flex flex-col md:gap-5 gap-1 ">
                   <span className="text-2xl font-semibold text-white ">Construbloques y Adoquines</span>
                   <span className="text-lg text-slate-300 ">fabricación y distribución de bloques y adoquines Vibroprensados, para la construcción basándonos en estándares de calidad y prestando un servicio oportuno a nuestros clientes.</span>
                   <div className="flex flex-row gap-5 ">
@@ -102,7 +105,7 @@ export default function Home() {
                     </button>
                   </div>
               </div>
-              <div className="md:w-1/3 flex flex-col gap-5 ">
+              <div className="md:w-1/3 flex flex-col md:gap-5 gap-1 ">
                   <span className="text-2xl font-semibold text-white ">Enlaces rapidos </span>
                   <Link href={"/"}>
                     <span className="text-slate-300">Inicio</span>
@@ -137,7 +140,7 @@ export default function Home() {
               </div>
           </div>
           <span className="text-sm text-white my-2">&#169; Contrubloques&Adoquines</span>
-          <span className="text-sm text-white my-2">Desarrollado por: Bayron Meneses By Syprods</span>
+          <span className="text-sm text-white md:my-2">Desarrollado por: Bayron Meneses By Syprods</span>
         </div>
       </footer>
     </section>
