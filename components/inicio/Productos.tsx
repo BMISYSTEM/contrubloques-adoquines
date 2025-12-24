@@ -25,7 +25,7 @@ export const Productos = () => {
                     flex flex-col gap-4  items-center justify-center
                     ">
                       <span className="text-lg text-slate-200">Bloque estructural</span>
-                <Link href={"/"} title="Conoce mas informacion sobre bloques  " 
+                <Link href={"/bloques"} title="Conoce mas informacion sobre bloques  " 
                 className="px-5 py-1 rounded-[80px] border border-slate-200 bg-black/60 transition-all hover:bg-black hover:text-white cursor-pointer">
                   <span className="text-sm text-slate-200">Ver mas</span>
                 </Link>
@@ -45,7 +45,7 @@ export const Productos = () => {
                     flex flex-col gap-4  items-center justify-center
                     ">
                       <span className="text-lg text-slate-200">Adoquines</span>
-                <Link href={"/"} title="Conoce mas informacion sobre Adoquines  " 
+                <Link href={"/adoquines"} title="Conoce mas informacion sobre Adoquines  " 
                 className="px-5 py-1 rounded-[80px] border border-slate-200 bg-black/60 transition-all hover:bg-black hover:text-white cursor-pointer">
                   <span className="text-sm text-slate-200">Ver mas</span>
                 </Link>
