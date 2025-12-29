@@ -100,19 +100,19 @@ export const Bloque3d = () => {
           <section className='w-full h-screen relative flex flex-col items-center justify-center snap-start '>
             {valorScroll >= 1300 && (
               <DivScrollTop className='absolute top-[20%] '>
-                <button onClick={() => setMove(!move)} className='border border-slate-300  px-5 py-2 rounded-sm'>Mover libre </button>
+                <button onClick={() => setMove(!move)} className='border border-slate-300  px-5 py-2 rounded-sm backdrop-blur-md shadow-xl transition-all hover:bg-[#FFD230] cursor-pointer '>Mover libre </button>
               </DivScrollTop>
             )}
             {move &&  (
               <Canvas
-                className='border rounded-sm border-slate-300'
+                className=' rounded-sm  backdrop-blur-lg hover:shadow-sm transition-all hover:shadow-[#FFD230]'
                 style={{
                   width: "70%",
                   height: "20rem",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
-                  background: "white"
+                  background: "transparent"
                 }}
                 camera={{ position: [0, 5, 8], fov: 45 }}>
                 <ambientLight intensity={1} />
