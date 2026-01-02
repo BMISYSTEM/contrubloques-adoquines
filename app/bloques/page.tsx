@@ -8,7 +8,7 @@ const page = () => {
   return (
     <>
     <section className="w-full fixed  top-0 flex items-center justify-center mt-10 z-50 ">
-              <section className="md:w-280 w-full">
+              <section className="md:w-5/6 w-full">
                 <LiquidGlass blur={3} contrast={1.1} brightness={1.05} saturation={1.1} className="animate__animated animate__fadeInDown w-full  flex flex-row  items-center justify-center">
                   <nav id="navegacion-desktop" className=" flex flex-row px-5 justify-between md:gap-2  w-full  h-15    z-50 rounded-[80px]">
                     <div id="logo-nav" className="hidden w-30 h-full md:flex items-center justify-center">

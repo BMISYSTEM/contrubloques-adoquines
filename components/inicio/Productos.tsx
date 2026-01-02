@@ -7,7 +7,7 @@ import { DivScrollRigth } from '../componenst-animate/DivScrollRigth'
 
 export const Productos = () => {
   return (
-    <section id="sect-productos" className="md:w-280 w-full flex flex-col items-center justify-center gap-5 md:mt-20 md:p-0 pt-24 snap-start " >
+    <section id="sect-productos" className="md:w-5/6 md:h-screen w-full flex flex-col items-center justify-center gap-5 md:mt-20 md:p-0 pt-24 snap-start " >
           <h3 className="text-3xl font-semibold text-white">Nuestros productos</h3>
           <span className="text-lg text-white ">Productos de cemento con la mas alta calidad para tus proyectos de construccion</span>
           <div className="flex md:flex-row flex-col gap-5 items-center justify-center mt-10">

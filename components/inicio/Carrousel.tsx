@@ -29,7 +29,7 @@ export const Carrousel = () => {
       <Slider {...settings}>
         {[1,2,3,4,5,6].map(n => (
           <div key={n} className="md:px-10">
-            <div className="bg-white h-110 w-80 rounded-[80px] shadow-xl flex flex-col gap-1 overflow-hidden ">
+            <div className="bg-white h-96 w-70 rounded-[80px] shadow-xl flex flex-col gap-1 overflow-hidden ">
                 <div className="w-full h-full bg-black">
                     {/* video */}
                 </div>

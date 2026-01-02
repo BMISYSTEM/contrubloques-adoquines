@@ -123,7 +123,7 @@ export const Bloque3d = () => {
             )}
           </section>
           <section className='w-full h-screen flex items-center bg-[linear-gradient(-45deg,#B5BDBB_0%,#3C4642_100%)] justify-center snap-start '>
-            <div className='md:w-280 w-full h-screen flex flex-col gap-10 items-center justify-center'>
+            <div className='md:w-5/6 w-full h-screen flex flex-col gap-10 items-center justify-center'>
                 <h2 className='text-3xl font-semibold'>Fecha tecnica</h2> 
                 <div className='w-full flex items-center justify-center  '>
                   <table className='w-1/2 rounded-3xl overflow-hidden shadow-2xl'>
@@ -176,7 +176,7 @@ export const Bloque3d = () => {
             </div>
           </section>
           <section className='w-full h-screen flex items-center bg-[linear-gradient(-45deg,#B5BDBB_0%,#3C4642_100%)] justify-center snap-start '>
-            <div className='md:w-280 w-full h-screen flex flex-col gap-10 items-center justify-center'>
+            <div className='md:w-5/6 w-full h-screen flex flex-col gap-10 items-center justify-center'>
                 <h3 className='text-3xl font-semibold text-white'>Producto Instalado</h3> 
                 <Image width={1000} height={1000} alt='Imagen de producto instalado' title='Producto instalado '
                 src={"/productoinstalado.png"} className='w-200 h-130'/>
