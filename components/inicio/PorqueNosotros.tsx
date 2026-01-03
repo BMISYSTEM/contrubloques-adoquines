@@ -6,7 +6,7 @@ import { DivScrollTop } from '../componenst-animate/DivScrollTop'
 export const PorqueNosotros = () => {
   return (
     <section id="sect-beneficios" className="w-full h-screen snap-start md:p-0 p-20 flex flex-col items-center justify-center   px-5 mt-10  gap-10 bg-[#222222] pt-20 ">
-          <div className="md:w-280 w-full flex flex-col gap-5 ">
+          <div className="md:w-5/6 w-full flex flex-col gap-5 ">
             <h6 className="text-lg text-slate-300">¿ Porque Nosotros ? </h6>
             <span className="text-xl text-white ">Algunos de nuestros beneficios</span>
 

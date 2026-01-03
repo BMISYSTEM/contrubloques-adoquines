@@ -14,8 +14,8 @@ import { PorqueNosotros } from "@/components/inicio/PorqueNosotros";
 export default function Home() {
   return (
     <section className="h-screen overflow-y-scroll overflow-x-hidden snap-y snap-mandatory">
-      <section className="w-full fixed  top-0 flex items-center justify-center mt-10 z-50 ">
-        <section className="md:w-280 w-full">
+      <section className="w-full fixed  top-0 flex items-center justify-center mt-2 z-50 ">
+        <section className="md:w-5/6 w-full">
           <LiquidGlass blur={5} contrast={1.1} brightness={1.05} saturation={1.1} className="animate__animated animate__fadeInDown w-full  flex flex-row  items-center justify-center">
             
             <nav id="navegacion-desktop" className=" flex flex-row px-5 justify-between md:gap-2  w-full  h-15    z-50 rounded-[80px]">
@@ -39,7 +39,7 @@ export default function Home() {
       </section>
       <header className="w-full bg-[url(/imagen-header.png)] bg-cover object-cover h-screen snap-start  rounded-b-[80px] shadow-xl flex items-center justify-center relative ">
         <section className=" w-full  h-full bg-black/60 flex items-center justify-center  ">
-        <div className="md:w-280">
+        <div className="md:w-5/6">
           <Image src={"/brand-header.png"} alt="Contru bloques  y adoquines, calidad y diseño" width={100} height={100}
             className="animate__animated animate__fadeInRight w-60 h-60 absolute md:bottom-30 bottom-50 md:right-60 right-30" />
         </div>
@@ -89,7 +89,7 @@ export default function Home() {
       </main>
       <footer className="w-full bg-[url(/fondofooter.png)] bg-cover object-cover h-screen relative snap-start z-[9999999999999999999999] ">
         <div className="w-full h-full flex flex-col bg-black/70 backdrop-blur-sm  items-center justify-center px-5">
-          <div className="md:w-280 w-full md:h-full h-auto flex md:flex-row flex-col md:items-center   md:justify-between md:gap-0 gap-5 ">
+          <div className="md:w-5/6 w-full md:h-full h-auto flex md:flex-row flex-col md:items-center   md:justify-between md:gap-0 gap-5 ">
               <div className="md:w-1/3 flex flex-col md:gap-5 gap-1 ">
                   <span className="text-2xl font-semibold text-white ">Construbloques y Adoquines</span>
                   <span className="text-lg text-slate-300 ">fabricación y distribución de bloques y adoquines Vibroprensados, para la construcción basándonos en estándares de calidad y prestando un servicio oportuno a nuestros clientes.</span>
