@@ -104,7 +104,7 @@ export const Bloque3d = () => {
                 <span className='md:text-sm text-xs'>Bloque 14 {">"} </span>
               </button>
             </DivScrollTop>
-            <DivScrollRigth className='absolute md:left-[33%] left-0 md:rotate-0 rotate-90 top-[60%] scale-y-[-1] md:top-[30%]'>
+            <DivScrollRigth className='absolute md:left-[33%] left-0 md:rotate-0  top-[60%] md:scale-y-100  scale-y-[-1] md:top-[30%]'>
               <Image title='flecha' alt='flecha' src={"/flecha.png"} width={100} height={100}
                 className=' w-40 ' />
             </DivScrollRigth>
