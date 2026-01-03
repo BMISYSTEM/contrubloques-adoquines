@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <section className="h-screen overflow-y-scroll overflow-x-hidden snap-y snap-mandatory">
       <Navar/>
-      <header className="w-full bg-[url(/imagen-header.png)] bg-cover object-cover h-screen snap-start  rounded-b-[80px] shadow-xl flex items-center justify-center relative ">
+      <header className="w-full bg-[url(/imagen-header.png)] bg-cover object-cover h-screen snap-start  md:rounded-b-[80px] shadow-xl flex items-center justify-center relative ">
         <section className=" w-full  h-full bg-black/60 flex items-center justify-center  ">
         <div className="md:w-5/6">
           <Image src={"/brand-header.png"} alt="Contru bloques  y adoquines, calidad y diseño" width={100} height={100}
@@ -33,15 +33,15 @@ export default function Home() {
         </section>
         <section id="sect-nuestros-clientes" className="w-full h-screen bg-white snap-start">
           <div className="w-full h-full flex flex-col items-center justify-center gap-5">
-            <h4 className="text-2xl font-semibold">Nuestros clientes</h4>
-            <span className="text-lg text-slate-600">Empresas que confían en nuestra calidad</span>
+            <h4 className="md:text-2xl text-xl font-semibold">Nuestros clientes</h4>
+            <span className="md:text-lg text-sm text-slate-600">Empresas que confían en nuestra calidad</span>
             <div className="flex md:flex-row flex-wrap gap-10 items-center justify-center mt-10 ">
-              <Image src={"/emp1.png"} alt="empresa" width={100} height={100} className="w-32 h-32 object-contain"/>
-              <Image src={"/emp2.png"} alt="empresa" width={100} height={100} className="w-32 h-32 object-contain"/>
-              <Image src={"/emp3.png"} alt="empresa" width={100} height={100} className="w-32 h-32 object-contain"/>
-              <Image src={"/emp4.png"} alt="empresa" width={100} height={100} className="w-32 h-32 object-contain"/>
-              <Image src={"/emp5.png"} alt="empresa" width={100} height={100} className="w-32 h-32 object-contain"/>
-              <Image src={"/emp6.png"} alt="empresa" width={100} height={100} className="w-32 h-32 object-contain"/>
+              <Image src={"/emp1.png"} alt="empresa" width={100} height={100} className="md:w-32 w-24 md:h-32 h-24 object-contain"/>
+              <Image src={"/emp2.png"} alt="empresa" width={100} height={100} className="md:w-32 w-24 md:h-32 h-24 object-contain"/>
+              <Image src={"/emp3.png"} alt="empresa" width={100} height={100} className="md:w-32 w-24 md:h-32 h-24 object-contain"/>
+              <Image src={"/emp4.png"} alt="empresa" width={100} height={100} className="md:w-32 w-24 md:h-32 h-24 object-contain"/>
+              <Image src={"/emp5.png"} alt="empresa" width={100} height={100} className="md:w-32 w-24 md:h-32 h-24 object-contain"/>
+              <Image src={"/emp6.png"} alt="empresa" width={100} height={100} className="md:w-32 w-24 md:h-32 h-24 object-contain"/>
             </div>
             <div className="flex flex-row gap-10 mt-10 items-center justify-center">
               <div className="flex flex-col gap-2 items-center justify-center">

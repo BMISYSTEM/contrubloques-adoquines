@@ -87,4 +87,24 @@
   --progress: -100%;
 }
 
+/* ==== FIX react-slick + Tailwind Preflight ==== */
+.slick-slider {
+  width: 100%;
+}
 
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  float: none !important;
+  height: auto;
+}
+
+.slick-slide > div {
+  width: 100%;
+}
