@@ -1,82 +1,54 @@
 'use client'
 
-import dynamic from "next/dynamic"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { Pagination, Navigation } from 'swiper/modules'
 
-const Slider = dynamic(() => import("react-slick"), {
-  ssr: false,
-})
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
 
 export const Carrousel = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: true,
-
-    responsive: [
-      {
-        breakpoint: 1024, // tablets
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768, // móviles
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: false,
-          centerMode: true,
-          centerPadding: "16px",
-        },
-      },
-    ],
-  }
-
   return (
-    <div className="w-full overflow-hidden">
-      <Slider {...settings}>
+    <div className="w-full">
+      <Swiper
+        modules={[Pagination, Navigation]}
+        spaceBetween={10}
+        pagination={{ clickable: true }}
+        navigation
+        breakpoints={{
+          0: { slidesPerView: 1 },
+          768: { slidesPerView: 4 },
+          1024: { slidesPerView: 5 },
+        }}
+      >
         {[1, 2, 3, 4, 5, 6].map((n) => (
-          <div key={n} className="px-2 md:px-10 h-96 w-96">
+          <SwiperSlide key={n}>
+            <div className="h-96 w-96 px-2 md:px-6 py-5">
+              <div className="bg-white h-full rounded-[80px] shadow-xl flex flex-col overflow-hidden">
+                <div className="w-full h-1/2 bg-black" />
+                <div className="w-full h-1/2 flex flex-col gap-2 justify-between px-5 pb-3">
+                  <div>
+                    <span className="text-sm font-semibold">
+                      Constructora X
+                    </span>
+                    <span className="text-sm text-slate-500 block">
+                      María Rodríguez – CEO
+                    </span>
+                  </div>
 
-            <div className="bg-white w-full h-full rounded-[80px] shadow-xl flex flex-col overflow-hidden">
-              
-              {/* Video / imagen */}
-              <div className="w-full h-1/2 bg-black" />
+                  <p className="text-sm">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  </p>
 
-              {/* Contenido */}
-              <div className="w-full h-1/2 flex flex-col gap-2 justify-between px-5 pb-3">
-                <div className="flex flex-col">
-                  <span className="text-sm text-black font-semibold">
-                    Constructora X
-                  </span>
-                  <span className="text-sm text-slate-500">
-                    María Rodríguez – CEO
-                  </span>
-                </div>
-
-                <span className="text-sm text-slate-700">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quis ut dicta nisi atque velit nobis.
-                </span>
-
-                <div className="w-full flex items-center justify-center">
-                  <button className="bg-blue-800 text-white rounded-lg px-5 py-1">
-                    <span className="text-sm">Ver Artículo →</span>
+                  <button className="bg-blue-800 text-white rounded-lg px-5 py-1 mx-auto">
+                    Ver Artículo →
                   </button>
                 </div>
               </div>
-
             </div>
-          </div>
+          </SwiperSlide>
         ))}
-      </Slider>
+      </Swiper>
     </div>
   )
 }
