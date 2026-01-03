@@ -12,7 +12,17 @@ import { DivScrollRigth } from '@/components/componenst-animate/DivScrollRigth';
 import { LiquidGlass } from '@liquidglass/react';
 import Link from 'next/link';
 
+
 export const Bloque3d = () => {
+  const images = [
+    "/bloque-g1.png",
+    "/bloque-g2.png",
+    "/bloque-g3.png",
+    "/bloque-g4.png",
+
+  ]
+  const [open, setOpen] = useState(false)
+  const [imageSelect,setImagenSelect] = useState(0)
   const [valorScroll, setValorScroll] = useState(0)
   const [move, setMove] = useState(false);
   const containerRef = useRef<HTMLElement | null>(null)
@@ -33,6 +43,19 @@ export const Bloque3d = () => {
       setMove(false)
     }
   },[valorScroll])
+
+
+    const toggle = (pocicion:number) => {
+      setImagenSelect(pocicion)
+    if ('startViewTransition' in document) {
+      // @ts-ignore
+      document.startViewTransition(() => {
+        setOpen(!open)
+      })
+    } else {
+      setOpen(!open)
+    }
+  }
   return (
     <>
         <div className="fixed inset-0 z-0" style={{   background: "white",   backgroundImage: `     linear-gradient(to right, rgba(71,85,105,0.15) 1px, transparent 1px),     linear-gradient(to bottom, rgba(71,85,105,0.15) 1px, transparent 1px),     radial-gradient(circle at 50% 60%, rgba(236,72,153,0.15) 0%, rgba(168,85,247,0.05) 40%, transparent 70%)   `,   backgroundSize: "40px 40px, 40px 40px, 100% 100%", }} />
@@ -180,6 +203,50 @@ export const Bloque3d = () => {
                 <h3 className='text-3xl font-semibold text-white'>Producto Instalado</h3> 
                 <Image width={1000} height={1000} alt='Imagen de producto instalado' title='Producto instalado '
                 src={"/productoinstalado.png"} className='w-200 h-130'/>
+            </div>
+          </section>
+          <section className='w-full h-screen flex items-center  bg-[#B5BDBB]  justify-center snap-start '>
+            <div className='md:w-280 w-full h-screen flex flex-col gap-10 items-center justify-center relative'>
+                <h3 className='text-3xl font-semibold text-white'>Producto Instalado</h3> 
+                {open ? (
+                  <div onClick={()=>toggle(0)} style={{viewTransitionName:"image-zoom"}} className='flex items-center justify-center transition-transform fixed inset-0 z-50'>
+                      <Image  width={5000} height={5000} alt='Imagen de producto instalado' title='Producto instalado '
+                      className='w-280 h-160 object-center ' 
+                      src={images[imageSelect]} />
+                  </div>
+                ): (
+                  <div className='grid grid-cols-4 grid-rows-2 gap-2 w-full h-2/3 '>
+                    <DivScrollLeft className='w-full h-full col-span-2'>
+                      <button onClick={()=>toggle(0)} className='w-full h-full cursor-pointer '>
+                        <Image width={500} height={500} alt='Imagen de producto instalado' title='Producto instalado '
+                        src={"/bloque-g1.png"} className='w-full h-full object-center '  style={{viewTransitionName:"image-zoom"}}
+                        />
+                      </button>
+                    </DivScrollLeft>
+                    <DivScrollRigth className='w-full h-full col-span-2'>
+                      <button onClick={()=>toggle(1)} className='w-full h-full cursor-pointer'>
+                        <Image width={500} height={500} alt='Imagen de producto instalado' title='Producto instalado '
+                        src={"/bloque-g2.png"} className='w-full h-full object-center '
+                      />
+                      </button>
+                    </DivScrollRigth>
+                    <DivScrollTop className='w-full h-full '>
+                      <button onClick={()=>toggle(2)} className='w-full h-full cursor-pointer'>
+                        <Image width={500} height={500} alt='Imagen de producto instalado' title='Producto instalado '
+                        src={"/bloque-g3.png"} className='w-full h-full object-center '
+                      />
+                      </button>
+                    </DivScrollTop>
+                    <DivScrollLeft className='w-full h-full col-span-3 '>
+                      <button onClick={()=>toggle(3)} className='w-full h-full cursor-pointer'>
+                        <Image width={500} height={500} alt='Imagen de producto instalado' title='Producto instalado '
+                        src={"/bloque-g4.png"} className='w-full h-full object-center '
+                      />
+                      </button>
+                    </DivScrollLeft>
+                  </div>
+                )}
+
             </div>
           </section>
       </section>
