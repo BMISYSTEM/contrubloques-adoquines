@@ -181,7 +181,7 @@ const page = () => {
                 </button>
               </form>
             </div>
-            <div className="md:w-1/4 w-full px-5 md:mx-0 mx-5 md:px-0 h-full bg-black flex flex-col py-5 gap-5 md:rounded-xl ">
+            <div className="md:w-1/4 w-full px-5 md:mx-0 mx-5 px-5 h-full bg-black flex flex-col py-5 gap-5 md:rounded-xl ">
               <h5 className="text-amber-300">Informacion de contacto</h5>
               <div className="flex flex-row gap-2 items-center ">
                 <div className="p-2 bg-gray-700 rounded-full flex items-center justify-center">
