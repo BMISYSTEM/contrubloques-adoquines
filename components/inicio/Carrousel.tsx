@@ -12,7 +12,7 @@ export const Carrousel = () => {
     <div className="w-full">
       <Swiper
         modules={[Pagination, Navigation]}
-        spaceBetween={10}
+        spaceBetween={16}
         pagination={{ clickable: true }}
         navigation
         breakpoints={{
