@@ -3,6 +3,7 @@ import { DivScrollRigth } from "@/components/componenst-animate/DivScrollRigth";
 import { DivScrollTop } from "@/components/componenst-animate/DivScrollTop";
 import { Footer } from "@/components/Footer";
 import { Navar } from "@/components/Navar";
+import { Metadata } from "next";
 import Image from "next/image";
 import React from "react";
 import { BsFacebook, BsInstagram, BsLinkedin, BsTwitterX } from "react-icons/bs";
@@ -11,6 +12,10 @@ import { GiLightBulb } from "react-icons/gi";
 import { MdAddLocation, MdClear, MdEmail, MdFacebook, MdMap, MdOutlineSecurity, MdPhone, MdTimeline, MdTimer } from "react-icons/md";
 import { SiCcleaner } from "react-icons/si";
 
+export const metadata: Metadata = {
+  title: "Quienes somos - Construbloques&Adoquines",
+  description: "En Contribloques nos dedicamos a la fabricación de bloques y adoquines en cemento con altos estándares de calidad, resistencia y durabilidad. Nuestra misión es ofrecer soluciones confiables para la construcción, brindando productos seguros, uniformes y accesibles que aporten al desarrollo de viviendas, obras civiles y proyectos urbanos. Trabajamos con responsabilidad, innovación y compromiso para garantizar la satisfacción de nuestros clientes y el crecimiento de nuestra comunidad. ",
+};
 const page = () => {
   return (
     <>
@@ -155,6 +160,7 @@ const page = () => {
           </DivScrollTop>
         </section>
         <section
+        id="contactenos"
         className="snap-start w-full md:h-screen   flex flex-col gap-5 pt-10 items-center justify-center   "
         >
           <div className="flex flex-col w-3/4 gap-10  items-center md:mt-0 mt-20">

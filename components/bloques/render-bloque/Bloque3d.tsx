@@ -60,7 +60,13 @@ export const Bloque3d = () => {
   }
   return (
     <>
-        <div className="fixed inset-0 z-0" style={{   background: "white",   backgroundImage: `     linear-gradient(to right, rgba(71,85,105,0.15) 1px, transparent 1px),     linear-gradient(to bottom, rgba(71,85,105,0.15) 1px, transparent 1px),     radial-gradient(circle at 50% 60%, rgba(236,72,153,0.15) 0%, rgba(168,85,247,0.05) 40%, transparent 70%)   `,   backgroundSize: "40px 40px, 40px 40px, 100% 100%", }} />
+    <div
+    className="fixed inset-0 z-0"
+    style={{
+      background: "radial-gradient(125% 125% at 50% 90%, #fff 40%, #475569 100%)",
+    }}
+  />
+        {/* <div className="fixed inset-0 z-0" style={{   background: "white",   backgroundImage: `     linear-gradient(to right, rgba(71,85,105,0.15) 1px, transparent 1px),     linear-gradient(to bottom, rgba(71,85,105,0.15) 1px, transparent 1px),     radial-gradient(circle at 50% 60%, rgba(236,72,153,0.15) 0%, rgba(168,85,247,0.05) 40%, transparent 70%)   `,   backgroundSize: "40px 40px, 40px 40px, 100% 100%", }} /> */}
         {!move && (
           <Canvas
             style={{
@@ -104,11 +110,11 @@ export const Bloque3d = () => {
                 <span className='md:text-sm text-xs'>Bloque 14 {">"} </span>
               </button>
             </DivScrollTop>
-            <DivScrollRigth className='absolute md:left-[33%] left-0 md:rotate-0  top-[60%] md:scale-y-100  scale-y-[-1] md:top-[30%]'>
+            <DivScrollRigth className='absolute md:left-[33%] left-0 md:rotate-0 rotate-90  top-[50%] md:scale-y-100  scale-y-[-1] md:top-[30%]'>
               <Image title='flecha' alt='flecha' src={"/flecha.png"} width={100} height={100}
                 className=' w-40 ' />
             </DivScrollRigth>
-            <DivScrollLeft className='w-40 absolute md:left-[30%] left-5 bottom-5 md:top-[40%]'>
+            <DivScrollLeft className='w-40 absolute md:left-[30%] left-5 bottom-10 md:top-[40%]'>
               <span className=''>
                 Bloque 10
                 Dimenciones (W,H,L)

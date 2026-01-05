@@ -15,10 +15,11 @@ export const Carrousel = () => {
         spaceBetween={16}
         pagination={{ clickable: true }}
         navigation
+        
         breakpoints={{
           0: { slidesPerView: 1 },
-          768: { slidesPerView: 4 },
-          1024: { slidesPerView: 5 },
+          768: { slidesPerView: 3 },
+          1024: { slidesPerView: 3 },
         }}
       >
         {[1, 2, 3, 4, 5, 6].map((n) => (
