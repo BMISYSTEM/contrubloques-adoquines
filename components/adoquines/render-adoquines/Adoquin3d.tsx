@@ -98,7 +98,7 @@ export const Adoquines3d = () => {
                     h-screen
                     overflow-y-scroll
                     overflow-x-hidden
-                    snap-y snap-mandatory
+                    
                     scroll-smooth
                     z-10
                   ">

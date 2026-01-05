@@ -15,9 +15,9 @@ import { Footer } from "@/components/Footer";
 import { Navar } from "@/components/Navar";
 export default function Home() {
   return (
-    <section className="h-screen overflow-y-scroll overflow-x-hidden snap-y snap-mandatory">
+    <section className="h-screen overflow-y-scroll overflow-x-hidden ">
       <Navar/>
-      <header className="w-full bg-[url(/imagen-header.png)] bg-cover object-cover h-screen snap-start  md:rounded-b-[80px] shadow-xl flex items-center justify-center relative ">
+      <header className="w-full bg-[url(/imagen-header.png)] bg-cover object-cover h-screen shadow-2xl shadow-white snap-start overflow-hidden  md:rounded-b-[80px] flex items-center justify-center relative ">
         <section className=" w-full  h-full bg-black/60 flex items-center justify-center  ">
         <div className="md:w-5/6">
           <Image src={"/brand-header.png"} alt="Contru bloques  y adoquines, calidad y diseño" width={100} height={100}
