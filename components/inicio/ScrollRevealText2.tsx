@@ -32,7 +32,7 @@ export const ScrollRevealText2 = () => {
 }, [])
 
   const letters = text.split("")
-  const visibleLetters = Math.floor(progress * letters.length)
+  const visibleLetters = Math.floor((progress + 0.3) * letters.length)
 
   return (
     <section className="w-full py-24 bg-gray-100">

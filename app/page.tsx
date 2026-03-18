@@ -30,7 +30,7 @@ export default function Home() {
             className="absolute top-0 left-0 w-full h-full object-cover"
             preload="metadata"
           >
-            <source src="/videoinicio.mp4" type="video/mp4" />
+            <source src="/video.MOV" type="video/mp4" />
           </video>
 
           {/* Dark Overlay */}
@@ -48,7 +48,7 @@ export default function Home() {
             </div> */}
 
             {/* Main Heading */}
-            <h1 className="text-white text-6xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight max-w-2xl">
+            <h1 className="text-white text-6xl md:text-6xl lg:text-6xl font-bold mb-6 leading-tight max-w-2xl">
               La Construcción
               <br />
               reinventada

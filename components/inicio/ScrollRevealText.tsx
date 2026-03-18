@@ -32,10 +32,10 @@ export const ScrollRevealText = () => {
 }, [])
 
   const letters = text.split("")
-  const visibleLetters = Math.floor(progress * letters.length)
+  const visibleLetters = Math.floor((progress + 0.3) * letters.length)
 
   return (
-    <section className="w-full py-24 bg-gray-100">
+    <section className="w-full  py-24 bg-gray-100">
       <div className="max-w-6xl mx-auto px-6 md:px-12 flex items-center justify-center min-h-screen">
         <div ref={textRef} className="text-center">
           <h2 className="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight">

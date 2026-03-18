@@ -13,7 +13,7 @@ export const StickyVideoSection = () => {
           loop
           className="w-full h-full object-cover"
         >
-          <source src="/videoinicio.mp4" type="video/mp4" />
+          <source src="/video.MOV" type="video/mp4" />
         </video>
 
         {/* Dark Overlay */}
