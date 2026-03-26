@@ -34,7 +34,7 @@ export const Navar = () => {
                     <Link href={"/quienes-somos"}>
                       <span className={pathname === "/" ?"text-slate-200 text-sm" : "text-slate-500 text-sm"}>Prefabricados</span>
                     </Link>
-                    <Link href={"/#sect-productos"} >
+                    <Link href={"/quienes-somos"} >
                       <span className={pathname === "/" ?"text-slate-200 text-sm" : "text-slate-500 text-sm"}>Quienes somos</span>
                     </Link>
                     <Link href={"/#sect-productos"} >
