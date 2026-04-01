@@ -1,3 +1,4 @@
+'use client'
 import { useGLTF } from "@react-three/drei";
 import { useFrame, useThree } from "@react-three/fiber";
 import { useEffect, useRef } from "react";
@@ -85,7 +86,7 @@ export default function Scene({
         <>
             <ambientLight intensity={1} />
             <pointLight position={[0, 3, 8]} />
-            <primitive ref={cubeRef} object={glb.scene} scale={3} />
+            <primitive ref={cubeRef} object={glb.scene} scale={7} />
         </>
     );
 }

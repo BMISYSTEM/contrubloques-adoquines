@@ -86,7 +86,7 @@ export default function Scene({
         <>
             <ambientLight intensity={1} />
             <pointLight position={[0, 3, 8]} />
-            <primitive ref={cubeRef} object={glb.scene} scale={3} />
+            <primitive ref={cubeRef} object={glb.scene} scale={5} />
         </>
     );
 }
