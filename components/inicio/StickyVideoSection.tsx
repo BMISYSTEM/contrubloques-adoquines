@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import { FiZap, FiArrowRight, FiMove } from 'react-icons/fi'
 
 export const StickyVideoSection = () => {
@@ -29,7 +30,7 @@ export const StickyVideoSection = () => {
 
           {/* Title */}
           <h2 className="text-5xl md:text-7xl font-bold text-white text-center mb-12 leading-tight max-w-3xl">
-            Construye con precisión
+            No es solo producción es sistema.
           </h2>
 
           {/* Features Grid */}
@@ -39,7 +40,7 @@ export const StickyVideoSection = () => {
               <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur flex items-center justify-center mx-auto mb-4 border border-white/20">
                 <FiMove className="text-white text-2xl" />
               </div>
-              <h3 className="text-white font-semibold mb-2">Versatilidad</h3>
+              <h3 className="text-white font-semibold mb-2">Escala industrial</h3>
               <p className="text-gray-200 text-sm">
                 Múltiples referencias para cada proyecto y necesidad
               </p>
@@ -50,7 +51,7 @@ export const StickyVideoSection = () => {
               <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur flex items-center justify-center mx-auto mb-4 border border-white/20">
                 <FiZap className="text-white text-2xl" />
               </div>
-              <h3 className="text-white font-semibold mb-2">Resistencia</h3>
+              <h3 className="text-white font-semibold mb-2">Control de calidad</h3>
               <p className="text-gray-200 text-sm">
                 Calidad garantizada en cada bloque y adoquín
               </p>
@@ -61,7 +62,7 @@ export const StickyVideoSection = () => {
               <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur flex items-center justify-center mx-auto mb-4 border border-white/20">
                 <FiArrowRight className="text-white text-2xl" />
               </div>
-              <h3 className="text-white font-semibold mb-2">Entrega rápida</h3>
+              <h3 className="text-white font-semibold mb-2">Flujo de logistica eficiente</h3>
               <p className="text-gray-200 text-sm">
                 Desde 10 días a tu obra
               </p>
@@ -70,13 +71,17 @@ export const StickyVideoSection = () => {
 
           {/* Description */}
           <p className="text-gray-200 text-center max-w-2xl mb-12 text-lg">
-            Contamos con más de 20 años de experiencia en la industria, proporcionando los mejores materiales de construcción para proyectos residenciales y comerciales.
+          Contamos con amplia experiencia en la industria, proporcionando materiales de construcción confiables para proyectos residenciales y comerciales
           </p>
 
           {/* CTA Button */}
-          <button className="bg-white hover:bg-gray-100 text-slate-900 px-10 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl">
+          <Link href={"https://api.whatsapp.com/message/25MC5Y67LNMXJ1?autoload=1&app_absent=0"} className="bg-white hover:bg-gray-100 text-slate-900 px-10 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl">
             Solicitar Cotización
-          </button>
+          </Link>
+          <p className='mt-5 text-slate-200'>Dejanos tus datos y te contactamos </p>
+          <a className='text-blue-200 border-b' href="https://mail.google.com/mail/?view=cm&to=destinatario@gmail.com&su=Asunto&body=Mensaje" target="_blank">
+            Enviar correo
+          </a>
         </div>
       </div>
     </div>

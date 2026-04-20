@@ -78,7 +78,7 @@ export const LogosCarrusel = () => {
         }
 
         .animate-scroll {
-          animation: scroll 40s linear infinite;
+          animation: scroll 10s linear infinite;
         }
 
         .animate-scroll:hover {

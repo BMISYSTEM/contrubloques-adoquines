@@ -3,12 +3,17 @@ import { LiquidGlass } from '@liquidglass/react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 
 export const Navar = () => {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
-
+  const [scrollPantalla,setScrollPantalla] = useState(0)
+  const refNavar = useRef<HTMLDivElement>(null);
+  const [pantalla, setPantalla] = useState(0)
+    useEffect(() => {
+    setPantalla(window.innerHeight) // ✅ solo se ejecuta en el cliente
+  }, [])
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false) }
     if (open) {
@@ -22,9 +27,19 @@ export const Navar = () => {
       window.removeEventListener('keydown', onKey)
     }
   }, [open])
+
+
+  useEffect(()=>{
+    const handleScroll = () =>{
+      // console.log("scrolly ",)
+      setScrollPantalla(window.scrollY)
+    }
+    window.addEventListener("scroll",handleScroll, { passive: true });
+    return ()=> window.removeEventListener("scroll",handleScroll);
+  },[])
   return (
     <>
-    <section className="w-full fixed  top-0 flex items-center justify-center mt-2 z-50 ">
+    <section   className={` ${(scrollPantalla + 50) >= pantalla ? "bg-black/30 backdrop-blur-md " : ""} w-full fixed  top-0 flex items-center justify-center pt-2 z-50 `}>
             <section className="md:w-5/6 w-full">
                 <nav id="navegacion-desktop" className=" flex flex-row px-5 justify-between md:gap-2  w-full  h-15    z-50 rounded-[80px]">
                   <Link href={"/"}  id="logo-nav" className="hidden w-30 h-full md:flex items-center justify-center">

@@ -57,7 +57,7 @@ export const ScrollRevealText2 = () => {
             Una Elección técnica para quienes priorizan estabilidad y rendimiento estructural.
           </p>
           <div className="mt-12 flex items-center justify-center gap-1 flex-col">
-            <CountersDisplay triggerProgress={progress} targetNumber={1243} />
+            <CountersDisplay triggerProgress={progress} targetNumber={1200} />
             <p className="text-gray-600 mt-4">Obras realizados</p>
           </div>
         </div>

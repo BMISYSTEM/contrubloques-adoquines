@@ -1,20 +1,18 @@
 'use client'
 
+import { ArrowLeftRight, ArrowUpDown } from 'lucide-react'
 import { useState } from 'react'
 
 // Datos de referencias de productos
 const productReferences = {
   bloques: [
-    { id: 'bloque-g1', name: 'Bloque G-1', m2PerUnit: 0.546 },
-    { id: 'bloque-g2', name: 'Bloque G-2', m2PerUnit: 0.546 },
-    { id: 'bloque-g3', name: 'Bloque G-3', m2PerUnit: 0.546 },
-    { id: 'bloque-g4', name: 'Bloque G-4', m2PerUnit: 0.546 },
+    { id: 'bloque-10', name: 'Bloque 10', m2PerUnit: 0.546 },
+    { id: 'bloque-12', name: 'Bloque 12', m2PerUnit: 0.546 },
+    { id: 'bloque-14', name: 'Bloque 14', m2PerUnit: 0.546 },
   ],
   adoquines: [
-    { id: 'adoquin-amarillo', name: 'Adoquín Amarillo', m2PerUnit: 0.02 },
-    { id: 'adoquin-negro', name: 'Adoquín Negro', m2PerUnit: 0.02 },
-    { id: 'adoquin-rojo', name: 'Adoquín Rojo', m2PerUnit: 0.02 },
-    { id: 'adoquin-combinado', name: 'Adoquín Combinado', m2PerUnit: 0.02 },
+    { id: 'adoquin-peatonal', name: 'Adoquín peatonal', m2PerUnit: 0.02 },
+    { id: 'adoquin-vehicular', name: 'Adoquín vehicular', m2PerUnit: 0.02 },
   ]
 }
 
@@ -44,7 +42,7 @@ export const Calculadora = () => {
         {/* Header */}
         <div className="mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-2">
-            Calculadora de Materiales
+            Calcula antes de contruir
           </h2>
           <p className="text-slate-700">
             Calcula cuántos bloques o adoquines necesitas para tu proyecto
@@ -79,8 +77,8 @@ export const Calculadora = () => {
           {/* Input Fields - Full width */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-2">
-                Área de pared (m²)
+              <label className=" text-sm font-semibold flex flex-row gap-2 items-center text-slate-700 mb-2">
+                Largo <ArrowLeftRight size={20}/>
               </label>
               <input
                 type="number"
@@ -91,8 +89,9 @@ export const Calculadora = () => {
               />
             </div>
             <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-2">
-                Área de puertas (m²)
+              <label className=" text-sm font-semibold flex flex-row gap-2 items-center text-slate-700 mb-2">
+
+                Alto <ArrowUpDown size={20}/>
               </label>
               <input
                 type="number"
@@ -102,20 +101,9 @@ export const Calculadora = () => {
                 className="w-full px-4 py-2 border-2 border-slate-300 rounded-lg focus:border-yellow-400 focus:outline-none"
               />
             </div>
-            <div>
-              <label className="block text-sm font-semibold text-slate-700 mb-2">
-                Área de ventanas (m²)
-              </label>
-              <input
-                type="number"
-                value={windowsArea}
-                onChange={(e) => setWindowsArea(e.target.value)}
-                placeholder="Ej: 10"
-                className="w-full px-4 py-2 border-2 border-slate-300 rounded-lg focus:border-yellow-400 focus:outline-none"
-              />
-            </div>
+            
           </div>
-
+          <p>Ingresa las medidad de tu muro en metros.</p>
           {/* Results - Clean display */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div>

@@ -12,10 +12,14 @@ export const Carrousel = () => {
     <div className="w-full">
       <Swiper
         modules={[Pagination, Navigation]}
-        spaceBetween={16}
+        spaceBetween={50}
         pagination={{ clickable: true }}
         navigation
-        
+        speed={3000}
+        autoplay={{
+    delay: 0,        // tiempo entre slides en ms
+    disableOnInteraction: false, // continúa después de que el usuario interactúa
+  }}
         breakpoints={{
           0: { slidesPerView: 1 },
           768: { slidesPerView: 3 },

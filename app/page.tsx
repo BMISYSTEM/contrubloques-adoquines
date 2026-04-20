@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { LiquidGlass } from '@liquidglass/react';
-import 'animate.css';
 import { Carrousel } from "@/components/inicio/Carrousel";
 import { MdFacebook, MdHomeFilled, MdOutgoingMail } from "react-icons/md";
 import { RiInstagramFill } from "react-icons/ri";
@@ -48,7 +47,7 @@ export default function Home() {
             </div> */}
 
             {/* Main Heading */}
-            <h1 className="text-white text-6xl md:text-6xl lg:text-6xl font-bold mb-6 leading-tight max-w-2xl">
+            <h1 className="text-white text-6xl md:text-6xl lg:text-6xl font-bold mb-6 leading-tight max-w-2xl " style={{lineHeight:0.8}}>
               La Construcción
               <br />
               reinventada
@@ -61,12 +60,12 @@ export default function Home() {
 
             {/* CTA Buttons */}
             <div className="flex gap-6">
-              <button className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
+              <Link href={"/#productos"} className="bg-white text-black px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition">
                 Descubrir Productos
-              </button>
-              <button className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition">
+              </Link>
+              <Link href={"/nuestro-servicio"} className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-black transition">
                 Conocer más
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -100,11 +99,11 @@ export default function Home() {
 
         {/* Additional Sections */}
         <Calculadora />
+        <Productos />
         <LogosCarrusel />
         <ScrollRevealText />
         <StickyVideoSection />
         <ScrollRevealText2 />
-        {/* <Productos /> */}
         <PorqueNosotros />
         <Footer />
       </section>
