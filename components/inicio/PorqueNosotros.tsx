@@ -2,44 +2,45 @@
 import React from 'react'
 import { MdHomeFilled } from 'react-icons/md'
 import { DivScrollTop } from '../componenst-animate/DivScrollTop'
+import Image from 'next/image'
+import { ChevronRight } from 'lucide-react'
 
 export const PorqueNosotros = () => {
   return (
-    <section id="sect-beneficios" className="w-full h-screen snap-start md:p-0  flex flex-col items-center justify-center   px-5   gap-10 bg-[#222222] pt-20 ">
-          <div className="md:w-5/6 w-full flex flex-col gap-5 ">
-            <h6 className="text-lg text-slate-300">¿ Porque Nosotros ? </h6>
-            <span className="text-xl text-white ">Algunos de nuestros beneficios</span>
-
-            <DivScrollTop className="flex md:flex-row flex-wrap justify-center md:gap-10 gap-2 items-center md:mt-10 mt-2 ">
-              <div className="md:w-auto w-40 flex flex-col gap-5 bg-black rounded-xl shadow px-5 py-3 ">
-                <MdHomeFilled size={20} color="white"/> 
-                <span className="text-sm font-semibold text-white">+ 200 Servicios </span>
-                <span className="text-xs text-slate-100">Nuestra atencion es dedicada por cada cliente </span>
-              </div>
-              <div className="md:w-auto w-40 flex flex-col gap-5 bg-black rounded-xl shadow px-5 py-3 ">
-                <MdHomeFilled size={20} color="white"/> 
-                <span className="text-sm font-semibold text-white">+ 200 Servicios </span>
-                <span className="text-xs text-slate-100">Nuestra atencion es dedicada por cada cliente </span>
-              </div>
-              <div className="md:w-auto w-40 flex flex-col gap-5 bg-black rounded-xl shadow px-5 py-3 ">
-                <MdHomeFilled size={20} color="white"/> 
-                <span className="text-sm font-semibold text-white">+ 200 Servicios </span>
-                <span className="text-xs text-slate-100">Nuestra atencion es dedicada por cada cliente </span>
-              </div>
-              <div className="md:w-auto w-40 flex flex-col gap-5 bg-black rounded-xl shadow px-5 py-3 ">
-                <MdHomeFilled size={20} color="white"/> 
-                <span className="text-sm font-semibold text-white">+ 200 Servicios </span>
-                <span className="text-xs text-slate-100">Nuestra atencion es dedicada por cada cliente </span>
-              </div>
-              <div className="md:w-auto w-40 flex flex-col gap-5 bg-black rounded-xl shadow px-5 py-3 ">
-                <MdHomeFilled size={20} color="white"/> 
-                <span className="text-sm font-semibold text-white">+ 200 Servicios </span>
-                <span className="text-xs text-slate-100">Nuestra atencion es dedicada por cada cliente </span>
-              </div>
-              
-            </DivScrollTop>
-          </div>
-
-        </section>
+    <section className="w-full h-[160vh] bg-black relative flex justify-center ">
+                    <div className='w-full h-full absolute bg-linear-to-b from-black to-transparent'></div>
+                    <h1 className="md:text-8xl text-3xl absolute mt-20 text-white text-center font-bold ">Sigue explorando</h1>
+                    <div className='top-72 flex flex-wrap w-full absolute md:px-20 px-2 items-center justify-center gap-5 '>
+                      <div className='group w-100 h-40 bg-white rounded-lg flex flex-row justify-center items-end '>
+                        <div className=' flex flex-row justify-between items-center w-full px-4 py-2'>
+                          <span className='text-2xl'>Prefabricados</span>
+                          <button className='bg-slate-300 group-hover:text-white rounded-full transition-all group-hover:bg-black'>
+                            <ChevronRight size={30} />
+                          </button>
+                        </div>
+                      </div>
+                      <div className=' group w-100 h-40 bg-white rounded-lg flex flex-row justify-center items-end '>
+                        <div className=' flex flex-row justify-between items-center w-full px-4 py-2'>
+                          <span className='text-2xl'>Nuestro servicio</span>
+                          <button className='bg-slate-300 group-hover:text-white rounded-full transition-all group-hover:bg-black'>
+                            <ChevronRight size={30} />
+                          </button>
+                        </div>
+                      </div>
+                      <div className='group w-100 h-40 bg-white rounded-lg flex flex-row justify-center items-end '>
+                        <div className=' flex flex-row justify-between items-center w-full px-4 py-2'>
+                          <span className='text-2xl'>Contactanos</span>
+                          <button className='bg-slate-300 group-hover:text-white rounded-full transition-all group-hover:bg-black'>
+                            <ChevronRight size={30} />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <Image src={"/playa.webp"}
+                        alt="Imagen de nuestro estandar "
+                        width={1080}
+                        height={1080}
+                        className="w-full h-full object-cover" />
+                </section>
   )
 }
