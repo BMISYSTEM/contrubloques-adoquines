@@ -53,12 +53,12 @@ export const Navar = () => {
               <Link href={"/quienes-somos"} >
                 <span className={openOptions  ? "text-slate-500 text-sm" : "text-slate-200 text-sm"}>Quienes somos</span>
               </Link>
-              <Link href={"/nuestro-estandar"} >
-                <span className={openOptions  ? "text-slate-500 text-sm" : "text-slate-200 text-sm"}>Nuestro estandar</span>
+              <Link href={"/nuestro-servicio"} >
+                <span className={openOptions  ? "text-slate-500 text-sm" : "text-slate-200 text-sm"}>Nuestro servicio</span>
               </Link>
             </div>
             <div className="flex items-center gap-3">
-              <Link href={"/quienes-somos#contactenos"} className="hidden md:inline-flex bg-[#FFD230] h-10 items-center justify-center px-3 py-1 rounded-[80px] transition-all hover:opacity-80">
+              <Link href={"/contactenos"} className="hidden md:inline-flex bg-[#FFD230] h-10 items-center justify-center px-3 py-1 rounded-[80px] transition-all hover:opacity-80">
                 <span className="text-sm">Contactanos</span>
               </Link>
 
@@ -79,9 +79,9 @@ export const Navar = () => {
 
               <button className='w-60 h-60 cursor-pointer group '>
                 {/* imagen  */}
-                <div className='w-60 h-32  overflow-hidden'>
+                <Link href={"/bloques"} className='w-60 h-32  overflow-hidden'>
                   <Image src={"/bloque.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
-                </div>
+                </Link>
                 {/* texto */}
                 <span className='text-xl font-semibold mt-2 text-slate-500 transition-all group-hover:text-slate-700'>Bloques</span>
               </button>
