@@ -173,6 +173,7 @@ const page = () => {
       </section>
       <section className="w-full h-screen bg-blue-500 ">
         <video
+        playsInline
           autoPlay
           muted
           loop

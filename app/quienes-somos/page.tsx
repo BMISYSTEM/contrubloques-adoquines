@@ -41,11 +41,13 @@ const page = () => {
         </p>
         <div className="md:w-[80%] w-full h-96 bg-black mt-20">
           <video
+            playsInline
             autoPlay
             muted
             loop
-            className=" w-full h-full object-cover"
+            controls={false}
             preload="metadata"
+            className=" w-full h-full object-cover"
           >
             <source src="/video.MOV" type="video/mp4" />
           </video>

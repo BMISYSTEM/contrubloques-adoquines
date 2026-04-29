@@ -23,6 +23,7 @@ export default function Home() {
         <div className="relative w-full h-screen overflow-hidden">
           {/* Video Background */}
           <video
+          playsInline
             autoPlay
             muted
             loop
