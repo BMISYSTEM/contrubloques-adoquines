@@ -21,8 +21,8 @@ const page = () => {
     <>
       <Navar />
       <section className="w-full h-[120vh] bg-black relative flex justify-center">
-        <h1 className="text-8xl absolute top-20 text-white ">Origen Estructural</h1>
-        <Image src={"/header-nosotros.webp"}
+        <h1 className="md:text-8xl text-6xl absolute top-20 text-white px-5">Origen Estructural</h1>
+        <Image src={"/contenido/IMG_1_SESION_QUIENES_SOMOS.png"}
           alt="Imagen de nosotros "
           width={1080}
           height={1080}
@@ -39,7 +39,7 @@ const page = () => {
           Con trabajo constante, control en cada proceso y una búsqueda permanente por mejorar el acabado y la organización, construimos una forma distinta de hacer prefabricados: más precisa, más limpia, más responsable.
 
         </p>
-        <div className="w-[80%] h-96 bg-black mt-20">
+        <div className="md:w-[80%] w-full h-96 bg-black mt-20">
           <video
             autoPlay
             muted
@@ -61,8 +61,8 @@ const page = () => {
         </p>
       </section>
       <section className="w-full h-[140vh] bg-black relative flex justify-center">
-        <h3 className="text-8xl absolute top-20 text-white ">Estandares internos</h3>
-        <Image src={"/nosotros2.webp"}
+        <h3 className="md:text-8xl text-6xl px-6  absolute top-20 text-white ">Estandares internos</h3>
+        <Image src={"/contenido/IMG_2_QUIENES_SOMOS.webp"}
           alt="Imagen de nosotros "
           width={1080}
           height={1080}
@@ -71,7 +71,7 @@ const page = () => {
         <p className="absolute bottom-10 right-10 text-white text-xl w-60">Orden como metodo, Cumplimiento conciente, Evolucion Constante.</p>
       </section>
       <section className="w-full h-screen bg-black relative flex justify-center">
-        <Image src={"/nosotros2.webp"}
+        <Image src={"/contenido/IMG_3_SESION_QUIENES_SOMOS.png"}
           alt="Imagen de nosotros "
           width={1080}
           height={1080}

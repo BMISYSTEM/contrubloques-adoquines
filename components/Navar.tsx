@@ -47,14 +47,14 @@ export const Navar = () => {
               <Image src={"/logo.png"} alt="Logo contru bloques " width={100} height={100} className="object-contain" />
             </Link>
             <div id="opciones-nav" className="hidden md:flex w-full md:flex-row md:gap-10 items-center md:justify-center justify-between">
-              <button onClick={()=>setOpenOptions(!openOptions)} >
-                <span className={openOptions  ? "text-slate-500 text-sm" : "text-slate-200 text-sm"}>Prefabricados</span>
+              <button onClick={() => setOpenOptions(!openOptions)} >
+                <span className={openOptions ? "text-slate-500 text-sm" : "text-slate-200 text-sm"}>Prefabricados</span>
               </button>
               <Link href={"/quienes-somos"} >
-                <span className={openOptions  ? "text-slate-500 text-sm" : "text-slate-200 text-sm"}>Quienes somos</span>
+                <span className={openOptions ? "text-slate-500 text-sm" : "text-slate-200 text-sm"}>Quienes somos</span>
               </Link>
               <Link href={"/nuestro-servicio"} >
-                <span className={openOptions  ? "text-slate-500 text-sm" : "text-slate-200 text-sm"}>Nuestro servicio</span>
+                <span className={openOptions ? "text-slate-500 text-sm" : "text-slate-200 text-sm"}>Nuestro servicio</span>
               </Link>
             </div>
             <div className="flex items-center gap-3">
@@ -75,24 +75,24 @@ export const Navar = () => {
           </nav>
         </section>
         {openOptions && (
-          <section className='absolute top-0 w-full h-90 bg-white flex flex-wrap justify-center gap-10 px-5 pt-20'>
+          <section className='absolute top-0  w-full h-90 bg-white md:flex hidden flex-wrap justify-center gap-10 px-5 pt-20'>
 
-              <button className='w-60 h-60 cursor-pointer group '>
-                {/* imagen  */}
-                <Link href={"/bloques"} className='w-60 h-32  overflow-hidden'>
-                  <Image src={"/bloque.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
-                </Link>
-                {/* texto */}
-                <span className='text-xl font-semibold mt-2 text-slate-500 transition-all group-hover:text-slate-700'>Bloques</span>
-              </button>
-              <button className='w-60 h-60 group cursor-pointer'>
-                {/* imagen  */}
-                <div className='w-60 h-32  overflow-hidden'>
-                  <Image src={"/adoquin.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
-                </div>
-                {/* texto */}
-                <span className='text-xl font-semibold mt-2 text-slate-500 transition-all group-hover:text-slate-700'>Adoquines</span>
-              </button>
+            <button className='w-60 h-60 cursor-pointer group '>
+              {/* imagen  */}
+              <Link href={"/bloques"} className='w-60 h-32  overflow-hidden'>
+                <Image src={"/bloque.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
+              </Link>
+              {/* texto */}
+              <span className='text-xl font-semibold mt-2 text-slate-500 transition-all group-hover:text-slate-700'>Bloques</span>
+            </button>
+            <button className='w-60 h-60 group cursor-pointer'>
+              {/* imagen  */}
+              <div className='w-60 h-32  overflow-hidden'>
+                <Image src={"/adoquin.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
+              </div>
+              {/* texto */}
+              <span className='text-xl font-semibold mt-2 text-slate-500 transition-all group-hover:text-slate-700'>Adoquines</span>
+            </button>
           </section>
         )}
       </section>
@@ -109,10 +109,31 @@ export const Navar = () => {
 
           <div className="flex-1 flex flex-col items-center justify-center gap-8">
             <Link href={"/"} onClick={() => setOpen(false)} className="text-2xl text-white">Inicio</Link>
+            <button  onClick={() => setOpenOptions(!openOptions)} className="text-2xl text-white">Prefabricados</button>
+            {openOptions && (
+              <section className=' w-full md:h-90 bg-white flex flex-wrap justify-center gap-10 px-5 pt-20'>
+
+                <button className='w-60 h-60 cursor-pointer group '>
+                  {/* imagen  */}
+                  <Link href={"/bloques"} className='w-60 h-32  overflow-hidden'>
+                    <Image src={"/bloque.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
+                  </Link>
+                  {/* texto */}
+                  <span className='text-xl font-semibold mt-2 text-slate-500 transition-all group-hover:text-slate-700'>Bloques</span>
+                </button>
+                <button className='w-60 h-60 group cursor-pointer'>
+                  {/* imagen  */}
+                  <div className='w-60 h-32  overflow-hidden'>
+                    <Image src={"/adoquin.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
+                  </div>
+                  {/* texto */}
+                  <span className='text-xl font-semibold mt-2 text-slate-500 transition-all group-hover:text-slate-700'>Adoquines</span>
+                </button>
+              </section>
+            )}
             <Link href={"/quienes-somos"} onClick={() => setOpen(false)} className="text-2xl text-white">Quienes somos</Link>
-            <Link href={"/#sect-productos"} onClick={() => setOpen(false)} className="text-2xl text-white">Nuestros productos</Link>
-            <Link href={"/#sect-productos"} onClick={() => setOpen(false)} className="text-2xl text-white">Nuestro estandar</Link>
-            <Link href={"/quienes-somos#contactenos"} onClick={() => setOpen(false)} className="mt-4 bg-[#FFD230] px-6 py-2 rounded-full text-black font-medium">Contactanos</Link>
+            <Link href={"/nuestro-servicio"} onClick={() => setOpen(false)} className="text-2xl text-white">Nuestros Servicio</Link>
+            <Link href={"/contactenos"} onClick={() => setOpen(false)} className="mt-4 bg-[#FFD230] px-6 py-2 rounded-full text-black font-medium">Contactanos</Link>
           </div>
         </div>
       )}

@@ -36,7 +36,7 @@ export const PorqueNosotros = () => {
                         </div>
                       </div>
                     </div>
-                    <Image src={"/playa.webp"}
+                    <Image src={"/contenido/IMG_1_SESION_SEGUIR_EXPLORANDO.png"}
                         alt="Imagen de nuestro estandar "
                         width={1080}
                         height={1080}

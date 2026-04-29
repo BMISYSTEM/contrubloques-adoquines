@@ -1,13 +1,14 @@
 import { Footer } from '@/components/Footer'
 import { Navar } from '@/components/Navar'
+import Image from 'next/image'
 import React from 'react'
 
 const page = () => {
     return (
         <>
             <Navar />
-            <section className='w-full h-screen bg-linear-to-b  from-black/20 to-transparent flex flex-col bg-white gap-5 justify-center  px-5 '>
-                <h1 className='text-4xl font-bold '>Contacto</h1>
+            <section className='w-full md:h-screen min-h-screen bg-linear-to-b  from-black/20 to-transparent flex flex-col bg-white gap-5 md:justify-center  px-5 '>
+                <h1 className='text-4xl font-bold md:mt-0 mt-30 '>Contacto</h1>
                 <p>
                     ¿tienes dudas sobre tu obra o necesitas apoyo con tu pedido?<br />
                     Nuestro equipo está listo para ayudarte a elegir, cotizar y coordinar tu entrega de forma clara y rápida.
@@ -37,12 +38,17 @@ const page = () => {
                 </div>
             </section>
             <section className='mt-5 h-screen flex flex-col '>
-                <div className='w-full h-1/2 bg-blue-500'>
-
+                <div className='w-full h-1/2 '>
+                    <Image alt='imagen de contactenos' width={10080} height={10080} src={"/contenido/IMG_2_SESION_CONTACTO.png"} className='w-full h-full object-contain' />
                 </div>
                 <div className='flex md:flex-row flex-col gap-2 h-1/2  '>
-                    <div className='w-full h-full bg-amber-500'></div>
-                    <div className='md:w-1/2 w-full h-full bg-indigo-500'></div>
+                    <div className='w-full h-full '>
+                        <Image alt='imagen de contactenos' width={10080} height={10080} src={"/contenido/IMG_2_SESION_CONTACTO.png"} className='w-full h-full object-contain' />
+
+                    </div>
+                    <div className='md:w-1/2 w-full h-full '>
+                        <Image alt='imagen de contactenos' width={10080} height={10080} src={"/contenido/IMG_2_SESION_CONTACTO.png"} className='w-full h-full object-contain' />
+                    </div>
                 </div>
 
             </section>
@@ -93,7 +99,7 @@ const page = () => {
                     </p>
                 </details>
             </section>
-            <Footer/>
+            <Footer />
         </>
     )
 }

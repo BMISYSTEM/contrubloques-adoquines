@@ -23,7 +23,7 @@ const page = () => {
         <button className="px-4 py-2 absolute bottom-60 bg-white rounded-[80px] text-sm font-bold hover:opacity-80 transition-all">
           <span>Programa tu pedido</span>
         </button>
-        <Image src={"/nuestro-estandar1.webp"}
+        <Image src={"/contenido/IMG_1_SESION_BLOQUES.png"}
           alt="Imagen de nuestro estandar "
           width={1080}
           height={1080}
@@ -48,7 +48,7 @@ const page = () => {
           </div>
 
           <div className="flex gap-10  items-start">
-            <div className="flex flex-row items-center justify-center gap-4">
+            <div className="flex flex-wrap items-center justify-center gap-4">
               {[
                 'Alta resistencia',
                 'Medidas uniformes',
@@ -74,7 +74,7 @@ const page = () => {
           <section className="w-full h-screen bg-black relative flex justify-center items-end ">
             <h6 className="md:text-8xl text-3xl absolute text-white text-center font-bold mb-10 ">Hecho para durar</h6>
 
-            <Image src={"/nuestro-estandar1.webp"}
+            <Image src={"/contenido/IMG_1_SESION_BLOQUES.png"}
               alt="Imagen de nuestro estandar "
               width={1080}
               height={1080}
@@ -89,29 +89,29 @@ const page = () => {
       <section className='w-full h-auto  pt-20 gap-1 pb-20 bg-[#F5F5F5] flex flex-col items-center '>
 
         <div className='flex md:flex-row flex-col gap-1 md:w-250 w-full  '>
-          <div className='w-2/3   h-250 rounded-lg bg-gray-500'>
-            <Image src={"/estandares2.webp"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
+          <div className='md:w-2/3 w-full   h-250 rounded-lg bg-gray-500'>
+            <Image src={"/contenido/Sesión_bloque_imagen_1_carrusel.jpg"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
           </div>
-          <div className='w-1/3   h-96 sticky top-0 bg-gray-500 rounded-lg'>
-            <Image src={"/estandares3.webp"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
+          <div className='md:w-1/3 w-full   h-96 md:sticky top-0 bg-gray-500 rounded-lg'>
+            <Image src={"/contenido/Sesión_bloque_imagen_2_carrusel.jpg"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
           </div>
         </div>
         <div className='flex md:flex-row flex-col gap-1 md:w-250 w-full '>
-          <div className='w-1/3 h-96  sticky top-0 bg-gray-500 rounded-lg'>
-            <Image src={"/estandares4.webp"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
+          <div className='md:w-1/3 w-full h-96  md:sticky top-0 bg-gray-500 rounded-lg'>
+            <Image src={"/contenido/Sesión_bloque_imagen_3_carrusel.jpg"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
           </div>
-          <div className='w-2/3 h-250  rounded-lg bg-gray-500'>
-            <Image src={"/estandares5.webp"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
+          <div className='md:w-2/3 w-full h-250  rounded-lg bg-gray-500'>
+            <Image src={"/contenido/Sesión_bloque_imagen_4_carrusel.jpg"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
           </div>
         </div>
       </section>
-      <section className="md:px-10 w-full h-120 flex flex-row  ">
-        <div className="w-96 h-full bg-black flex flex-col text-white px-5 py-10 gap-5">
+      <section className="md:px-10 w-full h-120 flex md:flex-row flex-col  ">
+        <div className="md:w-96 w-full md:h-full h-1/3 bg-black flex flex-col text-white px-5 py-10 gap-5">
           {/* texto */}
           <h6 className="text-xl font-semibold">Te gustaria visitarnos en planta ?</h6>
           <p className="text-sm text-slate-100">Conoce el proceso, revisa el producto y llevate una muestra para tu proyecto</p>
         </div>
-        <div className="w-full">
+        <div className="w-full h-full">
           {/* mapa */}
           <iframe className='w-full h-full' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.932416982708!2d-76.56135832469378!3d3.366696851776152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a3455d660df1%3A0x997e30f1caba5483!2sBloques%20de%20Cemento%20Cali%20%2F%20Construbloques%20y%20Adoquines!5e0!3m2!1ses-419!2sco!4v1771867439443!5m2!1ses-419!2sco" width="600" height="450" loading="lazy"
           ></iframe>
@@ -124,7 +124,7 @@ const page = () => {
           <span>Asesoria por Whatssap</span>
         </button>
       </section>
-      <section className='w-full h-screen flex flex-wrap md:gap-50 gap-20 items-center justify-center  md:px-20 pt-20 bg-[#F5F5F5] '>
+      <section className='w-full md:h-screen pb-10 flex flex-wrap md:gap-50 gap-20 items-center justify-center  md:px-20 pt-20 bg-[#F5F5F5] '>
         {/* columna */}
         <div className='flex flex-col gap-3 justify-center '>
           <Image src={"/bloque.png"} alt="bloque " width={1000} height={1000} className="w-full h-40" />
@@ -170,14 +170,19 @@ const page = () => {
           <span className="text-left">rendimiento: 12.5 und/m²</span>
           <span className="text-left">aplicación: proyectos exigentes</span>
         </div>
-        {/* columna */}
-
-
       </section>
       <section className="w-full h-screen bg-blue-500 ">
-
+        <video
+          autoPlay
+          muted
+          loop
+          className="w-full h-full object-cover"
+          preload="metadata"
+        >
+          <source src="/contenido/video_2_sesión_bloque.MOV" type="video/mp4" />
+        </video>
       </section>
-      <Footer/>
+      <Footer />
     </>
   );
 };
