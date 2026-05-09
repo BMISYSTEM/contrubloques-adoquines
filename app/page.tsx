@@ -75,35 +75,26 @@ export default function Home() {
 
         {/* Bottom Stats Section */}
         <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent">
-          <div className="grid grid-cols-3 gap-8 px-12 md:px-16 lg:px-20 py-8">
+          <div className="grid grid-cols-3 gap-1 px-12 md:px-16 lg:px-20 pb-10">
             <div className="flex flex-col">
-              <div className="flex items-center gap-1 mb-2 justify-center">
-                <span className="text-red-500 text-2xl">✓</span>
+              <div className="flex items-center   justify-center">
                 <h3 className="text-white font-semibold">Producción organizada</h3>
               </div>
-              <p className="text-gray-300 text-sm text-center">Capacidad de producción para proyectos con bloques de cemento y adoquines vibroprensados.</p>
+              <p className="text-gray-300 text-xs text-center">Capacidad de producción para proyectos con bloques de cemento y adoquines vibroprensados.</p>
             </div>
             <div className="flex flex-col">
-              <div className="flex items-center gap-1 mb-2 justify-center">
-                <span className="text-green-400 text-2xl">✓</span>
+              <div className="flex items-center   justify-center">
                 <h3 className="text-white font-semibold">Entregas cumplidas</h3>
               </div>
-              <p className="text-gray-300 text-sm text-center">Despachos programados en Cali y Valle del Cauca.</p>
+              <p className="text-gray-300 text-xs text-center">Despachos programados en Cali y Valle del Cauca.</p>
             </div>
             <div className="flex flex-col">
-              <div className="flex items-center gap-1 mb-2 justify-center">
-                <span className="text-green-400 text-2xl">✓</span>
+              <div className="flex items-center   justify-center">
                 <h3 className="text-white font-semibold">Precisión estructural</h3>
               </div>
-              <p className="text-gray-300 text-sm text-center">Fabricación uniforme para proyectos residenciales y comerciales.</p>
+              <p className="text-gray-300 text-xs text-center">Fabricación uniforme para proyectos residenciales y comerciales.</p>
             </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-1 mb-2 justify-center">
-                <span className="text-blue-400 text-2xl">✓</span>
-                <h3 className="text-white font-semibold">Disponible 24/7</h3>
-              </div>
-              <p className="text-gray-300 text-sm text-center">Soporte constante</p>
-            </div>
+
           </div>
         </div>
       </div>
