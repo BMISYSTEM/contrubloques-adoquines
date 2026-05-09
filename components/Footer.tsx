@@ -15,6 +15,8 @@ export const Footer = () => {
         <div className="md:w-5/6 w-full md:h-full h-auto flex md:flex-row flex-col md:items-start   md:justify-between md:gap-0 gap-5 ">
           <div className="md:w-1/3 flex flex-col md:gap-5 gap-1 ">
             <span className="md:text-2xl  text-xl font-semibold text-white ">Construbloques y Adoquines</span>
+            <p className='text-lg text-slate-200'>Producción y distribución de bloques de cemento, bloques estructurales y adoquines vibroprensados para proyectos residenciales, comerciales y urbanísticos en Cali y Valle del Cauca.</p>
+            
             <div className="flex flex-row gap-5 ">
               <button>
                 <RiInstagramFill size={30} color="orange" />

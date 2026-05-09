@@ -74,7 +74,6 @@ const page = () => {
                             <span className='text-xs font-semibold text-center'>Entrega</span>
                             <p className='text-center'>Cumplimos con entregas puntuales y seguimiento continuo</p>
                         </div>
-
                     </div>
                 </div>
             </section>
