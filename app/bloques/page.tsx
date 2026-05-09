@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { Footer } from "@/components/Footer";
+import { BottonWhatsapp } from "@/components/BottonWhatsapp";
 
 
 export const metadata: Metadata = {
@@ -17,6 +18,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
+    <BottonWhatsapp/>
       <Navar />
       <section className="w-full h-[120vh] bg-black relative flex justify-center items-center">
         <h1 className="md:text-8xl text-3xl absolute text-white text-center font-bold ">Bloques desde<br /> $ 3,150</h1>

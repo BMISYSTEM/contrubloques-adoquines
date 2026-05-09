@@ -40,7 +40,7 @@ export const Navar = () => {
   }, [])
   return (
     <>
-      <section className={` ${(scrollPantalla + 50) >= pantalla ? "bg-black/30  backdrop-blur-md  " : ""} w-full fixed  top-0 flex items-center justify-center pt-2 z-50 `}>
+      <section className={` ${(scrollPantalla + 50) >= pantalla ? "bg-black/50  backdrop-blur-md  " : ""} w-full fixed  top-0 flex items-center justify-center pt-2 z-50 `}>
         <section className="md:w-5/6 w-full z-50 ">
           <nav id="navegacion-desktop" className=" flex flex-row px-5 justify-between md:gap-2  w-full  h-15    z-50 rounded-[80px]">
             <Link href={"/"} id="logo-nav" className="hidden w-30 h-full md:flex items-center justify-center">

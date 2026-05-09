@@ -26,7 +26,7 @@ export const StickyVideoSection = () => {
 
       {/* Content Section - Scrolls over video */}
       <div className="relative z-10">
-        <div className='h-screen'></div>
+        <div className='h-1/2'></div>
         <div className="min-h-screen flex flex-col items-center justify-center px-6 md:px-12 py-24">
           {/* Tag */}
           <p className="text-sm text-yellow-400 font-semibold mb-6">Nuestras características</p>
@@ -45,7 +45,7 @@ export const StickyVideoSection = () => {
               </div>
               <h3 className="text-white font-semibold mb-2">Escala industrial</h3>
               <p className="text-gray-200 text-sm">
-                Múltiples referencias para cada proyecto y necesidad
+                Capacidad para producción continua de bloques estructurales y adoquines.
               </p>
             </div>
 
@@ -56,7 +56,7 @@ export const StickyVideoSection = () => {
               </div>
               <h3 className="text-white font-semibold mb-2">Control de calidad</h3>
               <p className="text-gray-200 text-sm">
-                Calidad garantizada en cada bloque y adoquín
+                Precisión uniforme en cada fabricación.
               </p>
             </div>
 
@@ -65,24 +65,23 @@ export const StickyVideoSection = () => {
               <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur flex items-center justify-center mx-auto mb-4 border border-white/20">
                 <FiArrowRight className="text-white text-2xl" />
               </div>
-              <h3 className="text-white font-semibold mb-2">Flujo de logistica eficiente</h3>
+              <h3 className="text-white font-semibold mb-2">Flujo logístico eficiente</h3>
               <p className="text-gray-200 text-sm">
-                Desde 10 días a tu obra
+                Despachos programados en Cali y municipios cercanos.
               </p>
             </div>
           </div>
 
           {/* Description */}
           <p className="text-gray-200 text-center max-w-2xl mb-12 text-lg">
-          Contamos con amplia experiencia en la industria, proporcionando materiales de construcción confiables para proyectos residenciales y comerciales
+            Detrás de cada bloque y adoquín existe un sistema de fabricación pensado para lograr precisión y uniformidad en cada pieza.
           </p>
-
           {/* CTA Button */}
           <Link href={"https://api.whatsapp.com/message/25MC5Y67LNMXJ1?autoload=1&app_absent=0"} className="bg-white hover:bg-gray-100 text-slate-900 px-10 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl">
             Solicitar Cotización
           </Link>
           <p className='mt-5 text-slate-200'>Dejanos tus datos y te contactamos </p>
-          <a className='text-blue-200 border-b' href="https://mail.google.com/mail/?view=cm&to=destinatario@gmail.com&su=Asunto&body=Mensaje" target="_blank">
+          <a className='text-blue-200 border-b' href="https://mail.google.com/mail/?view=cm&to=comercial.bloques@construbloques.co&su=Asunto&body=Mensaje" target="_blank">
             Enviar correo
           </a>
         </div>

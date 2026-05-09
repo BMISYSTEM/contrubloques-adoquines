@@ -1,3 +1,4 @@
+import { BottonWhatsapp } from "@/components/BottonWhatsapp";
 import { DivScrollLeft } from "@/components/componenst-animate/DivScrollLeft";
 import { DivScrollRigth } from "@/components/componenst-animate/DivScrollRigth";
 import { DivScrollTop } from "@/components/componenst-animate/DivScrollTop";
@@ -19,6 +20,7 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
+    <BottonWhatsapp/>
       <Navar />
       <section className="w-full h-[120vh] bg-black relative flex justify-center">
         <h1 className="md:text-8xl text-6xl absolute top-20 text-white px-5">Origen Estructural</h1>

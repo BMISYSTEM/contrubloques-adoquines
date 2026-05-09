@@ -10,7 +10,7 @@ import { RiInstagramFill } from 'react-icons/ri'
 
 export const Footer = () => {
   return (
-    <footer className="w-full bg-[url(/fondofooter.png)] bg-cover object-cover  h-auto  relative snap-start z-[9999999999999999999999] ">
+    <footer className="w-full bg-[url(/fondofooter.png)] bg-cover object-cover  h-auto  relative snap-start  ">
       <div className="w-full h-full flex flex-col bg-black/70 backdrop-blur-sm py-10  items-center justify-center px-5">
         <div className="md:w-5/6 w-full md:h-full h-auto flex md:flex-row flex-col md:items-start   md:justify-between md:gap-0 gap-5 ">
           <div className="md:w-1/3 flex flex-col md:gap-5 gap-1 ">

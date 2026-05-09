@@ -9,6 +9,7 @@ import Image from 'next/image'
 import React from 'react'
 import { ClipboardCheck, Shield, ShieldCheck, Timer } from 'lucide-react'
 import { Footer } from '@/components/Footer'
+import { BottonWhatsapp } from '@/components/BottonWhatsapp'
 
 
 const glbs = [
@@ -19,6 +20,7 @@ const glbs = [
 const page = () => {
     return (
         <>
+        <BottonWhatsapp/>
             <Navar />
             {/* section header */}
             <section className="w-full h-[120vh] bg-black relative flex justify-center items-center">
@@ -60,17 +62,17 @@ const page = () => {
                         <div className='flex flex-col gap-2 items-center justify-center w-1/3'>
                             <Timer size={20} />
                             <span className='text-xs font-semibold text-center'>Asesoria</span>
-                            <p>Te ayudamos a elegir el producto ideal según tu proyecto</p>
+                            <p className='text-center'>Te ayudamos a elegir el producto ideal según tu proyecto</p>
                         </div>
                         <div className='flex flex-col gap-2 items-center justify-center w-1/3'>
                             <ClipboardCheck size={20} />
                             <span className='text-xs font-semibold text-center'>Programación </span>
-                            <p>Organizamos producción y despacho según tus tiempos en obra</p>
+                            <p className='text-center'>Organizamos producción y despacho según tus tiempos en obra</p>
                         </div>
                         <div className='flex flex-col gap-2 items-center justify-center w-1/3'>
                             <ShieldCheck size={20} />
                             <span className='text-xs font-semibold text-center'>Entrega</span>
-                            <p>Cumplimos con entregas puntuales y seguimiento continuo</p>
+                            <p className='text-center'>Cumplimos con entregas puntuales y seguimiento continuo</p>
                         </div>
 
                     </div>

@@ -7,9 +7,9 @@ import { DivScrollRigth } from '../componenst-animate/DivScrollRigth'
 
 export const Productos = () => {
   return (
-    <section id="sect-productos" className=" w-full  h-full flex flex-col items-center justify-center gap-5 py-20  snap-start " >
+    <section id="productos" className=" w-full  h-full flex flex-col items-center justify-center gap-5 py-20  snap-start " >
           <h3 className="text-3xl font-semibold text-white text-center">Nuestros productos</h3>
-          <span className="text-lg text-white text-center ">Productos de cemento con la mas alta calidad para tus proyectos de construccion</span>
+          <span className="text-lg text-white text-center ">Prefabricados de concreto desarrollados para aportar precisión y estabilidad en cada proyecto.</span>
           <div className="flex md:flex-row flex-col gap-5 items-center justify-center mt-10 md:px-0 px-5 ">
             <DivScrollLeft className=" md:w-96  md:h-96 h-40 w-40 relative group overflow-hidden  bg-slate-300 shadow-xl">
               <Image src={"/producto1.png"} width={100} height={100} title="Imagen de producto de bloques de cemento " alt="Imagen de producto de bloques de cemento "

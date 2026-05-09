@@ -17,7 +17,7 @@ export const LogosCarrusel = () => {
       <div className=" mx-auto  ">
         {/* Header */}
         <div className="mb-12 text-center">
-          <p className="text-slate-700 font-semibold text-lg">Confían en nosotros</p>
+          <p className="text-slate-700 font-semibold text-lg">Aliados y Clientes</p>
         </div>
         
         {/* Carrusel Container */}

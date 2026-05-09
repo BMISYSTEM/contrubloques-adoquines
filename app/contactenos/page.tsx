@@ -1,3 +1,4 @@
+import { BottonWhatsapp } from '@/components/BottonWhatsapp'
 import { Footer } from '@/components/Footer'
 import { Navar } from '@/components/Navar'
 import Image from 'next/image'
@@ -6,6 +7,7 @@ import React from 'react'
 const page = () => {
     return (
         <>
+        <BottonWhatsapp/>
             <Navar />
             <section className='w-full md:h-screen min-h-screen bg-linear-to-b  from-black/20 to-transparent flex flex-col bg-white gap-5 md:justify-center  px-5 '>
                 <h1 className='text-4xl font-bold md:mt-0 mt-30 '>Contacto</h1>

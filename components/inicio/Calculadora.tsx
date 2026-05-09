@@ -6,7 +6,7 @@ import { useState } from 'react'
 // Datos de referencias de productos
 const productReferences = {
   bloques: [
-    { id: 'bloque-10', name: 'Bloque 10', m2PerUnit: 0.546 },
+    { id: 'bloque-10', name: 'Bloque 10', m2PerUnit: 12.5},
     { id: 'bloque-12', name: 'Bloque 12', m2PerUnit: 0.546 },
     { id: 'bloque-14', name: 'Bloque 14', m2PerUnit: 0.546 },
   ],
@@ -19,8 +19,8 @@ const productReferences = {
 export const Calculadora = () => {
   const [productType, setProductType] = useState('bloques')
   const [selectedReference, setSelectedReference] = useState('bloque-g1')
-  const [wallArea, setWallArea] = useState('')
-  const [doorsArea, setDoorsArea] = useState('')
+  const [wallArea, setWallArea] = useState("")
+  const [doorsArea, setDoorsArea] = useState("")
   const [windowsArea, setWindowsArea] = useState('')
 
   // Obtener el producto seleccionado
@@ -28,13 +28,10 @@ export const Calculadora = () => {
     .find(p => p.id === selectedReference)
 
   // Calcular área neta
-  const wallAreaNum = parseFloat(wallArea) || 0
-  const doorsAreaNum = parseFloat(doorsArea) || 0
-  const windowsAreaNum = parseFloat(windowsArea) || 0
-  const netArea = Math.max(wallAreaNum - doorsAreaNum - windowsAreaNum, 0)
+  const netArea = (Number(wallArea ?? 0) * Number(doorsArea ?? 0))
 
   // Calcular cantidad necesaria
-  const unitsNeeded = currentProduct ? Math.ceil(netArea / currentProduct.m2PerUnit) : 0
+  const unitsNeeded = Number(currentProduct?.m2PerUnit ?? 0) * netArea
 
   return (
     <section id="sect-calculadora" className="w-full py-16 px-6 md:px-12 bg-gradient-to-br from-blue-50 via-blue-100 to-cyan-50">
@@ -78,7 +75,7 @@ export const Calculadora = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div>
               <label className=" text-sm font-semibold flex flex-row gap-2 items-center text-slate-700 mb-2">
-                Largo <ArrowLeftRight size={20}/>
+                Largo m <ArrowLeftRight size={20}/>
               </label>
               <input
                 type="number"
@@ -90,8 +87,7 @@ export const Calculadora = () => {
             </div>
             <div>
               <label className=" text-sm font-semibold flex flex-row gap-2 items-center text-slate-700 mb-2">
-
-                Alto <ArrowUpDown size={20}/>
+                Alto m <ArrowUpDown size={20}/>
               </label>
               <input
                 type="number"
@@ -116,8 +112,19 @@ export const Calculadora = () => {
               <p className="text-sm text-slate-600 mb-2">
                 {productType === 'bloques' ? 'Bloques' : 'Adoquines'} necesarios
               </p>
-              <p className="text-3xl font-bold text-yellow-500">{unitsNeeded}</p>
+              <p className="text-3xl font-bold text-yellow-500">{unitsNeeded} Aprox</p>
             </div>
+            {unitsNeeded > 0 && 
+              <div>
+                <p className="text-sm text-slate-600 mb-2">
+                    ¿ Quieres cotizar esta cantidad ?
+                </p>
+                
+                <button className='px-3 py-1 text-sm text-white bg-green-500 rounded-sm hover:opacity-90'>
+                  <span>Solicita cotizacion por Whatsapp</span>
+                </button>
+              </div>
+            }
             <div>
               <p className="text-sm text-slate-600 mb-2">Producto seleccionado</p>
               <p className="text-lg font-semibold text-slate-900">{currentProduct?.name}</p>
