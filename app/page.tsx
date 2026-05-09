@@ -67,9 +67,6 @@ export default function Home() {
             <Link href={"/#productos"} className="bg-white text-black md:px-8 text-center px-3 md:py-3  rounded-full font-semibold hover:bg-gray-100 transition">
               Descubrir Productos
             </Link>
-            <Link href={"/nuestro-servicio"} className="border-2 border-white text-white md:px-8 text-center px-3 md:py-3  rounded-full font-semibold hover:bg-white hover:text-black transition">
-              Conocer más
-            </Link>
           </div>
         </div>
 
