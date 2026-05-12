@@ -12,7 +12,7 @@ export const Productos = () => {
           <span className="text-lg text-white text-center ">Prefabricados de concreto desarrollados para aportar precisión y estabilidad en cada proyecto.</span>
           <div className="flex md:flex-row flex-col gap-5 items-center justify-center mt-10 md:px-0 px-5 ">
             <DivScrollLeft className=" md:w-96  md:h-96 h-40 w-40 relative group overflow-hidden  bg-slate-300 shadow-xl">
-              <Image src={"/producto1.png"} width={100} height={100} title="Imagen de producto de bloques de cemento " alt="Imagen de producto de bloques de cemento "
+              <Image src={"/bloque.webp"} width={1000} height={1000} title="Imagen de producto de bloques de cemento " alt="Imagen de producto de bloques de cemento "
                 className="w-full h-full object-cover" />
               <div className="
                     w-full h-full
@@ -24,7 +24,7 @@ export const Productos = () => {
                     transition-all duration-500 ease-out
                     flex flex-col gap-4  items-center justify-center
                     ">
-                      <span className="text-lg text-slate-200">Bloque estructural</span>
+                      <span className="text-2xl font-semibold text-slate-200">Bloque estructural</span>
                 <Link href={"/bloques"} title="Conoce mas informacion sobre bloques  " 
                 className="px-5 py-1 rounded-[80px] border border-slate-200 bg-black/60 transition-all hover:bg-black hover:text-white cursor-pointer">
                   <span className="text-sm text-slate-200">Ver mas</span>
@@ -32,7 +32,7 @@ export const Productos = () => {
               </div>
             </DivScrollLeft>
             <DivScrollRigth className="md:w-96  md:h-96 h-40 w-40 relative group overflow-hidden rounded-sm bg-slate-300 shadow-xl">
-              <Image src={"/producto2.png"} width={100} height={100} title="Imagen de producto de bloques de cemento " alt="Imagen de producto de bloques de cemento "
+              <Image src={"/adoquin.webp"} width={1000} height={1000} title="Imagen de producto de bloques de cemento " alt="Imagen de producto de bloques de cemento "
                 className="w-full h-full object-cover" />
               <div className="
                     w-full h-full
@@ -44,7 +44,7 @@ export const Productos = () => {
                     transition-all duration-500 ease-out
                     flex flex-col gap-4  items-center justify-center
                     ">
-                      <span className="text-lg text-slate-200">Adoquines</span>
+                      <span className="text-2xl font-semibold text-slate-200">Adoquines</span>
                 <Link href={"/adoquines"} title="Conoce mas informacion sobre Adoquines  " 
                 className="px-5 py-1 rounded-[80px] border border-slate-200 bg-black/60 transition-all hover:bg-black hover:text-white cursor-pointer">
                   <span className="text-sm text-slate-200">Ver mas</span>

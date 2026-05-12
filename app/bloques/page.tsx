@@ -21,10 +21,17 @@ const page = () => {
     <BottonWhatsapp/>
       <Navar />
       <section className="w-full h-[120vh] bg-black relative flex justify-center items-center">
-        <h1 className="md:text-8xl text-3xl absolute text-white text-center font-bold ">Bloques desde<br /> $ 3,150</h1>
-        <button className="px-4 py-2 absolute bottom-60 bg-white rounded-[80px] text-sm font-bold hover:opacity-80 transition-all">
-          <span>Programa tu pedido</span>
-        </button>
+        <div className="w-full h-full bg-black/60 absolute">
+
+        </div>
+        <div className="w-full absolute top-[30%] flex flex-col items-center justify-center gap-10">
+          <h1 className="md:text-9xl text-3xl  text-white text-center font-bold ">Bloques desde</h1>
+          <span className="text-xl m-0 p-0 text-white text-center">$ 3,150</span>
+          <button className="px-4 py-2  bg-white rounded-[80px] text-sm font-bold hover:opacity-80 transition-all">
+            <span>Programa tu pedido</span>
+          </button>
+
+        </div>
         <Image src={"/contenido/IMG_1_SESION_BLOQUES.png"}
           alt="Imagen de nuestro estandar "
           width={1080}
@@ -33,7 +40,7 @@ const page = () => {
       </section>
       <ScrollRevealText />
       <section className="w-full h-screen bg-blue-300 flex items-center justify-center">
-        <h3>Render </h3>
+        <Image src={"/renderbloque.png"} width={1000} height={1000} alt="imagen de bloque" className="w-full h-full object-cover"/>
       </section>
 
       <section className="w-full bg-white py-20">
@@ -49,8 +56,8 @@ const page = () => {
             </div>
           </div>
 
-          <div className="flex gap-10  items-start">
-            <div className="flex flex-wrap items-center justify-center gap-4">
+          <div className="flex gap-10  items-center justify-center">
+            <div className="grid grid-cols-4 grid-rows-2 items-center justify-center gap-4">
               {[
                 'Alta resistencia',
                 'Medidas uniformes',

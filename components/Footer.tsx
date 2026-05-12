@@ -29,7 +29,7 @@ export const Footer = () => {
               </button>
             </div>
           </div>
-          <div className="md:w-1/3 flex flex-col md:gap-5 gap-1 ">
+          <div className="md:w-1/3 flex flex-col md:gap-5 gap-1 items-center ">
             <span className="md:text-2xl text-xl font-semibold text-white ">Explorar más</span>
             <Link href={"/"}>
               <span className="text-slate-300">Inicio</span>
@@ -63,8 +63,10 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <span className="text-sm text-white my-2">&#169; Contrubloques&Adoquines</span>
-        <span className="text-sm text-white md:my-2">Desarrollado por:   <a href={"https:://syprods.com"} target='_blank'><span className='text-orange-300 border-b'>SyProd</span></a></span>
+        <div className='flex flex-row gap-6 mt-10'>
+          <span className="text-sm text-white my-2">&#169; Contrubloques&Adoquines</span>
+          <span className="text-sm text-white md:my-2">Desarrollado por:   <a href={"https:://syprods.com"} target='_blank'><span className='text-orange-300 border-b'>SyProd</span></a></span>
+        </div>
       </div>
       <Link href={"/"} id="logo-nav" className="w-30 absolute bottom-5 right-5  md:flex items-center justify-center">
         <Image src={"/logo.png"} alt="Logo contru bloques " width={100} height={100} className="object-contain" />

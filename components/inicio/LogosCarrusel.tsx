@@ -1,14 +1,21 @@
 'use client'
 
+import Image from "next/image"
+
 const companies = [
-  { id: 1, name: 'Constructora A', logo: 'LOGO A', subtitle: 'Construcción Premium' },
-  { id: 2, name: 'Desarrollos B', logo: 'LOGO B', subtitle: 'Desarrollo Inmobiliario' },
-  { id: 3, name: 'Obra Magna', logo: 'LOGO C', subtitle: 'Proyectos Visionarios' },
-  { id: 4, name: 'Edificios Pro', logo: 'LOGO D', subtitle: 'Excelencia en Obra' },
-  { id: 5, name: 'Construya', logo: 'LOGO E', subtitle: 'Tu Proyecto, Realidad' },
-  { id: 6, name: 'Mega Obras', logo: 'LOGO F', subtitle: 'Grandes Construcciones' },
-  { id: 7, name: 'Proyecto Futuro', logo: 'LOGO G', subtitle: 'Innovación Constructiva' },
-  { id: 8, name: 'Elite Building', logo: 'LOGO H', subtitle: 'Calidad Garantizada' },
+  { id: 1, name: '', logo: '/clientes/0c14acef-a042-4a23-a1d6-c619191438c2.jpg', subtitle: '' },
+  { id: 2, name: '', logo: '/clientes/IMG_0784.JPG', subtitle: '' },
+  { id: 3, name: '', logo: '/clientes/IMG_0785.JPG', subtitle: '' },
+  { id: 4, name: '', logo: '/clientes/IMG_0786.JPG', subtitle: '' },
+  { id: 5, name: '', logo: '/clientes/IMG_0787.JPG', subtitle: '' },
+  { id: 6, name: '', logo: '/clientes/IMG_0788.JPG', subtitle: '' },
+  { id: 7, name: '', logo: '/clientes/IMG_0789.JPG', subtitle: '' },
+  { id: 8, name: '', logo: '/clientes/IMG_0790.JPG', subtitle: '' },
+  { id: 8, name: '', logo: '/clientes/IMG_0791.JPG', subtitle: '' },
+  { id: 8, name: '', logo: '/clientes/IMG_0792.JPG', subtitle: '' },
+  { id: 8, name: '', logo: '/clientes/IMG_0793.JPG', subtitle: '' },
+  { id: 8, name: '', logo: '/clientes/IMG_0794.JPG', subtitle: '' },
+  { id: 8, name: '', logo: '/clientes/IMG_0796.WEBP', subtitle: '' },
 ]
 
 export const LogosCarrusel = () => {
@@ -30,13 +37,11 @@ export const LogosCarrusel = () => {
                 className="flex-shrink-0 w-72"
               >
                 <div className="bg-white rounded-lg shadow-md p-8 h-full flex flex-col items-center justify-center hover:shadow-lg transition-shadow">
-                  <div className="text-3xl font-bold text-slate-400 mb-4">{company.logo}</div>
-                  <h3 className="text-xl font-bold text-slate-900 text-center mb-2">
-                    {company.name}
-                  </h3>
-                  <p className="text-sm text-slate-600 text-center">
-                    {company.subtitle}
-                  </p>
+                  <div className="bg-white rounded-lg shadow-md p-8 h-full flex flex-col items-center justify-center hover:shadow-lg transition-shadow">
+                  <div className="text-3xl font-bold text-slate-400 mb-4">
+                    <Image src={company.logo} alt="logo empresas aliados " width={500} height={5000} className="w-full h-full object-contain"/>
+                  </div>
+                </div>
                 </div>
               </div>
             ))}
@@ -48,13 +53,9 @@ export const LogosCarrusel = () => {
                 className="flex-shrink-0 w-72"
               >
                 <div className="bg-white rounded-lg shadow-md p-8 h-full flex flex-col items-center justify-center hover:shadow-lg transition-shadow">
-                  <div className="text-3xl font-bold text-slate-400 mb-4">{company.logo}</div>
-                  <h3 className="text-xl font-bold text-slate-900 text-center mb-2">
-                    {company.name}
-                  </h3>
-                  <p className="text-sm text-slate-600 text-center">
-                    {company.subtitle}
-                  </p>
+                  <div className="text-3xl font-bold text-slate-400 mb-4">
+                    <Image src={company.logo} alt="logo empresas aliados " width={500} height={5000} className="w-full h-full object-contain"/>
+                  </div>
                 </div>
               </div>
             ))}

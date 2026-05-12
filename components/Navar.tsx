@@ -48,7 +48,7 @@ export const Navar = () => {
             </Link>
             <div id="opciones-nav" className="hidden md:flex w-full md:flex-row md:gap-10 items-center md:justify-center justify-between">
               <button onClick={() => setOpenOptions(!openOptions)} >
-                <span className={openOptions ? "text-slate-500 text-sm" : "text-slate-200 text-sm"}>Prefabricados</span>
+                <span className={openOptions ? "text-slate-500 text-sm cursor-pointer" : "cursor-pointer text-slate-200 text-sm"}>Prefabricados</span>
               </button>
               <Link href={"/quienes-somos"} >
                 <span className={openOptions ? "text-slate-500 text-sm" : "text-slate-200 text-sm"}>Quienes somos</span>
