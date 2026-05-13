@@ -53,7 +53,7 @@ const page = () => {
             preload="metadata"
             className=" w-full h-full object-cover"
           >
-            <source src="/video.MOV" type="video/mp4" />
+            <source src="/Vide_1_sesioon_Quienes_somos.MOV" type="video/mp4" />
           </video>
         </div>
         {/* continuacion de texto */}
@@ -79,12 +79,22 @@ const page = () => {
       </section>
       <section className="w-full h-screen bg-black relative flex justify-center">
         <div className="w-full h-full bg-black/50 absolute"></div>
+        <div className="absolute left-10 top-[30%] md:w-96 w-full">
+          <span className="text-2xl font-semibold text-white">Detras de cada<br/>bloque hay<br/>un estandar<br/>humano.</span>
+        </div>
         <Image src={"/contenido/IMG_3_SESION_QUIENES_SOMOS.png"}
           alt="Imagen de nosotros "
           width={1080}
           height={1080}
           className="w-full h-full object-cover" />
       </section>
+      <div className="w-full md:px-10 px-2 h-32 bg-white mt-10">
+        <span className="text-xl ">
+          Cada pieza refleja el compromiso de quienes están en cada etapa del proceso.<br/>
+          Personas que trabajan con precisión, responsabilidad y enfoque, asegurando que lo que entregamos cumpla con lo que prometemos: calidad real, sin atajos.
+
+        </span>
+      </div>
       <Footer />
     </>
   );

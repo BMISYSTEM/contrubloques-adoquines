@@ -29,7 +29,7 @@ export const Footer = () => {
               </button>
             </div>
           </div>
-          <div className="md:w-1/3 flex flex-col md:gap-5 gap-1 items-center ">
+          <div className="md:w-1/3 flex flex-col md:gap-5 gap-1 md:items-center items-start ">
             <span className="md:text-2xl text-xl font-semibold text-white ">Explorar más</span>
             <Link href={"/"}>
               <span className="text-slate-300">Inicio</span>

@@ -1,6 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { Visitanos } from '../Visitanos'
 
 export const ScrollRevealText2 = () => {
   const textRef = useRef<HTMLDivElement>(null)
@@ -36,8 +37,8 @@ export const ScrollRevealText2 = () => {
 
   return (
     <section className="w-full py-24 bg-gray-100">
-      <div className="w-full mx-auto px-6 md:px-12 flex flex-col  items-center justify-center min-h-screen">
-        <div ref={textRef} className="text-center">
+      <div className="w-full mx-auto   flex flex-col  items-center justify-center min-h-screen">
+        <div ref={textRef} className="text-center px-6">
           <h2 className="text-2xl md:text-6xl lg:text-6xl font-bold leading-tight">
             {letters.map((letter, index) => (
               <span
@@ -54,25 +55,14 @@ export const ScrollRevealText2 = () => {
           </h2>
           {/* Cards counter: proyectos realizados */}
           <p className="text-gray-600 mt-4">
-            Una Elección técnica para quienes priorizan estabilidad y rendimiento estructural.
+            Una elección técnica para quienes priorizan estabilidad y rendimiento estructural.
           </p>
           <div className="mt-12 flex items-center justify-center gap-1 flex-col">
             <CountersDisplay triggerProgress={progress} targetNumber={1200} />
-            <p className="text-gray-600 mt-4">Obras realizados</p>
+            <p className="text-gray-600 mt-4">Obras realizadas</p>
           </div>
         </div>
-             <section className="md:px-10 w-full mt-10 h-120 flex md:flex-row flex-col  ">
-        <div className="md:w-96 w-full md:h-full h-1/3 bg-black flex flex-col text-white px-5 py-10 gap-5">
-          {/* texto */}
-          <h6 className="text-xl font-semibold">Te gustaria visitarnos en planta ?</h6>
-          <p className="text-sm text-slate-100">Conoce el proceso, revisa el producto y llevate una muestra para tu proyecto</p>
-        </div>
-        <div className="w-full h-full">
-          {/* mapa */}
-          <iframe className='w-full h-full' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.932416982708!2d-76.56135832469378!3d3.366696851776152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a3455d660df1%3A0x997e30f1caba5483!2sBloques%20de%20Cemento%20Cali%20%2F%20Construbloques%20y%20Adoquines!5e0!3m2!1ses-419!2sco!4v1771867439443!5m2!1ses-419!2sco" width="600" height="450" loading="lazy"
-          ></iframe>
-        </div>
-      </section>
+        <Visitanos/>
       </div>
     </section>
   )

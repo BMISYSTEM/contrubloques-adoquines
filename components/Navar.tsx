@@ -77,15 +77,15 @@ export const Navar = () => {
         {openOptions && (
           <section className='absolute top-0  w-full h-90 bg-white md:flex hidden flex-wrap justify-center gap-10 px-5 pt-20'>
 
-            <button className='w-60 h-60 cursor-pointer group '>
+            <button className='w-60 h-40 cursor-pointer group items-center '>
               {/* imagen  */}
-              <Link href={"/bloques"} className='w-60 h-32  overflow-hidden'>
-                <Image src={"/bloque.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
+              <Link href={"/bloques"} className='w-60 h-32   overflow-hidden'>
+                <Image src={"/bloque-m.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-32  object-contain transition-all group-hover:scale-105' />
               </Link>
               {/* texto */}
               <span className='text-xl font-semibold mt-2 text-slate-500 transition-all group-hover:text-slate-700'>Bloques</span>
             </button>
-            <button className='w-60 h-60 group cursor-pointer'>
+            <button className='w-60 h-40 group cursor-pointer'>
               {/* imagen  */}
               <div className='w-60 h-32  overflow-hidden'>
                 <Image src={"/adoquin.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />

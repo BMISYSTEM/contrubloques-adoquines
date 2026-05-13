@@ -11,11 +11,11 @@ const companies = [
   { id: 6, name: '', logo: '/clientes/IMG_0788.JPG', subtitle: '' },
   { id: 7, name: '', logo: '/clientes/IMG_0789.JPG', subtitle: '' },
   { id: 8, name: '', logo: '/clientes/IMG_0790.JPG', subtitle: '' },
-  { id: 8, name: '', logo: '/clientes/IMG_0791.JPG', subtitle: '' },
-  { id: 8, name: '', logo: '/clientes/IMG_0792.JPG', subtitle: '' },
-  { id: 8, name: '', logo: '/clientes/IMG_0793.JPG', subtitle: '' },
-  { id: 8, name: '', logo: '/clientes/IMG_0794.JPG', subtitle: '' },
-  { id: 8, name: '', logo: '/clientes/IMG_0796.WEBP', subtitle: '' },
+  { id: 9, name: '', logo: '/clientes/IMG_0791.JPG', subtitle: '' },
+  { id: 10, name: '', logo: '/clientes/IMG_0792.JPG', subtitle: '' },
+  { id:11, name: '', logo: '/clientes/IMG_0793.JPG', subtitle: '' },
+  { id: 12, name: '', logo: '/clientes/IMG_0794.JPG', subtitle: '' },
+  { id: 13, name: '', logo: '/clientes/IMG_0796.WEBP', subtitle: '' },
 ]
 
 export const LogosCarrusel = () => {
@@ -34,14 +34,12 @@ export const LogosCarrusel = () => {
             {companies.map((company,index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-72"
+                className="flex-shrink-0 md:w-72 md:h-72 w-32 h-32"
               >
-                <div className="bg-white rounded-lg shadow-md p-8 h-full flex flex-col items-center justify-center hover:shadow-lg transition-shadow">
                   <div className="bg-white rounded-lg shadow-md p-8 h-full flex flex-col items-center justify-center hover:shadow-lg transition-shadow">
                   <div className="text-3xl font-bold text-slate-400 mb-4">
                     <Image src={company.logo} alt="logo empresas aliados " width={500} height={5000} className="w-full h-full object-contain"/>
                   </div>
-                </div>
                 </div>
               </div>
             ))}
@@ -50,9 +48,33 @@ export const LogosCarrusel = () => {
             {companies.map((company,index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-72"
+                className="flex-shrink-0 md:w-72 md:h-72 w-32 h-32"
               >
-                <div className="bg-white rounded-lg shadow-md p-8 h-full flex flex-col items-center justify-center hover:shadow-lg transition-shadow">
+                <div className="bg-white rounded-lg shadow-md h-full flex flex-col items-center justify-center hover:shadow-lg transition-shadow">
+                  <div className="text-3xl font-bold text-slate-400 mb-4">
+                    <Image src={company.logo} alt="logo empresas aliados " width={500} height={5000} className="w-full h-full object-contain"/>
+                  </div>
+                </div>
+              </div>
+            ))}
+            {companies.map((company,index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 md:w-72 md:h-72 w-32 h-32"
+              >
+                <div className="bg-white rounded-lg shadow-md  h-full flex flex-col items-center justify-center hover:shadow-lg transition-shadow">
+                  <div className="text-3xl font-bold text-slate-400 mb-4">
+                    <Image src={company.logo} alt="logo empresas aliados " width={500} height={5000} className="w-full h-full object-contain"/>
+                  </div>
+                </div>
+              </div>
+            ))}
+            {companies.map((company,index) => (
+              <div
+                key={index}
+                className="flex-shrink-0 md:w-72 w-full"
+              >
+                <div className="bg-white rounded-lg shadow-md  h-full flex flex-col items-center justify-center hover:shadow-lg transition-shadow">
                   <div className="text-3xl font-bold text-slate-400 mb-4">
                     <Image src={company.logo} alt="logo empresas aliados " width={500} height={5000} className="w-full h-full object-contain"/>
                   </div>
@@ -74,12 +96,12 @@ export const LogosCarrusel = () => {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(calc(-50% - 12px));
+            transform: translateX(calc(-500% - 12px));
           }
         }
 
         .animate-scroll {
-          animation: scroll 10s linear infinite;
+          animation: scroll 40s linear infinite;
         }
 
         .animate-scroll:hover {

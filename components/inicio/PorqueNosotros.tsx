@@ -49,7 +49,9 @@ export const PorqueNosotros = () => {
         <h4 className='text-5xl font-semibold text-slate-800'>Hablemos de tu próximo proyecto.</h4>
         <p className='text-center text-xl text-slate-800 font-semibold'>Te ayudamos a elegir la referencia adecuada en bloques estructurales y adoquines para tu proyecto</p>
         <div>
-          <button className='px-3 py-1 rounded-sm bg-black text-white cursor-pointer hover:opacity-90'>
+          <button onClick={()=>{
+            window.open("https://wa.link/okhbn0","_blanck")
+          }} className='px-3 py-1 rounded-sm bg-black text-white cursor-pointer hover:opacity-90'>
             <span>Asesoría por WhatsApp</span>
           </button>
 

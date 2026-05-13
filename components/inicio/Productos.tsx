@@ -24,7 +24,7 @@ export const Productos = () => {
                     transition-all duration-500 ease-out
                     flex flex-col gap-4  items-center justify-center
                     ">
-                      <span className="text-2xl font-semibold text-slate-200">Bloque estructural</span>
+                      <span className="text-2xl font-semibold text-slate-200 text-center">Bloque estructural</span>
                 <Link href={"/bloques"} title="Conoce mas informacion sobre bloques  " 
                 className="px-5 py-1 rounded-[80px] border border-slate-200 bg-black/60 transition-all hover:bg-black hover:text-white cursor-pointer">
                   <span className="text-sm text-slate-200">Ver mas</span>
@@ -44,7 +44,7 @@ export const Productos = () => {
                     transition-all duration-500 ease-out
                     flex flex-col gap-4  items-center justify-center
                     ">
-                      <span className="text-2xl font-semibold text-slate-200">Adoquines</span>
+                      <span className="text-2xl font-semibold text-slate-200 text-center">Adoquines</span>
                 <Link href={"/adoquines"} title="Conoce mas informacion sobre Adoquines  " 
                 className="px-5 py-1 rounded-[80px] border border-slate-200 bg-black/60 transition-all hover:bg-black hover:text-white cursor-pointer">
                   <span className="text-sm text-slate-200">Ver mas</span>

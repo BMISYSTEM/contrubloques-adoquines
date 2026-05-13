@@ -1,3 +1,4 @@
+
 import { Bloque3d } from "@/components/bloques/render-bloque/Bloque3d";
 import { ImageCarousel } from "@/components/bloques/ImageCarousel";
 import { ScrollRevealText } from "@/components/bloques/ScrollRevealText";
@@ -19,52 +20,53 @@ export const metadata: Metadata = {
 const page = () => {
   const iconos = [
     {
-      title:'Alta resistencia',
-      icon:"/icon/Alta _resistencia.png"
+      title: 'Alta resistencia',
+      icon: "/icon/Alta _resistencia.png"
     },
     {
-      title:'Medidas uniformes',
-      icon:"/icon/Aplicacion.png"
+      title: 'Medidas uniformes',
+      icon: "/icon/Aplicacion.png"
     },
     {
-      title:'Mayor rendimiento',
-      icon:"/icon/Mayor_rendimiento.png"
+      title: 'Mayor rendimiento',
+      icon: "/icon/Mayor_rendimiento.png"
     },
     {
-      title:'Fácil instalación',
-      icon:"/icon/Facil_instalacion.png"
+      title: 'Fácil instalación',
+      icon: "/icon/Facil_instalacion.png"
     },
     {
-      title:'Menor desperdicio',
-      icon:"/icon/Menor_desperdicio.png"
+      title: 'Menor desperdicio',
+      icon: "/icon/Menor_desperdicio.png"
     },
     {
-      title:'Alineación precisa',
-      icon:"/icon/Grosor.png"
+      title: 'Alineación precisa',
+      icon: "/icon/Grosor.png"
     },
     {
-      title:'Calidad constante',
-      icon:"/icon/Rendimiento.png"
+      title: 'Calidad constante',
+      icon: "/icon/Rendimiento.png"
     },
     {
-      title:'Entregas cumplidas',
-      icon:"/icon/Entregas_programadas.png"
+      title: 'Entregas cumplidas',
+      icon: "/icon/Entregas_programadas.png"
     },
   ]
   return (
     <>
-    <BottonWhatsapp/>
+      <BottonWhatsapp />
       <Navar />
       <section className="w-full h-[120vh] bg-black relative flex justify-center items-center">
         <div className="w-full h-full bg-black/60 absolute">
 
         </div>
-        <div className="w-full absolute top-[30%] flex flex-col items-center justify-center gap-10">
-          <h1 className="md:text-9xl text-3xl  text-white text-center font-bold ">Bloques desde</h1>
+        <div className="w-full absolute bottom-40 flex flex-col items-center justify-center gap-10">
+          <h1 className="md:text-9xl text-6xl  text-white text-center font-bold ">Bloques<br />desde</h1>
           <span className="text-xl m-0 p-0 text-white text-center">$ 3,150</span>
-          <button className="px-4 py-2  bg-white rounded-[80px] text-sm font-bold hover:opacity-80 transition-all">
+          <a href="https://wa.link/okhbn0" target="_blank"
+            className="px-4 py-2  bg-white rounded-[80px] text-sm font-bold hover:opacity-80 transition-all">
             <span>Programa tu pedido</span>
-          </button>
+          </a>
 
         </div>
         <Image src={"/contenido/IMG_1_SESION_BLOQUES.png"}
@@ -74,7 +76,7 @@ const page = () => {
           className="w-full h-full object-cover" />
       </section>
       <ScrollRevealText />
-      <SeleccionRender/>
+      <SeleccionRender />
 
       <section className="w-full bg-white py-20">
         <div className="w-full mx-auto  space-y-16">
@@ -84,16 +86,16 @@ const page = () => {
               Calcula material y elige el bloque ideal para tu obra
             </h4>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link href="https://wa.me/54911XXXXXXXX" target="_blank" className="inline-flex items-center justify-center rounded-full bg-slate-900 px-7 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">Cotiza por WhatsApp</Link>
+              <Link href="https://wa.link/okhbn0" target="_blank" className="inline-flex items-center justify-center rounded-full bg-slate-900 px-7 py-3 text-sm font-semibold text-white transition hover:bg-slate-800">Cotiza por WhatsApp</Link>
               <Link href="/#sect-calculadora" className="inline-flex items-center justify-center rounded-full border border-slate-900 px-7 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-100">Calcula material</Link>
             </div>
           </div>
 
           <div className="flex gap-10  items-center justify-center">
             <div className="grid grid-cols-4 grid-rows-2 items-center justify-center gap-4">
-              {iconos.map((feature,index) => (
+              {iconos.map((feature, index) => (
                 <div key={index} className="flex flex-col items-center gap-4 rounded-[28px]  p-5 ">
-                  <Image src={feature.icon} alt="icono" width={200} height={200} className="w-10 h-10 "/>
+                  <Image src={feature.icon} alt="icono" width={200} height={200} className="w-10 h-10 " />
                   <p className="text-sm font-semibold text-slate-900">{feature.title}</p>
                 </div>
               ))}
@@ -107,15 +109,25 @@ const page = () => {
           <section className="w-full h-screen bg-black relative flex justify-center items-end ">
             <div className="w-full h-full absolute bg-black/50"></div>
             <h6 className="md:text-8xl text-3xl absolute text-white text-center font-bold mb-10 ">Hecho para durar</h6>
-            <Image src={"/contenido/IMG_1_SESION_BLOQUES.png"}
+            {/* <Image src={"/contenido/IMG_1_SESION_BLOQUES.png"}
               alt="Imagen de nuestro estandar "
               width={1080}
               height={1080}
-              className="w-full h-full object-cover" />
+              className="w-full h-full object-cover" /> */}
+            <video
+              playsInline
+              autoPlay
+              muted
+              loop
+              className="w-full h-full object-cover"
+              preload="metadata"
+            >
+              <source src="/Video_1_sesion_bloques.MOV" type="video/mp4" />
+            </video>
           </section>
         </div>
       </section>
-      <section className="flex flex-col gap-5 mt-10 text-center pb-10 items-center justify-center ">
+      <section className="flex flex-col gap-5  text-center pb-20 items-center justify-center ">
         <h6 className="text-3xl font-bold">Diseñado para alineación precisa</h6>
         <p className="text-xl  max-w-120">Cada detalle responde a una función: precisión en los bordes, uniformidad en la forma y acabado consistente en cada pieza.</p>
       </section>
@@ -151,93 +163,93 @@ const page = () => {
         </div>
       </section>
       <section className="flex flex-col gap-5 mt-10 pb-10 text-center items-center justify-center  pt-10">
-        <h6 className="text-3xl font-bold">No estas seguro de que medida es la adecuada para tu obra?</h6>
-        <p className="text-xl  max-w-120">Te ayudamos a elegir la refrencia adecuada. Segun tu proyecto.</p>
-        <button className="px-5 py-2 rounded-xl bg-black hover:opacity-80 cursor-pointer text-white transition-all">
+        <h6 className="text-3xl font-bold">¿No estas seguro de que medida es la adecuada para tu obra?</h6>
+        <p className="text-xl  max-w-120">Te ayudamos a elegir la referencia adecuada Segun tu proyecto.</p>
+        <a  href="https://wa.link/okhbn0" className="px-5 py-2 rounded-xl bg-black hover:opacity-80 cursor-pointer text-white transition-all">
           <span>Asesoria por Whatssap</span>
-        </button>
+        </a>
       </section>
-      <section className='w-full md:h-auto  pb-20 flex flex-wrap md:gap-50 gap-10 items-center justify-center  md:px-20 pt-20 bg-[#F5F5F5] '>
+      <section className='w-full md:h-auto  pb-20 flex flex-wrap md:gap-50 gap-10 items-center justify-center  md:px-20 pt-20 bg-white '>
         {/* columna */}
         <div className='flex flex-col gap-3 justify-center '>
           <Image src={"/bloque-p.png"} alt="bloque " width={1000} height={1000} className="w-full h-40" />
           <span className='text-2xl font-semibold text-center'>10 cm</span>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/icon/grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <Image src={"/icon/grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
             <span><span className="text-lg font-semibold">Grosor:</span> 10 cm</span>
-          </div>    
+          </div>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/icon/uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <Image src={"/icon/uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
             <span><span className="text-lg font-semibold">Uso:</span> divisiones y cerramientos</span>
-          </div>    
+          </div>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/icon/tipo.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <Image src={"/icon/tipo.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
             <span><span className="text-lg font-semibold">Tipo:</span> no estructural</span>
-          </div>    
+          </div>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/icon/rendimiento.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <Image src={"/icon/rendimiento.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
             <span><span className="text-lg font-semibold">Rendimiento:</span> 12.5 und/m²</span>
-          </div>    
+          </div>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/icon/aplicacion.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <Image src={"/icon/aplicacion.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
             <span><span className="text-lg font-semibold">Aplicación:</span> muros livianos</span>
-          </div>    
+          </div>
         </div>
         {/* columna */}
         <div className='flex flex-col gap-3 justify-center '>
           <Image src={"/bloque-m.png"} alt="bloque " width={1000} height={1000} className="w-full h-40" />
           <span className='text-2xl font-semibold text-center'>12 cm</span>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/icon/grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <Image src={"/icon/grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
             <span><span className="text-lg font-semibold">Grosor:</span> 12 cm</span>
-          </div>    
+          </div>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/icon/uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <Image src={"/icon/uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
             <span><span className="text-lg font-semibold">Uso:</span> vivienda general</span>
-          </div>    
+          </div>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/icon/tipo.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <Image src={"/icon/tipo.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
             <span><span className="text-lg font-semibold">Tipo:</span> estructural</span>
-          </div>    
+          </div>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/icon/rendimiento.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <Image src={"/icon/rendimiento.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
             <span><span className="text-lg font-semibold">Rendimiento:</span> 12.5 und/m²</span>
-          </div>    
+          </div>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/icon/aplicacion.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <Image src={"/icon/aplicacion.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
             <span><span className="text-lg font-semibold">Aplicación:</span> muros principales</span>
-          </div> 
+          </div>
         </div>
         {/* columna */}
         <div className='flex flex-col gap-3 justify-center '>
           <Image src={"/bloque-g.png"} alt="bloque " width={1000} height={1000} className="w-full h-40" />
           <span className='text-2xl font-semibold text-center'>14 cm</span>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/icon/grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <Image src={"/icon/grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
             <span><span className="text-lg font-semibold">Grosor:</span> 14 cm</span>
-          </div>    
+          </div>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/icon/uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <Image src={"/icon/uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
             <span><span className="text-lg font-semibold">Uso:</span> mayor carga</span>
-          </div>    
+          </div>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/icon/tipo.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <Image src={"/icon/tipo.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
             <span><span className="text-lg font-semibold">Tipo:</span> estructural reforzado</span>
-          </div>    
+          </div>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/icon/rendimiento.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <Image src={"/icon/rendimiento.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
             <span><span className="text-lg font-semibold">Rendimiento:</span> 12.5 und/m²</span>
-          </div>    
+          </div>
           <div className="flex flex-col items-center justify-center">
-            <Image src={"/icon/aplicacion.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <Image src={"/icon/aplicacion.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
             <span><span className="text-lg font-semibold">Aplicación:</span> proyectos exigentes</span>
-          </div> 
+          </div>
         </div>
       </section>
       <section className="w-full h-screen bg-blue-500  ">
         <div className="w-full h-full bg-black/50 absolute"></div>
         <video
-        playsInline
+          playsInline
           autoPlay
           muted
           loop

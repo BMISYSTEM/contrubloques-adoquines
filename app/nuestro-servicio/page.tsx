@@ -26,7 +26,7 @@ const page = () => {
             <section className="w-full h-[120vh] bg-black relative flex justify-center items-center">
                 <div className="w-full h-full bg-black/50 absolute"></div>
                 <h1 className="md:text-6xl text-3xl absolute text-white text-center font-bold ">Tu obra no se detiene</h1>
-                <p className='text-xl font-semibold absolute mt-30 text-center  text-white'>Coordinamos produccion, despacho y entrega para que tu proyecto avance sin interrupciones</p>
+                <p className='md:text-xl text-lg font-semibold absolute md:mt-30 mt-36 text-center   text-white'>Coordinamos produccion, despacho y entrega para que tu proyecto avance sin interrupciones</p>
                 <Image src={"/contenido/IMG_1_SESION_NUESTRO_SERVICIO.png"}
                     alt="Imagen de nuestro estandar "
                     width={2000}
@@ -39,10 +39,10 @@ const page = () => {
                 <div className='w-full h-full  flex flex-col gap-2 items-center justify-center '>
                     <Image src={"/contenido/IMG_2_SESION_NUESTROS_SERVICIO.png"} alt='estandares' width={1080} height={1080} className="w-full h-full object-contain" />
                 </div>
-                <div className='md:w-2/3 w-full h-full  flex flex-col  items-center gap-5 justify-center'>
+                <div className='md:w-2/3 w-full h-full pb-10  flex flex-col  items-center gap-5 justify-center'>
                     <h4 className='text-3xl font-semibold'>Siempre a tiempo</h4>
-                    <div className='flex flex-wrap gap-10  justify-center items-center'>
-                        <div className='flex flex-col gap-2 items-center justify-center w-1/3'>
+                    <div className='flex flex-wrap gap-10  justify-center '>
+                        <div className='flex flex-col gap-2 items-center  w-1/3'>
                             <Timer size={20} />
                             <span className='text-sm  text-center font-semibold'>Asesoria</span>
                             <p className='text-center'>Te ayudamos a elegir el producto ideal según tu proyecto</p>

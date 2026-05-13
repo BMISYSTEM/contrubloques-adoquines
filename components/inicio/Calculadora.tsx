@@ -20,7 +20,7 @@ const productReferences = {
 
 export const Calculadora = () => {
   const [productType, setProductType] = useState('bloques')
-  const [selectedReference, setSelectedReference] = useState('bloque-g1')
+  const [selectedReference, setSelectedReference] = useState('bloque-10')
   const [wallArea, setWallArea] = useState("")
   const [doorsArea, setDoorsArea] = useState("")
   const [windowsArea, setWindowsArea] = useState('')
@@ -37,9 +37,8 @@ export const Calculadora = () => {
 
   const openWhatsapp = () => {
     const numero = "573106479481";
-    const mensaje = encodeURIComponent(`Quiero mas informacion para un proyecto con estas especificaciones, 
-                      ${currentProduct?.name} de largo ${wallArea} m2 y de alto ${doorsArea} m2 con un area neta de 
-                      ${netArea} y unas unidades aproximadas de ${unitsNeeded}`)
+    const mensaje = encodeURIComponent(`Quiero mas informacion para un proyecto con estas especificaciones,<br/>
+                      ${currentProduct?.name} <br/>Largo ${wallArea} m2 y de alto ${doorsArea} m2 <br/> con un area neta de ${netArea} y unas unidades aproximadas de ${unitsNeeded}`)
     const link = `https://wa.me/${numero}?text=${mensaje}`;
     window.open(link,"_blanck");
   }
@@ -108,7 +107,7 @@ export const Calculadora = () => {
             </div>
 
           </div>
-          <p>Ingresa las medidad de tu muro en metros.</p>
+          <p>Ingresa las medidas de tu muro en metros.</p>
           {/* Results - Clean display */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-5">
             <div>

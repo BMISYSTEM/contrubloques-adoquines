@@ -77,7 +77,7 @@ export const StickyVideoSection = () => {
             Detrás de cada bloque y adoquín existe un sistema de fabricación pensado para lograr precisión y uniformidad en cada pieza.
           </p>
           {/* CTA Button */}
-          <Link href={"https://api.whatsapp.com/message/25MC5Y67LNMXJ1?autoload=1&app_absent=0"} className="bg-white hover:bg-gray-100 text-slate-900 px-10 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl">
+          <Link href={"https://wa.link/okhbn0"} className="bg-white hover:bg-gray-100 text-slate-900 px-10 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl">
             Solicitar Cotización
           </Link>
           <p className='mt-5 text-slate-200'>Dejanos tus datos y te contactamos </p>
