@@ -35,7 +35,7 @@ const page = () => {
       {/* quienes somos */}
       <section className="w-full bg-[#F3EFE9] h-auto pt-10 flex flex-col items-center justify-center">
         <h2 className="text-4xl font-bold mb-4">Quienes somos</h2>
-        <p className="text-center w-1/2 text-2xl ">
+        <p className="text-center md:w-1/2 px-2 text-2xl ">
           Cada estructura tiene un punto de partida.<br />
           El nuestro nació de la convicción de que la calidad no es un detalle, es la base.
           <br />
@@ -57,7 +57,7 @@ const page = () => {
           </video>
         </div>
         {/* continuacion de texto */}
-        <p className="text-center w-1/2 text-2xl mt-20  mb-10">
+        <p className="text-center md:w-1/2 px-2  text-2xl mt-20  mb-10">
           Desde 2022, la operación dio un paso hacia mayor capacidad técnica y control productivo.
           <br />
           La incorporación de nueva maquinaria y la estandarización de procesos permitió mejorar la precisión dimensional, optimizar tiempos de fabricación y fortalecer la consistencia en acabados.

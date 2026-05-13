@@ -26,7 +26,7 @@ const page = () => {
             <section className="w-full h-[120vh] bg-black relative flex justify-center items-center">
                 <div className="w-full h-full bg-black/50 absolute"></div>
                 <h1 className="md:text-6xl text-3xl absolute text-white text-center font-bold ">Tu obra no se detiene</h1>
-                <p className='text-xl font-semibold absolute mt-30  text-white'>Coordinamos produccion, despacho y entrega para que tu proyecto avance sin interrupciones</p>
+                <p className='text-xl font-semibold absolute mt-30 text-center  text-white'>Coordinamos produccion, despacho y entrega para que tu proyecto avance sin interrupciones</p>
                 <Image src={"/contenido/IMG_1_SESION_NUESTRO_SERVICIO.png"}
                     alt="Imagen de nuestro estandar "
                     width={2000}
@@ -80,9 +80,9 @@ const page = () => {
                 </div>
             </section>
              <section className='w-full h-auto bg-[#F5F5F5] flex flex-col  items-center justify-center gap-2 pb-10 px-5 md:px-30 pt-20 '>
-                <h5 className='text-4xl font-semibold'>¿ Listo para programar tu entrega ? </h5>
-                <p>Cotiza segun cantidad,ubicacion y tiempo de obra </p>
-                <p>Te ayudamos a coordinar todo</p>
+                <h5 className='text-4xl font-semibold text-center'>¿Listo para programar tu entrega?</h5>
+                <p className='text-center'>Cotiza segun cantidad,ubicacion y tiempo de obra </p>
+                <p className='text-center'>Te ayudamos a coordinar todo</p>
                 <button className='px-5 py-2 text-white bg-black rounded-2xl mt-2'>
                     Cotiza por Whatsapp
                 </button>
