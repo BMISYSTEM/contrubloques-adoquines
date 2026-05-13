@@ -31,9 +31,9 @@ export const LogosCarrusel = () => {
         <div className="relative overflow-hidden">
           <div className="flex gap-6 animate-scroll">
             {/* Primera vuelta */}
-            {companies.map((company) => (
+            {companies.map((company,index) => (
               <div
-                key={`first-${company.id}`}
+                key={index}
                 className="flex-shrink-0 w-72"
               >
                 <div className="bg-white rounded-lg shadow-md p-8 h-full flex flex-col items-center justify-center hover:shadow-lg transition-shadow">
@@ -47,9 +47,9 @@ export const LogosCarrusel = () => {
             ))}
             
             {/* Segunda vuelta (duplicada para efecto infinito) */}
-            {companies.map((company) => (
+            {companies.map((company,index) => (
               <div
-                key={`second-${company.id}`}
+                key={index}
                 className="flex-shrink-0 w-72"
               >
                 <div className="bg-white rounded-lg shadow-md p-8 h-full flex flex-col items-center justify-center hover:shadow-lg transition-shadow">

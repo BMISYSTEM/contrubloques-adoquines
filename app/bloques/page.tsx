@@ -16,6 +16,40 @@ export const metadata: Metadata = {
   description: "En Contribloques nos dedicamos a la fabricación de bloques y adoquines en cemento con altos estándares de calidad, resistencia y durabilidad. Nuestra misión es ofrecer soluciones confiables para la construcción, brindando productos seguros, uniformes y accesibles que aporten al desarrollo de viviendas, obras civiles y proyectos urbanos. Trabajamos con responsabilidad, innovación y compromiso para garantizar la satisfacción de nuestros clientes y el crecimiento de nuestra comunidad. ",
 };
 const page = () => {
+  const iconos = [
+    {
+      title:'Alta resistencia',
+      icon:"/icon/Alta _resistencia.png"
+    },
+    {
+      title:'Medidas uniformes',
+      icon:"/icon/Aplicación.png"
+    },
+    {
+      title:'Mayor rendimiento',
+      icon:"/icon/Mayor_rendimiento.png"
+    },
+    {
+      title:'Fácil instalación',
+      icon:"/icon/Facil_instalacion.png"
+    },
+    {
+      title:'Menor desperdicio',
+      icon:"/icon/Menor_desperdicio.png"
+    },
+    {
+      title:'Alineación precisa',
+      icon:"/icon/Grosor.png"
+    },
+    {
+      title:'Calidad constante',
+      icon:"/icon/Rendimiento.png"
+    },
+    {
+      title:'Entregas cumplidas',
+      icon:"/icon/Entregas_programadas.png"
+    },
+  ]
   return (
     <>
     <BottonWhatsapp/>
@@ -58,19 +92,10 @@ const page = () => {
 
           <div className="flex gap-10  items-center justify-center">
             <div className="grid grid-cols-4 grid-rows-2 items-center justify-center gap-4">
-              {[
-                'Alta resistencia',
-                'Medidas uniformes',
-                'Mayor rendimiento',
-                'Fácil instalación',
-                'Menor desperdicio',
-                'Alineación precisa',
-                'Calidad constante',
-                'Entregas cumplidas',
-              ].map((feature) => (
-                <div key={feature} className="flex flex-col items-center gap-4 rounded-[28px]  p-5 ">
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-slate-900 text-sm font-semibold text-white">+</span>
-                  <p className="text-sm font-semibold text-slate-900">{feature}</p>
+              {iconos.map((feature,index) => (
+                <div key={index} className="flex flex-col items-center gap-4 rounded-[28px]  p-5 ">
+                  <Image src={feature.icon} alt="icono" width={200} height={200} className="w-10 h-10 "/>
+                  <p className="text-sm font-semibold text-slate-900">{feature.title}</p>
                 </div>
               ))}
             </div>
@@ -81,8 +106,8 @@ const page = () => {
             <h5 className="text-center text-2xl font-semibold">Presencia en obras de toda la region.</h5>
           </div>
           <section className="w-full h-screen bg-black relative flex justify-center items-end ">
+            <div className="w-full h-full absolute bg-black/50"></div>
             <h6 className="md:text-8xl text-3xl absolute text-white text-center font-bold mb-10 ">Hecho para durar</h6>
-
             <Image src={"/contenido/IMG_1_SESION_BLOQUES.png"}
               alt="Imagen de nuestro estandar "
               width={1080}
@@ -126,61 +151,92 @@ const page = () => {
           ></iframe>
         </div>
       </section>
-      <section className="flex flex-col gap-5 mt-10 text-center pb-10 items-center justify-center  pt-10">
+      <section className="flex flex-col gap-5 mt-10 pb-10 text-center items-center justify-center  pt-10">
         <h6 className="text-3xl font-bold">No estas seguro de que medida es la adecuada para tu obra?</h6>
         <p className="text-xl  max-w-120">Te ayudamos a elegir la refrencia adecuada. Segun tu proyecto.</p>
         <button className="px-5 py-2 rounded-xl bg-black hover:opacity-80 cursor-pointer text-white transition-all">
           <span>Asesoria por Whatssap</span>
         </button>
       </section>
-      <section className='w-full md:h-screen pb-10 flex flex-wrap md:gap-50 gap-20 items-center justify-center  md:px-20 pt-20 bg-[#F5F5F5] '>
+      <section className='w-full md:h-auto  pb-20 flex flex-wrap md:gap-50 gap-10 items-center justify-center  md:px-20 pt-20 bg-[#F5F5F5] '>
         {/* columna */}
         <div className='flex flex-col gap-3 justify-center '>
-          <Image src={"/bloque.png"} alt="bloque " width={1000} height={1000} className="w-full h-40" />
+          <Image src={"/bloque-p.png"} alt="bloque " width={1000} height={1000} className="w-full h-40" />
           <span className='text-2xl font-semibold text-center'>10 cm</span>
-          <div className='flex flex-row justify-between items-center gap-3 mt-4 '>
-            <div className='w-6 h-6 bg-red-500 rounded-full'></div>
-            <div className='w-6 h-6 bg-green-500 rounded-full'></div>
-            <div className='w-6 h-6 bg-amber-500 rounded-full'></div>
-          </div>
-          <span>grosor: 10 cm</span>
-          <span>uso: divisiones y cerramientos</span>
-          <span>tipo: no estructural</span>
-          <span>rendimiento: 12.5 und/m²</span>
-          <span>aplicación: muros livianos</span>
+          <div className="flex flex-col items-center justify-center">
+            <Image src={"/icon/grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <span><span className="text-lg font-semibold">Grosor:</span> 10 cm</span>
+          </div>    
+          <div className="flex flex-col items-center justify-center">
+            <Image src={"/icon/uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <span><span className="text-lg font-semibold">Uso:</span> divisiones y cerramientos</span>
+          </div>    
+          <div className="flex flex-col items-center justify-center">
+            <Image src={"/icon/tipo.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <span><span className="text-lg font-semibold">Tipo:</span> no estructural</span>
+          </div>    
+          <div className="flex flex-col items-center justify-center">
+            <Image src={"/icon/rendimiento.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <span><span className="text-lg font-semibold">Rendimiento:</span> 12.5 und/m²</span>
+          </div>    
+          <div className="flex flex-col items-center justify-center">
+            <Image src={"/icon/aplicacion.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <span><span className="text-lg font-semibold">Aplicación:</span> muros livianos</span>
+          </div>    
         </div>
         {/* columna */}
         <div className='flex flex-col gap-3 justify-center '>
-          <Image src={"/bloque.png"} alt="bloque " width={1000} height={1000} className="w-full h-40" />
+          <Image src={"/bloque-m.png"} alt="bloque " width={1000} height={1000} className="w-full h-40" />
           <span className='text-2xl font-semibold text-center'>12 cm</span>
-          <div className='flex flex-row justify-between items-center gap-3 mt-4 '>
-            <div className='w-6 h-6 bg-red-500 rounded-full'></div>
-            <div className='w-6 h-6 bg-green-500 rounded-full'></div>
-            <div className='w-6 h-6 bg-amber-500 rounded-full'></div>
-          </div>
-          <span>grosor: 12 cm</span>
-          <span>uso: vivienda general</span>
-          <span>tipo: estructural</span>
-          <span>rendimiento: 12.5 und/m²</span>
-          <span>aplicación: muros principales</span>
+          <div className="flex flex-col items-center justify-center">
+            <Image src={"/icon/grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <span><span className="text-lg font-semibold">Grosor:</span> 12 cm</span>
+          </div>    
+          <div className="flex flex-col items-center justify-center">
+            <Image src={"/icon/uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <span><span className="text-lg font-semibold">Uso:</span> vivienda general</span>
+          </div>    
+          <div className="flex flex-col items-center justify-center">
+            <Image src={"/icon/tipo.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <span><span className="text-lg font-semibold">Tipo:</span> estructural</span>
+          </div>    
+          <div className="flex flex-col items-center justify-center">
+            <Image src={"/icon/rendimiento.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <span><span className="text-lg font-semibold">Rendimiento:</span> 12.5 und/m²</span>
+          </div>    
+          <div className="flex flex-col items-center justify-center">
+            <Image src={"/icon/aplicacion.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <span><span className="text-lg font-semibold">Aplicación:</span> muros principales</span>
+          </div> 
         </div>
         {/* columna */}
         <div className='flex flex-col gap-3 justify-center '>
-          <Image src={"/bloque.png"} alt="bloque " width={1000} height={1000} className="w-full h-40" />
+          <Image src={"/bloque-g.png"} alt="bloque " width={1000} height={1000} className="w-full h-40" />
           <span className='text-2xl font-semibold text-center'>14 cm</span>
-          <div className='flex flex-row justify-between items-center gap-3 mt-4 '>
-            <div className='w-6 h-6 bg-red-500 rounded-full'></div>
-            <div className='w-6 h-6 bg-green-500 rounded-full'></div>
-            <div className='w-6 h-6 bg-amber-500 rounded-full'></div>
-          </div>
-          <span className="text-left">grosor: 14 cm</span>
-          <span className="text-left">uso: mayor carga</span>
-          <span className="text-left">tipo: estructural reforzado</span>
-          <span className="text-left">rendimiento: 12.5 und/m²</span>
-          <span className="text-left">aplicación: proyectos exigentes</span>
+          <div className="flex flex-col items-center justify-center">
+            <Image src={"/icon/grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <span><span className="text-lg font-semibold">Grosor:</span> 14 cm</span>
+          </div>    
+          <div className="flex flex-col items-center justify-center">
+            <Image src={"/icon/uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <span><span className="text-lg font-semibold">Uso:</span> mayor carga</span>
+          </div>    
+          <div className="flex flex-col items-center justify-center">
+            <Image src={"/icon/tipo.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <span><span className="text-lg font-semibold">Tipo:</span> estructural reforzado</span>
+          </div>    
+          <div className="flex flex-col items-center justify-center">
+            <Image src={"/icon/rendimiento.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <span><span className="text-lg font-semibold">Rendimiento:</span> 12.5 und/m²</span>
+          </div>    
+          <div className="flex flex-col items-center justify-center">
+            <Image src={"/icon/aplicacion.png"} alt="icono de grosor" width={100} height={100} className="w-15 "/>
+            <span><span className="text-lg font-semibold">Aplicación:</span> proyectos exigentes</span>
+          </div> 
         </div>
       </section>
-      <section className="w-full h-screen bg-blue-500 ">
+      <section className="w-full h-screen bg-blue-500  ">
+        <div className="w-full h-full bg-black/50 absolute"></div>
         <video
         playsInline
           autoPlay

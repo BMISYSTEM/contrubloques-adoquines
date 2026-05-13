@@ -4,15 +4,12 @@ import Image from 'next/image'
 import { useRef } from 'react'
 
 const carouselImages = [
-  '/contenido/Sesión_bloque_imagen_1_carrusel.jpg',
-  '/contenido/Sesión_bloque_imagen_2_carrusel.jpg',
-  '/contenido/Sesión_bloque_imagen_3_carrusel.jpg',
-  '/contenido/Sesión_bloque_imagen_4_carrusel.jpg',
-  '/contenido/Sesión_bloque_imagen_1_carrusel.jpg',
-  '/contenido/Sesión_bloque_imagen_2_carrusel.jpg',
-  '/contenido/Sesión_bloque_imagen_3_carrusel.jpg',
-  '/contenido/Sesión_bloque_imagen_4_carrusel.jpg',
-
+  '/carrousel-bloque/carrusel_1.jpg',
+  '/carrousel-bloque/Carrusel_2.webp',
+  '/carrousel-bloque/Carrusel_3.jpg',
+  '/carrousel-bloque/Carrusel_4.jpg',
+  '/carrousel-bloque/Carrusel_5.webp',
+  '/carrousel-bloque/Carrusel_6.JPG',
 ]
 
 export const ImageCarousel = () => {
