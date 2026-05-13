@@ -9,6 +9,7 @@ import Link from "next/link";
 import React from "react";
 import { Footer } from "@/components/Footer";
 import { BottonWhatsapp } from "@/components/BottonWhatsapp";
+import { SeleccionRender } from "@/components/bloques/SeleccionRender";
 
 
 export const metadata: Metadata = {
@@ -23,7 +24,7 @@ const page = () => {
     },
     {
       title:'Medidas uniformes',
-      icon:"/icon/Aplicación.png"
+      icon:"/icon/Aplicacion.png"
     },
     {
       title:'Mayor rendimiento',
@@ -73,9 +74,7 @@ const page = () => {
           className="w-full h-full object-cover" />
       </section>
       <ScrollRevealText />
-      <section className="w-full h-screen bg-blue-300 flex items-center justify-center">
-        <Image src={"/renderbloque.png"} width={1000} height={1000} alt="imagen de bloque" className="w-full h-full object-cover"/>
-      </section>
+      <SeleccionRender/>
 
       <section className="w-full bg-white py-20">
         <div className="w-full mx-auto  space-y-16">
