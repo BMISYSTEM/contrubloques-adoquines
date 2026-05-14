@@ -44,7 +44,8 @@ export const Bloque3d = () => {
   return (
     <div className='w-full h-full  items-center justify-center flex flex-col'>
       <span className='text-center text-2xl font-semibold mt-10'>Render De Bloque</span>
-      <span className='text-center text-lg  flex flex-row items-center justify-center mt-2 gap-5 '>Explora el bloque <RefreshCcw size={20}/> Rotar</span>
+      <span className='text-center   flex flex-row items-center justify-center mt-2 gap-5 md:text-9xl text-6xl font-bold'>Explora el bloque </span>
+      <span className='flex flex-row gap-3 items-center mt-3'><RefreshCcw size={20}/> Rotar</span>
       <Canvas
         className='rounded-sm backdrop-blur-lg transition-all'
         style={{
