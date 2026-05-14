@@ -20,9 +20,9 @@ export const metadata: Metadata = {
 const page = () => {
   return (
     <>
-    <BottonWhatsapp/>
+      <BottonWhatsapp/>
       <Navar />
-      <section className="w-full h-[120vh] bg-black relative flex justify-center">
+      <section className="w-full h-[120vh] bg-black relative flex justify-center overflow-hidden">
         <div className="w-full h-full bg-black/50 absolute"></div>
         <h1 className="md:text-8xl text-6xl absolute top-20 text-white px-5">Origen Estructural</h1>
         
@@ -33,7 +33,7 @@ const page = () => {
           className="w-full h-full object-cover" />
       </section>
       {/* quienes somos */}
-      <section className="w-full bg-[#F3EFE9] h-auto pt-10 flex flex-col items-center justify-center">
+      <section className="w-full overflow-hidden bg-[#F3EFE9] h-auto pt-10 flex flex-col items-center justify-center">
         <h2 className="text-4xl font-bold mb-4">Quienes somos</h2>
         <p className="text-center md:w-1/2 px-2 text-2xl ">
           Cada estructura tiene un punto de partida.<br />
@@ -66,7 +66,7 @@ const page = () => {
           Hoy cada unidad producida responde a parámetros más rigurosos de alineación, resistencia y uniformidad, consolidando una estructura operativa más eficiente y confiable.
         </p>
       </section>
-      <section className="w-full h-[140vh] bg-black relative flex justify-center">
+      <section className="w-full overflow-hidden h-[140vh] bg-black relative flex justify-center">
         <div className="w-full h-full bg-black/50 absolute"></div>
         <h3 className="md:text-8xl text-6xl px-6  absolute top-20 text-white ">Estandares internos</h3>
         <Image src={"/contenido/IMG_2_QUIENES_SOMOS.webp"}
@@ -77,7 +77,7 @@ const page = () => {
         <h4 className="absolute bottom-40 right-10 text-white text-2xl w-60 border-b border-slate-200">Rigor en cada detalle</h4>
         <p className="absolute bottom-10 right-10 text-white text-xl w-60">Orden como metodo, Cumplimiento conciente, Evolucion Constante.</p>
       </section>
-      <section className="w-full h-screen bg-black relative flex justify-center">
+      <section className="w-full overflow-hidden h-screen bg-black relative flex justify-center">
         <div className="w-full h-full bg-black/50 absolute"></div>
         <div className="absolute left-10 top-[30%] md:w-96 w-full">
           <span className="text-2xl font-semibold text-white">Detras de cada<br/>bloque hay<br/>un estandar<br/>humano.</span>
@@ -88,7 +88,7 @@ const page = () => {
           height={1080}
           className="w-full h-full object-cover" />
       </section>
-      <div className="w-full md:px-10 px-2 h-32 bg-white mt-10">
+      <div className="w-full md:px-10 px-2 md:h-32 h-60 bg-white mt-10">
         <span className="text-xl ">
           Cada pieza refleja el compromiso de quienes están en cada etapa del proceso.<br/>
           Personas que trabajan con precisión, responsabilidad y enfoque, asegurando que lo que entregamos cumpla con lo que prometemos: calidad real, sin atajos.
