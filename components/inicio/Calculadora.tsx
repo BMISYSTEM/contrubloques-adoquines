@@ -104,7 +104,7 @@ export const Calculadora = () => {
             </div>
             <div>
               <label className=" text-sm font-semibold flex flex-row gap-2 items-center text-slate-700 mb-2">
-                Alto m <ArrowUpDown size={20} />
+                {productType === "bloques" ? "Alto m" : "Ancho m"} <ArrowUpDown size={20} />
               </label>
               <input
                 type="number"
