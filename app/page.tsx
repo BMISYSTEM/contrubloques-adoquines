@@ -77,7 +77,7 @@ export default function Home() {
               <div className="flex items-center   justify-center">
                 <h3 className="text-white font-semibold">Producción organizada</h3>
               </div>
-              <p className="text-gray-300 text-xs text-center">Capacidad de producción para proyectos con bloques de cemento y adoquines vibroprensados.</p>
+              <p className="text-gray-300 text-xs text-center">Bloques y adoquines vibroprensados.</p>
             </div>
             <div className="flex flex-col">
               <div className="flex items-center   justify-center">

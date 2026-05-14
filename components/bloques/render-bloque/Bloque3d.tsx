@@ -13,7 +13,7 @@ import { LiquidGlass } from '@liquidglass/react';
 import Link from 'next/link';
 import { MdEmail, MdWhatsapp } from 'react-icons/md';
 import { Footer } from '@/components/Footer';
-import { Move3D } from 'lucide-react';
+import { Move3D, RefreshCcw } from 'lucide-react';
 
 
 export const Bloque3d = () => {
@@ -44,12 +44,12 @@ export const Bloque3d = () => {
   return (
     <div className='w-full h-full  items-center justify-center flex flex-col'>
       <span className='text-center text-2xl font-semibold mt-10'>Render De Bloque</span>
-      <span className='text-center text-lg  flex flex-row items-center justify-center mt-2 gap-5 '>Explora el bloque <Move3D size={20}/></span>
+      <span className='text-center text-lg  flex flex-row items-center justify-center mt-2 gap-5 '>Explora el bloque <RefreshCcw size={20}/> Rotar</span>
       <Canvas
         className='rounded-sm backdrop-blur-lg transition-all'
         style={{
           width: "70%",
-          height: "100%",
+          height: "50%",
           background: "transparent"
         }}
         camera={{ position: [0, 0, 5], fov: 45 }}

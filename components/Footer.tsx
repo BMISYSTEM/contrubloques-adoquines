@@ -18,15 +18,15 @@ export const Footer = () => {
             <p className='text-lg text-slate-200'>Producción y distribución de bloques de cemento, bloques estructurales y adoquines vibroprensados para proyectos residenciales, comerciales y urbanísticos en Cali y Valle del Cauca.</p>
             
             <div className="flex flex-row gap-5 ">
-              <button>
+              <Link href={"https://www.instagram.com/construbloquesyadoquines?igsh=NGluZDJjbmc1ZWlx"}>
                 <RiInstagramFill size={30} color="orange" />
-              </button>
-              <button>
+              </Link>
+              <Link href={"https://www.facebook.com/share/1E8vtkaYJ2/?mibextid=wwXIfr"}>
                 <MdFacebook size={30} color="orange" />
-              </button>
-              <button>
+              </Link>
+              <Link href={"https://www.tiktok.com/@construbloquesyadoquines?_r=1&_t=ZS-96MMKF6fFAr"}>
                 <AiFillTikTok size={30} color="orange" />
-              </button>
+              </Link>
             </div>
           </div>
           <div className="md:w-1/3 flex flex-col md:gap-5 gap-1 md:items-center items-start ">
@@ -34,16 +34,13 @@ export const Footer = () => {
             <Link href={"/"}>
               <span className="text-slate-300">Inicio</span>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/#productos"}>
               <span className="text-slate-300">Productos</span>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/#sect-calculadora"}>
               <span className="text-slate-300">Calculadora</span>
             </Link>
-            <Link href={"/"}>
-              <span className="text-slate-300">Promociones</span>
-            </Link>
-            <Link href={"/"}>
+            <Link href={"/contactenos"}>
               <span className="text-slate-300">Contacto</span>
             </Link>
           </div>
