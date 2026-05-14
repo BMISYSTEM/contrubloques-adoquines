@@ -26,7 +26,7 @@ const page = () => {
             <section className="w-full h-[120vh] bg-black relative flex justify-center items-center">
                 <div className="w-full h-full bg-black/50 absolute"></div>
                 <h1 className="md:text-6xl text-3xl absolute text-white text-center font-bold ">Tu obra no se detiene</h1>
-                <p className='md:text-xl text-lg font-semibold absolute md:mt-30 mt-36 text-center   text-white'>Coordinamos produccion, despacho y entrega para que tu proyecto avance sin interrupciones</p>
+                <p className='md:text-xl text-lg font-semibold absolute md:mt-30 mt-36 text-center   text-white'>Coordinamos producción, despacho y entrega para que tu proyecto avance sin interrupciones</p>
                 <Image src={"/contenido/IMG_1_SESION_NUESTRO_SERVICIO.png"}
                     alt="Imagen de nuestro estandar "
                     width={2000}
@@ -74,18 +74,18 @@ const page = () => {
                     <source src="/Video_1_sesion_nuestros_servicios.MOV" type="video/mp4" />
                 </video>
                 <div className='w-60 absolute bottom-5 left-5'>
-                    <h4 className='text-xl font-bold text-white'>Logistica pensada en obra real</h4>
+                    <h4 className='text-xl font-bold text-white'>Logística pensada en obra real</h4>
                     <p className='text-lg text-white'>entregas organizadas, controladas y adaptadas a tu proyecto</p>
 
                 </div>
             </section>
              <section className='w-full h-auto bg-[#F5F5F5] flex flex-col  items-center justify-center gap-2 pb-10 px-5 md:px-30 pt-20 '>
                 <h5 className='text-4xl font-semibold text-center'>¿Listo para programar tu entrega?</h5>
-                <p className='text-center'>Cotiza segun cantidad,ubicacion y tiempo de obra </p>
+                <p className='text-center'>Cotiza según cantidad, ubicación y tiempo de obra </p>
                 <p className='text-center'>Te ayudamos a coordinar todo</p>
-                <button className='px-5 py-2 text-white bg-black rounded-2xl mt-2'>
+                <a href='https://wa.link/okhbn0'  className='px-5 py-2 text-white bg-black rounded-2xl mt-2'>
                     Cotiza por Whatsapp
-                </button>
+                </a>
                 {/* <div className='flex flex-wrap gap-1 '>
                     <Image src={"/contenido/IMG_1_SESION_NUESTRO_SERVICIO.png"} alt='imagen de bloques ' width={1080} height={1020} className='w-96 h-96 ' />
                     <Image src={"/contenido/IMG_2_SESION_NUESTROS_SERVICIO.png"} alt='imagen de bloques ' width={1080} height={1020} className='w-96 h-96 object-cover ' />

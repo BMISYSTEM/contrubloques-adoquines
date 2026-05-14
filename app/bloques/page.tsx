@@ -11,6 +11,7 @@ import React from "react";
 import { Footer } from "@/components/Footer";
 import { BottonWhatsapp } from "@/components/BottonWhatsapp";
 import { SeleccionRender } from "@/components/bloques/SeleccionRender";
+import ScrollStopMotion from "@/components/ScrollStopMotion";
 
 
 export const metadata: Metadata = {
@@ -61,8 +62,8 @@ const page = () => {
 
         </div>
         <div className="w-full absolute bottom-40 flex flex-col items-center justify-center gap-10">
-          <h1 className="md:text-9xl text-6xl  text-white text-center font-bold ">Bloques<br />desde</h1>
-          <span className="text-xl m-0 p-0 text-white text-center">$ 3,150</span>
+          <h1 className="md:text-9xl text-6xl  text-white text-center font-bold ">Bloques</h1>
+          <span className="text-xl m-0 p-0 text-white text-center">Desde $ 3,150</span>
           <a href="https://wa.link/okhbn0" target="_blank"
             className="px-4 py-2  bg-white rounded-[80px] text-sm font-bold hover:opacity-80 transition-all">
             <span>Programa tu pedido</span>
@@ -131,29 +132,41 @@ const page = () => {
         <h6 className="text-3xl font-bold">Diseñado para alineación precisa</h6>
         <p className="text-xl  max-w-120">Cada detalle responde a una función: precisión en los bordes, uniformidad en la forma y acabado consistente en cada pieza.</p>
       </section>
-      <section className='w-full h-auto  pt-20 gap-1 pb-20 bg-[#F5F5F5] flex flex-col items-center '>
+      <section className='w-full h-auto  pt-20 gap-1 pb-20 bg-white flex flex-col items-center '>
 
         <div className='flex md:flex-row flex-col gap-1 md:w-250 w-full  '>
           <div className='md:w-2/3 w-full   h-250 rounded-lg bg-gray-500'>
-            <Image src={"/contenido/Sesión_bloque_imagen_1_carrusel.jpg"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
+            <Image src={"/bloque1.png"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
           </div>
           <div className='md:w-1/3 w-full   h-96 md:sticky top-0 bg-gray-500 rounded-lg'>
-            <Image src={"/contenido/Sesión_bloque_imagen_2_carrusel.jpg"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
+            <Image src={"/bloque2.png"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
           </div>
         </div>
         <div className='flex md:flex-row flex-col gap-1 md:w-250 w-full '>
           <div className='md:w-1/3 w-full h-96  md:sticky top-0 bg-gray-500 rounded-lg'>
-            <Image src={"/contenido/Sesión_bloque_imagen_3_carrusel.jpg"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
+            <Image src={"/bloque3.png"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
           </div>
           <div className='md:w-2/3 w-full h-250  rounded-lg bg-gray-500'>
-            <Image src={"/contenido/Sesión_bloque_imagen_4_carrusel.jpg"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
+          <video
+            playsInline
+            autoPlay
+            muted
+            loop
+            className="w-full h-full object-cover"
+            preload="metadata"
+          >
+          <source src="/bloque4.mp4" type="video/mp4" />
+        </video>
           </div>
         </div>
+      </section>
+      <section className="pt-10 pb-10">
+        <ScrollStopMotion/>
       </section>
       <section className="md:px-10 w-full h-120 flex md:flex-row flex-col  ">
         <div className="md:w-96 w-full md:h-full h-1/3 bg-black flex flex-col text-white px-5 py-10 gap-5">
           {/* texto */}
-          <h6 className="text-xl font-semibold">Te gustaria visitarnos en planta ?</h6>
+          <h6 className="text-xl font-semibold">¿Te gustaria visitarnos en planta?</h6>
           <p className="text-sm text-slate-100">Conoce el proceso, revisa el producto y llevate una muestra para tu proyecto</p>
         </div>
         <div className="w-full h-full">
@@ -245,6 +258,9 @@ const page = () => {
             <span><span className="text-lg font-semibold">Aplicación:</span> proyectos exigentes</span>
           </div>
         </div>
+      </section>
+      <section className="w-full h-screen bg-white items-center justify-center">
+        <Bloque3d/>
       </section>
       <section className="w-full h-screen bg-blue-500  ">
         <div className="w-full h-full bg-black/50 absolute"></div>

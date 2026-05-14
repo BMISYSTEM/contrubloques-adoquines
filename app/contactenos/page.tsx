@@ -13,28 +13,28 @@ const page = () => {
             <section className='w-full md:h-screen min-h-screen bg-linear-to-b md:px-20  from-black/20 to-transparent flex flex-col bg-white gap-5 md:justify-center  px-5 '>
                 <h1 className='text-7xl font-bold md:mt-0 mt-30 '>Contacto</h1>
                 <p>
-                    ¿tienes dudas sobre tu obra o necesitas apoyo con tu pedido?<br />
+                    ¿Tienes dudas sobre tu obra o necesitas apoyo con tu pedido?<br />
                     Nuestro equipo está listo para ayudarte a elegir, cotizar y coordinar tu entrega de forma clara y rápida.
                 </p>
                 <div className='flex md:flex-row flex-col gap-5 justify-between items-center absolute bottom-10 '>
                     <div className='flex flex-col max-w-96 gap-5 bg-white px-5 py-3'>
                         <h2 className='text-xl font-bold'>Solicitar cotización</h2>
                         <p>
-                            ¿estás iniciando tu proyecto?<br />
+                            ¿Estás iniciando tu proyecto?<br />
                             Recibe precios según cantidad, ubicación y tiempos de entrega.
                         </p>
                     </div>
                     <div className='flex flex-col max-w-96 gap-5 bg-white px-5 py-3'>
                         <h2 className='text-xl font-bold'>Seguimiento de pedido</h2>
                         <p>
-                            ¿ya realizaste tu pedido?<br />
+                            ¿Ya realizaste tu pedido?<br />
                             Consulta estado, tiempos de entrega o cualquier novedad de tu solicitud.
                         </p>
                     </div>
                     <div className='flex flex-col max-w-96 gap-5 bg-white px-5 py-3'>
                         <h2 className='text-xl font-bold'>Asesoría técnica</h2>
                         <p>
-                            ¿no sabes qué material necesitas?<br />
+                            ¿No sabes qué material necesitas?<br />
                             Te ayudamos a elegir la referencia ideal según tu tipo de obra.
                         </p>
                     </div>
@@ -42,11 +42,11 @@ const page = () => {
             </section>
             <section className='mt-5 h-screen flex flex-col '>
                 <div className='w-full h-full'>
-                    <Image alt='imagen de contactenos' width={10080} height={10080} src={"/contacto.JPG"} className='w-full h-full object-contain' />
+                    <Image alt='imagen de contactenos' width={10080} height={10080} src={"/contacto.JPG"} className='w-full h-full md:object-contain object-cover' />
                 </div>
             </section>
             <section className='md:px-10 px-2 flex flex-col gap-5 mt-10 pb-10'>
-                <h3 className='text-3xl font-bol text-center'>Preguntas frecuentes</h3>
+                <h3 className='text-4xl font-bol '>Preguntas frecuentes</h3>
                 <Acordion 
                 title='¿Qué tipo de bloque es adecuado para mi proyecto?'
                 content={`Depende del tipo de obra y del uso estructural. <br />

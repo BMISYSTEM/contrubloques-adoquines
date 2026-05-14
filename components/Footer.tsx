@@ -68,7 +68,7 @@ export const Footer = () => {
           <span className="text-sm text-white md:my-2">Desarrollado por:   <a href={"https:://syprods.com"} target='_blank'><span className='text-orange-300 border-b'>SyProd</span></a></span>
         </div>
       </div>
-      <Link href={"/"} id="logo-nav" className="w-30 absolute bottom-5 right-5  md:flex items-center justify-center">
+      <Link href={"/"} id="logo-nav" className="w-30 absolute bottom-[40%] right-5  md:flex items-center justify-center">
         <Image src={"/logo.png"} alt="Logo contru bloques " width={100} height={100} className="object-contain" />
       </Link>
     </footer>

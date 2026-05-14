@@ -16,13 +16,7 @@ import { Footer } from '@/components/Footer';
 
 
 export const Bloque3d = () => {
-  const images = [
-    "/bloque-g1.png",
-    "/bloque-g2.png",
-    "/bloque-g3.png",
-    "/bloque-g4.png",
 
-  ]
   const [open, setOpen] = useState(false)
   const [imageSelect,setImagenSelect] = useState(0)
   const [valorScroll, setValorScroll] = useState(0)
@@ -46,279 +40,25 @@ export const Bloque3d = () => {
     }
   },[valorScroll])
 
-
-    const toggle = (pocicion:number) => {
-      setImagenSelect(pocicion)
-    if ('startViewTransition' in document) {
-      // @ts-ignore
-      document.startViewTransition(() => {
-        setOpen(!open)
-      })
-    } else {
-      setOpen(!open)
-    }
-  }
   return (
-    <>
-    <div
-    className="fixed inset-0 z-0"
-    style={{
-      background: "radial-gradient(125% 125% at 50% 90%, #fff 40%, #475569 100%)",
-    }}
-  />
-        {/* <div className="fixed inset-0 z-0" style={{   background: "white",   backgroundImage: `     linear-gradient(to right, rgba(71,85,105,0.15) 1px, transparent 1px),     linear-gradient(to bottom, rgba(71,85,105,0.15) 1px, transparent 1px),     radial-gradient(circle at 50% 60%, rgba(236,72,153,0.15) 0%, rgba(168,85,247,0.05) 40%, transparent 70%)   `,   backgroundSize: "40px 40px, 40px 40px, 100% 100%", }} /> */}
-        {!move && (
-          <Canvas
-            style={{
-              width: "100%",
-              height: "100%",
-              position: "fixed",
-              top: 0,
-              left: 0,
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-            camera={{ position: [0, 3, 8], fov: 45 }}>
-            <ambientLight intensity={1} />
-            {/* <pointLight position={[10, 10, 10]} /> */}
-            {/* <OrbitControls/> */}
-            {/* <OrbitControls enableZoom={false} enableRotate={false}
-            enablePan={false} /> */}
-            <Scene scrollY={valorScroll} move={move} />
-          </Canvas>
-        )}
-      <section ref={containerRef}     className="
-                    relative
-                    h-screen
-                    overflow-y-scroll
-                    overflow-x-hidden
-                    
-                    scroll-smooth
-                    z-10
-                  ">
-          
-          <header className='w-full h-screen flex flex-col items-center pt-30  gap-2  snap-start '>
-            <DivScrollTop className='flex flex-row gap-5 items-center absolute'>
-              <button className='px-5 py-1 rounded-sm bg-amber-300 flex flex-row gap-2'>
-                <span className='md:text-sm text-xs'>Bloque 10 {">"} </span>
-              </button>
-              <button className='px-5 py-1 rounded-sm bg-amber-300 flex flex-row gap-2'>
-                <span className='md:text-sm text-xs'>Bloque 12 {">"} </span>
-              </button>
-              <button className='px-5 py-1 rounded-sm bg-amber-300 flex flex-row gap-2'>
-                <span className='md:text-sm text-xs'>Bloque 14 {">"} </span>
-              </button>
-            </DivScrollTop>
-            <DivScrollRigth className='absolute md:left-[33%] left-0 md:rotate-0 rotate-90  top-[50%] md:scale-y-100  scale-y-[-1] md:top-[30%]'>
-              <Image title='flecha' alt='flecha' src={"/flecha.png"} width={100} height={100}
-                className=' w-40 ' />
-            </DivScrollRigth>
-            <DivScrollLeft className='w-40 absolute md:left-[30%] left-5 bottom-10 md:top-[40%]'>
-              <span className=''>
-                Bloque 10
-                Dimenciones (W,H,L)
-                10*19*39 cm
-                Peso aprox: 10,5 Kg
-              </span>
-            </DivScrollLeft>
-          </header>
-          <section className='w-full h-screen snap-start flex flex-col justify-center '>
-            <DivScrollLeft className='absolute md:px-10 px-2  w-[40%] h-96 bg-amber-300 rounded-r-[80px] flex flex-col items-center gap-5  justify-center '>
-              <h1 className='md:text-3xl text-sm font-semibold uppercase text-slate-700'>Productos con <br></br> <span className='md:text-7xl text-lg font-bold'>Calidad</span> <br></br> y durabilidad </h1>
-              <p className='md:text-lg text-xs font-semibold'>Nuestro bloque de concreto está diseñado para ofrecer resistencia y durabilidad en proyectos de construcción de muros, cercas y estructuras diversas. Con sus dimensiones precisas y acabado de calidad, garantiza una fácil instalación y un resultado impecable.</p>
-            </DivScrollLeft>
-          </section>
-          <section className='w-full h-screen relative flex flex-col items-center justify-center snap-start '>
-            {valorScroll >= 1300 && (
-              <DivScrollTop className='absolute top-[20%] '>
-                <button onClick={() => setMove(!move)} className='border border-slate-300  px-5 py-2 rounded-sm backdrop-blur-md shadow-xl transition-all hover:bg-[#FFD230] cursor-pointer '>Mover libre </button>
-              </DivScrollTop>
-            )}
-            {move &&  (
+    <div className='w-full h-full  items-center justify-center flex flex-col'>
+              <span className='text-center text-2xl font-semibold mt-10'>Render De Bloque</span>
               <Canvas
-                className=' rounded-sm  backdrop-blur-lg hover:shadow-sm transition-all hover:shadow-[#FFD230]'
+                className=' rounded-sm  backdrop-blur-lg  transition-all '
                 style={{
                   width: "70%",
-                  height: "20rem",
+                  height: "100%",
                   display: "flex",
                   justifyContent: "center",
                   alignItems: "center",
                   background: "transparent"
                 }}
-                camera={{ position: [0, 5, 8], fov: 45 }}>
+                camera={{ position: [0, 0, 5], fov: 45 }}>
                 <ambientLight intensity={1} />
-                <OrbitControls enableZoom={true} enableRotate={true}
-                  enablePan={true} />
+                <OrbitControls enableZoom={false} enableDamping  dampingFactor={0.05} />
                 <Scene scrollY={valorScroll} move={move}  />
               </Canvas>
-            )}
-          </section>
-          <section className='w-full h-screen flex items-center bg-[linear-gradient(-45deg,#B5BDBB_0%,#3C4642_100%)] justify-center snap-start '>
-            <div className='md:w-5/6 w-full h-screen flex flex-col gap-10 items-center justify-center'>
-                <h2 className='md:text-3xl text-lg font-semibold'>Ficha tecnica</h2> 
-                <div className='w-full flex items-center justify-center md:px-0 px-5  '>
-                  <table className='md:w-1/2 w-full  rounded-3xl overflow-hidden shadow-2xl'>
-                    <thead>
-                      <tr className='bg-[#FFD230] '>
-                        <th className='font-bold py-4 text-left px-5 '>Propiedad</th>
-                        <th className='font-bold py-4 text-left px-5 '>Valor</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                        <tr className='border-b border-slate-300 bg-white '>
-                          <td className='px-5  py-3 text-left'>Referencia</td>
-                          <td className='px-5  py-3 text-left'>CB-1039</td>
-                        </tr>
-                        <tr className='border-b border-slate-300 bg-white '>
-                          <td className='px-5  py-3 text-left'>Altura</td>
-                          <td className='px-5  py-3 text-left'>19 cm</td>
-                        </tr>
-                        <tr className='border-b border-slate-300 bg-white '>
-                          <td className='px-5  py-3 text-left'>Ancho</td>
-                          <td className='px-5  py-3 text-left'>10 cm</td>
-                        </tr>
-                        <tr className='border-b border-slate-300 bg-white '>
-                          <td className='px-5  py-3 text-left'>Fondo</td>
-                          <td className='px-5  py-3 text-left'>39 cm </td>
-                        </tr>
-                        <tr className='border-b border-slate-300 bg-white '>
-                          <td className='px-5  py-3 text-left'>Peso</td>
-                          <td className='px-5  py-3 text-left'>7.5 Kg</td>
-                        </tr>
-                        <tr className=' bg-slate-100 '>
-                          <td className='px-5  py-1 text-left font-bold' colSpan={2}>Caracteristicas adiccionales:</td>
-                        </tr>
-                        <tr className=' bg-slate-100 '>
-                          <td className='px-5  py-1 text-left' colSpan={2}>Resistencia a la compresion: 4.0 MPa</td>
-                        </tr>
-                        <tr className=' bg-slate-100 '>
-                          <td className='px-5  py-1 text-left' colSpan={2}>Absorcion de agua: {"<8%"}</td>
-                        </tr>
-                        <tr className=' bg-slate-100 '>
-                          <td className='px-5  py-1 text-left' colSpan={2}>Material: Cemento Portland y agregados seleccionados</td>
-                        </tr>
-                        <tr className=' bg-slate-100 '>
-                          <td className='px-5  py-1 text-left' colSpan={2}>Aplicacion: Muros estructuras y divisorios </td>
-                        </tr>
-                    </tbody>
-                  </table>
-                </div>
-
-            </div>
-          </section>
-          <section className='w-full h-screen flex items-center bg-[linear-gradient(-45deg,#B5BDBB_0%,#3C4642_100%)] justify-center snap-start '>
-            <div className='md:w-5/6 w-full h-screen flex flex-col gap-10 items-center justify-center md:px-0 px-5'>
-                <h3 className='md:text-3xl text-lg font-semibold text-white'>Producto Instalado</h3> 
-                <Image width={1000} height={1000} alt='Imagen de producto instalado' title='Producto instalado '
-                src={"/productoinstalado.png"} className='w-200 h-3/5  object-contain'/>
-            </div>
-          </section>
-          <section className='w-full h-screen flex items-center  bg-[#B5BDBB]  justify-center snap-start '>
-            <div className='md:w-280 w-full h-screen flex flex-col gap-10 items-center justify-center relative md:px-0 px-5'>
-                <h3 className='md:text-3xl text-lg font-semibold text-white'>Galeria</h3> 
-                {open ? (
-                  <div onClick={()=>toggle(0)} style={{viewTransitionName:"image-zoom"}} className='flex items-center justify-center transition-transform fixed inset-0 z-50'>
-                      <Image  width={5000} height={5000} alt='Imagen de producto instalado' title='Producto instalado '
-                      className='w-280 h-1/2 md:object-center object-contain ' 
-                      src={images[imageSelect]} />
-                  </div>
-                ): (
-                  <div className='grid grid-cols-4 grid-rows-2 gap-2 w-full h-2/3 '>
-                    <DivScrollLeft className='w-full h-full col-span-2'>
-                      <button onClick={()=>toggle(0)} className='w-full h-full cursor-pointer '>
-                        <Image width={500} height={500} alt='Imagen de producto instalado' title='Producto instalado '
-                        src={"/bloque-g1.png"} className='w-full h-full object-center '  style={{viewTransitionName:"image-zoom"}}
-                        />
-                      </button>
-                    </DivScrollLeft>
-                    <DivScrollRigth className='w-full h-full col-span-2'>
-                      <button onClick={()=>toggle(1)} className='w-full h-full cursor-pointer'>
-                        <Image width={500} height={500} alt='Imagen de producto instalado' title='Producto instalado '
-                        src={"/bloque-g2.png"} className='w-full h-full object-center '
-                      />
-                      </button>
-                    </DivScrollRigth>
-                    <DivScrollTop className='w-full h-full '>
-                      <button onClick={()=>toggle(2)} className='w-full h-full cursor-pointer'>
-                        <Image width={500} height={500} alt='Imagen de producto instalado' title='Producto instalado '
-                        src={"/bloque-g3.png"} className='w-full h-full object-center '
-                      />
-                      </button>
-                    </DivScrollTop>
-                    <DivScrollLeft className='w-full h-full col-span-3 '>
-                      <button onClick={()=>toggle(3)} className='w-full h-full cursor-pointer'>
-                        <Image width={500} height={500} alt='Imagen de producto instalado' title='Producto instalado '
-                        src={"/bloque-g4.png"} className='w-full h-full object-center '
-                      />
-                      </button>
-                    </DivScrollLeft>
-                  </div>
-                )}
-
-            </div>
-          </section>
-          <section className='snap-start w-full h-screen flex flex-col gap-10  items-center justify-center bg-[#B5BDBB] md:px-0 px-5  '>
-                <h5 className='text-3xl font-semibold  text-center'>¿ Listo para comenzar su proyecto ? </h5>
-                <p className='text-slate-600 text-center'>Contáctenos hoy mismo para obtener asesoramiento personalizado y cotizaciones para su proyecto de construcción. </p>
-                <div className='flex flex-row gap-5 items-center justify-center '>
-                  <button className='px-5 py-2 rounded-sm bg-green-500 transition-all hover:opacity-80 flex flex-row  gap-5'>
-                    <MdWhatsapp size={20} color='white'/>
-                    <span className='md:text-sm text-xs text-white'>Contactar por WhatsApp</span>
-                  </button>
-                  <button className='px-5 py-2 rounded-sm bg-slate-800 transition-all hover:opacity-80 flex flex-row  gap-5'>
-                    <MdEmail size={20} color='white'/>
-                    <span className='md:text-sm text-xs text-white'>Mas información</span>
-                  </button>
-                </div>
-          </section>
-          <section className='w-full h-screen flex items-center  bg-[#B5BDBB]  justify-center snap-start '>
-            <div className='md:w-280 w-full h-screen flex flex-col gap-10 items-center justify-center relative md:px-0 px-5 '>
-                <h3 className='text-3xl font-semibold text-black'>Caracteristicas</h3> 
-                {open ? (
-                  <div onClick={()=>toggle(0)} style={{viewTransitionName:"image-zoom"}} className='flex items-center justify-center transition-transform fixed inset-0 z-50'>
-                      <Image  width={5000} height={5000} alt='Imagen de producto instalado' title='Producto instalado '
-                      className='w-280 h-160 object-center ' 
-                      src={images[imageSelect]} />
-                  </div>
-                ): (
-                  <div className='grid grid-cols-4 grid-rows-2 gap-2 w-full h-2/3 '>
-                    <DivScrollLeft className='w-full h-full col-span-2'>
-                      <button onClick={()=>toggle(0)} className='w-full h-full cursor-pointer '>
-                        <Image width={500} height={500} alt='Imagen de producto instalado' title='Producto instalado '
-                        src={"/bloque-g1.png"} className='w-full h-full object-center '  style={{viewTransitionName:"image-zoom"}}
-                        />
-                      </button>
-                    </DivScrollLeft>
-                    <DivScrollRigth className='w-full h-full col-span-2'>
-                      <button onClick={()=>toggle(1)} className='w-full h-full cursor-pointer'>
-                        <Image width={500} height={500} alt='Imagen de producto instalado' title='Producto instalado '
-                        src={"/bloque-g2.png"} className='w-full h-full object-center '
-                      />
-                      </button>
-                    </DivScrollRigth>
-                    <DivScrollTop className='w-full h-full '>
-                      <button onClick={()=>toggle(2)} className='w-full h-full cursor-pointer'>
-                        <Image width={500} height={500} alt='Imagen de producto instalado' title='Producto instalado '
-                        src={"/bloque-g3.png"} className='w-full h-full object-center '
-                      />
-                      </button>
-                    </DivScrollTop>
-                    <DivScrollLeft className='w-full h-full col-span-3 '>
-                      <button onClick={()=>toggle(3)} className='w-full h-full cursor-pointer'>
-                        <Image width={500} height={500} alt='Imagen de producto instalado' title='Producto instalado '
-                        src={"/bloque-g4.png"} className='w-full h-full object-center '
-                      />
-                      </button>
-                    </DivScrollLeft>
-                  </div>
-                )}
-
-            </div>
-          </section>
-        <Footer/>
-      </section>
-    </>
+    </div>
   )
 }
 

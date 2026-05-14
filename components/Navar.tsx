@@ -87,9 +87,9 @@ export const Navar = () => {
             </button>
             <button className='w-60 h-40 group cursor-pointer'>
               {/* imagen  */}
-              <div className='w-60 h-32  overflow-hidden'>
+              <Link href={"/adoquines"} className='w-60 h-32  overflow-hidden'>
                 <Image src={"/adoquin.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
-              </div>
+              </Link>
               {/* texto */}
               <span className='text-xl font-semibold mt-2 text-slate-500 transition-all group-hover:text-slate-700'>Adoquines</span>
             </button>
@@ -112,7 +112,6 @@ export const Navar = () => {
             <button  onClick={() => setOpenOptions(!openOptions)} className="text-2xl text-white">Prefabricados</button>
             {openOptions && (
               <section className=' w-full md:h-90 bg-white flex flex-wrap justify-center gap-10 px-5 pt-20'>
-
                 <button className='w-60 h-60 cursor-pointer group '>
                   {/* imagen  */}
                   <Link href={"/bloques"} className='w-60 h-32  overflow-hidden'>
@@ -123,9 +122,9 @@ export const Navar = () => {
                 </button>
                 <button className='w-60 h-60 group cursor-pointer'>
                   {/* imagen  */}
-                  <div className='w-60 h-32  overflow-hidden'>
+                  <Link href={"/adoquines"} className='w-60 h-32  overflow-hidden'>
                     <Image src={"/adoquin.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
-                  </div>
+                  </Link>
                   {/* texto */}
                   <span className='text-xl font-semibold mt-2 text-slate-500 transition-all group-hover:text-slate-700'>Adoquines</span>
                 </button>
