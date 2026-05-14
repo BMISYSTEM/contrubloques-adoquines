@@ -57,7 +57,7 @@ const page = () => {
     <>
       <BottonWhatsapp />
       <Navar />
-      <section className="w-full h-[120vh] bg-black relative flex justify-center items-center">
+      <section className="w-full h-screen bg-black relative flex justify-center items-center">
         <div className="w-full h-full bg-black/60 absolute">
 
         </div>
