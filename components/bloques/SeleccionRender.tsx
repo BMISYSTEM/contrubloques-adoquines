@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 export const SeleccionRender = () => {
     const [render,setRender] = useState(1)
   return (
-    <section className="w-full h-screen bg-white relative flex items-center justify-center"> 
+    <section className="w-full md:h-screen h-120 bg-white relative flex items-center justify-center"> 
         <Image src={render === 1 ? "/bloque-p.png" : render === 2 ? "/bloque-m.png" : "/bloque-g.png" } width={1000} height={1000} alt="imagen de bloque" className="w-full h-full md:object-cover object-contain"/>
         <div className="absolute bottom-20 flex flex-wrap justify-center items-center gap-5 ">
           <button onClick={()=>setRender(1)} className={render === 1 ? "px-3 py-1 rounded bg-black text-white transition-all hover:opacity-80 cursor-pointer" :

@@ -262,7 +262,7 @@ const page = () => {
       <section className="w-full h-screen bg-white items-center justify-center">
         <Bloque3d/>
       </section>
-      <section className="w-full h-screen bg-blue-500  ">
+      <section className="w-full h-screen bg-blue-500 overflow-hidden  ">
         <div className="w-full h-full bg-black/50 absolute"></div>
         <video
           playsInline
