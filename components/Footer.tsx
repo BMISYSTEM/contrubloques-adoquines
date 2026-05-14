@@ -63,7 +63,7 @@ export const Footer = () => {
             </div>
           </div>
         </div>
-        <div className='flex flex-row gap-6 mt-10'>
+        <div className='flex md:flex-row flex-col gap-2 mt-10 items-center'>
           <span className="text-sm text-white my-2">&#169; Contrubloques&Adoquines</span>
           <span className="text-sm text-white md:my-2">Desarrollado por:   <a href={"https:://syprods.com"} target='_blank'><span className='text-orange-300 border-b'>SyProd</span></a></span>
         </div>

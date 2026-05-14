@@ -20,16 +20,16 @@ const companies = [
 
 export const LogosCarrusel = () => {
   return (
-    <section className="w-full py-16 bg-gradient-to-r from-gray-50 to-gray-100">
-      <div className=" mx-auto  ">
+    <section className="w-full py-16 md:h-auto h-96 bg-white">
+      <div className=" mx-auto   ">
         {/* Header */}
         <div className="mb-12 text-center">
           <p className="text-slate-700 font-semibold text-lg">Aliados y Clientes</p>
         </div>
         
         {/* Carrusel Container */}
-        <div className="relative overflow-hidden">
-          <div className="flex gap-6 animate-scroll">
+        <div className="relative overflow-hidden h-auto py-5 ">
+          <div className="flex gap-6 animate-scroll ">
             {/* Primera vuelta */}
             {companies.map((company,index) => (
               <div
@@ -85,7 +85,7 @@ export const LogosCarrusel = () => {
         </div>
 
         {/* Indicador de navegación */}
-        <div className="flex justify-center gap-2 mt-8">
+        <div className="flex justify-center gap-2 md:mt-8 ">
           <div className="w-2 h-2 rounded-full bg-red-500"></div>
         </div>
       </div>
