@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+import { Environment, OrbitControls } from '@react-three/drei';
 import Scene from './Scene';
 import Image from 'next/image';
 import { DivScrollLeft } from '@/components/componenst-animate/DivScrollLeft';
@@ -18,7 +18,7 @@ import { Footer } from '@/components/Footer';
 export const Bloque3d = () => {
 
   const [open, setOpen] = useState(false)
-  const [imageSelect,setImagenSelect] = useState(0)
+  const [imageSelect, setImagenSelect] = useState(0)
   const [valorScroll, setValorScroll] = useState(0)
   const [move, setMove] = useState(false);
   const containerRef = useRef<HTMLElement | null>(null)
@@ -34,30 +34,41 @@ export const Bloque3d = () => {
     return () => el.removeEventListener("scroll", handleScroll)
   }, []);
 
-  useEffect(()=>{
-    if(valorScroll < 1300){
+  useEffect(() => {
+    if (valorScroll < 1300) {
       setMove(false)
     }
-  },[valorScroll])
+  }, [valorScroll])
 
   return (
     <div className='w-full h-full  items-center justify-center flex flex-col'>
-              <span className='text-center text-2xl font-semibold mt-10'>Render De Bloque</span>
-              <Canvas
-                className=' rounded-sm  backdrop-blur-lg  transition-all '
-                style={{
-                  width: "70%",
-                  height: "100%",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  background: "transparent"
-                }}
-                camera={{ position: [0, 0, 5], fov: 45 }}>
-                <ambientLight intensity={1} />
-                <OrbitControls enableZoom={false} enableDamping  dampingFactor={0.05} />
-                <Scene scrollY={valorScroll} move={move}  />
-              </Canvas>
+      <span className='text-center text-2xl font-semibold mt-10'>Render De Bloque</span>
+      <Canvas
+        className='rounded-sm backdrop-blur-lg transition-all'
+        style={{
+          width: "70%",
+          height: "100%",
+          background: "transparent"
+        }}
+        camera={{ position: [0, 0, 5], fov: 45 }}
+      >
+        <ambientLight intensity={0.5} />
+
+        <directionalLight
+          position={[5, 5, 5]}
+          intensity={2}
+        />
+
+        <Environment preset="city" />
+
+        <OrbitControls
+          enableZoom={false}
+          enableDamping
+          dampingFactor={0.05}
+        />
+
+        <Scene scrollY={valorScroll} move={move} />
+      </Canvas>
     </div>
   )
 }

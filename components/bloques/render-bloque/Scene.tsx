@@ -14,8 +14,9 @@ export default function Scene({
     const glb = useGLTF("/bloque.glb")
     return (
         <>
-            <ambientLight intensity={1} />
-            <pointLight position={[0, 0, 0]} />
+            <ambientLight intensity={0} />
+            <directionalLight position={[5, 5, 5]} intensity={1} />
+            {/* <pointLight position={[0, 0, 0]} /> */}
             <primitive ref={cubeRef} object={glb.scene} scale={0.5} />
         </>
     );
