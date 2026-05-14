@@ -91,7 +91,7 @@ const page = () => {
       <div className="w-full md:px-10 px-2 md:h-32 h-60 bg-white mt-10">
         <span className="text-xl ">
           Cada pieza refleja el compromiso de quienes están en cada etapa del proceso.<br/>
-          Personas que trabajan con precisión, responsabilidad y enfoque, asegurando que lo que entregamos cumpla con lo que prometemos: calidad real, sin atajos.
+          Personas que trabajan con precisión, responsabilidad y enfoque, asegurando que lo que entregamos cumpla<br/> con lo que prometemos: calidad real, sin atajos.
 
         </span>
       </div>

@@ -79,16 +79,16 @@ export const Navar = () => {
 
             <button className='w-60 h-40 cursor-pointer group items-center '>
               {/* imagen  */}
-              <Link href={"/bloques"} className='w-60 h-32   overflow-hidden'>
-                <Image src={"/bloque-m.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-32  object-contain transition-all group-hover:scale-105' />
+              <Link href={"/bloques"} className='w-60 h-44   overflow-hidden'>
+                <Image src={"/bloque-m.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-44  object-contain transition-all group-hover:scale-105' />
               </Link>
               {/* texto */}
               <span className='text-xl font-semibold mt-2 text-slate-500 transition-all group-hover:text-slate-700'>Bloques</span>
             </button>
             <button className='w-60 h-40 group cursor-pointer'>
               {/* imagen  */}
-              <Link href={"/adoquines"} className='w-60 h-32  overflow-hidden'>
-                <Image src={"/adoquin.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
+              <Link href={"/adoquines"} className='w-60 h-44  overflow-hidden'>
+                <Image src={"/adoquin-p.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-44 object-contain transition-all group-hover:scale-105' />
               </Link>
               {/* texto */}
               <span className='text-xl font-semibold mt-2 text-slate-500 transition-all group-hover:text-slate-700'>Adoquines</span>

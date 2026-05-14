@@ -24,8 +24,8 @@ export const Visitanos = () => {
             </div>
             <div className='mt-10 flex md:flex-row flex-col gap-5 '>
                 <button onClick={()=>{
-                    window.open("https://maps.app.goo.gl/1fxz1vna3jrFxhQi8","_blanck")
-                }} className='px-5 py-2 flex flex-row gap-5 items-center bg-amber-400 rounded-2xl'>
+                    window.open("https://maps.app.goo.gl/Bvh6b8ZnfapyaqbS9","_blanck")
+                }} className='px-5 py-2 flex flex-row gap-5 items-center bg-amber-500 rounded-2xl'>
                     <ArrowRight size={20}/>
                     <span>Abrir Ubicación</span>
                 </button>

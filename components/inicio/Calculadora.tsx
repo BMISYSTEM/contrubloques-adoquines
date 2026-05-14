@@ -1,7 +1,7 @@
 'use client'
 
 import { ArrowLeftRight, ArrowUpDown } from 'lucide-react'
-import { useState } from 'react'
+import { useEffect, useEffectEvent, useState } from 'react'
 
 // Datos de referencias de productos
 const productReferences = {
@@ -37,11 +37,20 @@ export const Calculadora = () => {
 
   const openWhatsapp = () => {
     const numero = "573106479481";
-    const mensaje = encodeURIComponent(`Quiero mas informacion para un proyecto con estas especificaciones,<br/>
-                      ${currentProduct?.name} <br/>Largo ${wallArea} m2 y de alto ${doorsArea} m2 <br/> con un area neta de ${netArea} y unas unidades aproximadas de ${unitsNeeded}`)
+    const mensaje = encodeURIComponent(`Quiero mas informacion para un proyecto con estas especificaciones,\n
+                      ${currentProduct?.name}\nLargo ${wallArea} m2 y de alto ${doorsArea} m2\n con un area neta de ${netArea} y unas unidades aproximadas de ${unitsNeeded}`)
     const link = `https://wa.me/${numero}?text=${mensaje}`;
     window.open(link,"_blanck");
   }
+
+  useEffect(()=>{
+    if(productType === "bloques"){
+      setSelectedReference("bloque-10")
+    }else{
+      setSelectedReference("adoquin-peatonal")
+
+    }
+  },[productType])
   return (
     <section id="sect-calculadora" className="w-full py-16 px-6 md:px-12 bg-gradient-to-br from-blue-50 via-blue-100 to-cyan-50">
       <div className="max-w-6xl mx-auto">

@@ -144,10 +144,7 @@ const page = () => {
         </div>
         <div className='flex md:flex-row flex-col gap-1 md:w-250 w-full '>
           <div className='md:w-1/3 w-full h-96  md:sticky top-0 bg-gray-500 rounded-lg'>
-            <Image src={"/bloque3.png"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
-          </div>
-          <div className='md:w-2/3 w-full h-250  rounded-lg bg-gray-500'>
-          <video
+              <video
             playsInline
             autoPlay
             muted
@@ -158,10 +155,24 @@ const page = () => {
           <source src="/bloque4.mp4" type="video/mp4" />
         </video>
           </div>
+          <div className='md:w-2/3 w-full h-250  rounded-lg bg-gray-500'>
+            <Image src={"/bloque3.png"} alt='estandares' width={1080} height={1080} className="w-full h-full object-cover" />
+        
+          </div>
         </div>
       </section>
       <section className="pt-10 pb-10">
-        <ScrollStopMotion/>
+          <video
+            playsInline
+            autoPlay
+            muted
+            loop
+            className="w-full h-full object-cover"
+            preload="metadata"
+          >
+          <source src="/bloques-stop-animation/Estructurales.mp4" type="video/mp4" />
+        </video>
+        {/* <ScrollStopMotion/> */}
       </section>
       <section className="md:px-10 w-full h-120 flex md:flex-row flex-col  ">
         <div className="md:w-96 w-full md:h-full h-1/3 bg-black flex flex-col text-white px-5 py-10 gap-5">

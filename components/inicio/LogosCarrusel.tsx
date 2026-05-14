@@ -13,7 +13,7 @@ const companies = [
   { id: 8, name: '', logo: '/clientes/IMG_0790.JPG', subtitle: '' },
   { id: 9, name: '', logo: '/clientes/IMG_0791.JPG', subtitle: '' },
   { id: 10, name: '', logo: '/clientes/IMG_0792.JPG', subtitle: '' },
-  { id:11, name: '', logo: '/clientes/IMG_0793.JPG', subtitle: '' },
+  { id:11, name: '', logo: '/clientes/IMG_0793.PNG', subtitle: '' },
   { id: 12, name: '', logo: '/clientes/IMG_0794.JPG', subtitle: '' },
   { id: 13, name: '', logo: '/clientes/IMG_0796.WEBP', subtitle: '' },
 ]
