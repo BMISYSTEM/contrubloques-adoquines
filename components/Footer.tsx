@@ -19,13 +19,13 @@ export const Footer = () => {
             
             <div className="flex flex-row gap-5 ">
               <Link href={"https://www.instagram.com/construbloquesyadoquines?igsh=NGluZDJjbmc1ZWlx"}>
-                <RiInstagramFill size={30} color="orange" />
+                <RiInstagramFill size={30} color="#FFD230" />
               </Link>
               <Link href={"https://www.facebook.com/share/1E8vtkaYJ2/?mibextid=wwXIfr"}>
-                <MdFacebook size={30} color="orange" />
+                <MdFacebook size={30} color="#FFD230" />
               </Link>
               <Link href={"https://www.tiktok.com/@construbloquesyadoquines?_r=1&_t=ZS-96MMKF6fFAr"}>
-                <AiFillTikTok size={30} color="orange" />
+                <AiFillTikTok size={30} color="#FFD230" />
               </Link>
             </div>
           </div>
@@ -47,15 +47,15 @@ export const Footer = () => {
           <div className="md:w-1/3 w-full flex flex-col gap-5 ">
             <span className="md:text-2xl text-xl font-semibold text-white ">Contacto</span>
             <div className="flex flex-row gap-2 items-center">
-              <FiMapPin size={30} color="orange" />
+              <FiMapPin size={30} color="#FFD230" />
               <span className="text-slate-300">La Buitrera Cali, km 3 vía principal Sector vagón</span>
             </div>
             <div className="flex flex-row gap-2 items-center">
-              <BsTelephonePlus size={30} color="orange" />
+              <BsTelephonePlus size={30} color="#FFD230" />
               <span className="text-slate-300">+57 3184520627</span>
             </div>
             <div className="flex flex-row gap-2 items-center ">
-              <MdOutgoingMail size={35} color="orange" />
+              <MdOutgoingMail size={35} color="#FFD230" />
               <span className="text-slate-300">comercial.bloques@construbloques.co</span>
             </div>
           </div>

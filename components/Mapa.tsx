@@ -8,11 +8,11 @@ export const Mapa = () => {
             <div className="md:w-96 w-full overflow-hidden md:h-full h-full bg-black flex flex-col text-white px-5 py-10 gap-5">
                 <div className='md:w-100  items-start absolute px-10 flex flex-col gap-2 '>
                     <span className='text-xl uppercase text-[#FFD230]'>Nuestra planta</span>
-                    <span className='md:text-2xl text-xl font-semibold text-white '>Producción <br /> que construye <br /> confianza <span className='text-amber-500'>.</span></span>
+                    <span className='md:text-2xl text-xl font-semibold text-white '>Producción <br /> que construye <br /> confianza <span className='text-[#FFD230]'>.</span></span>
                     <span className=' text-white'>Tecnología, control y experiencia <br />para entregar prefabricados de<br /> alta calidad en cada proyecto.</span>
                     <div className='w-20 h-0.5 bg-[#FFD230]'></div>
                     <div className='flex flex-row gap-5 mt-2 items-center  '>
-                        <MapPin size={30} color='orange' />
+                        <MapPin size={30} color='#FFD230' />
                         <div className='flex flex-col gap-2 '>
                             <span className='text-lg font-semibold text-white'>La Buitrera, Cali</span>
                             <span className='text-slate-200'>Valle del Cauca, Colombia</span>
