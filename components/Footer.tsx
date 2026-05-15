@@ -44,7 +44,7 @@ export const Footer = () => {
               <span className="text-slate-300">Contacto</span>
             </Link>
           </div>
-          <div className="md:w-1/3 flex flex-col gap-5 ">
+          <div className="md:w-1/3 w-full flex flex-col gap-5 ">
             <span className="md:text-2xl text-xl font-semibold text-white ">Contacto</span>
             <div className="flex flex-row gap-2 items-center">
               <FiMapPin size={30} color="orange" />
@@ -54,9 +54,9 @@ export const Footer = () => {
               <BsTelephonePlus size={30} color="orange" />
               <span className="text-slate-300">+57 3184520627</span>
             </div>
-            <div className="flex flex-row gap-2 items-center">
-              <MdOutgoingMail size={30} color="orange" />
-              <span className="text-slate-300 text-xs">comercial.bloques@construbloques.co</span>
+            <div className="flex flex-row gap-2 items-center ">
+              <MdOutgoingMail size={35} color="orange" />
+              <span className="text-slate-300">comercial.bloques@construbloques.co</span>
             </div>
           </div>
         </div>
