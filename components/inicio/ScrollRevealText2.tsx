@@ -37,7 +37,7 @@ export const ScrollRevealText2 = () => {
 
   return (
     <section className="w-full py-24 bg-white">
-      <div className="w-full mx-auto   flex flex-col  items-center justify-center min-h-screen">
+      <div className="w-full mx-auto   flex flex-col gap-10  items-center justify-center min-h-screen">
         <div ref={textRef} className="text-center px-6">
           <h2 className="text-2xl md:text-6xl lg:text-6xl font-bold leading-tight">
             {letters.map((letter, index) => (

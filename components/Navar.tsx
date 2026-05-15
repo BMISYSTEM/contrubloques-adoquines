@@ -108,12 +108,12 @@ export const Navar = () => {
             </button>
           </div>
 
-          <div className="flex-1 flex flex-col items-center justify-center gap-8">
+          <div className="flex-1 flex flex-col items-center justify-center gap-8 overflow-auto">
             <Link href={"/"} onClick={() => setOpen(false)} className="text-2xl text-white">Inicio</Link>
             <button  onClick={() => setOpenOptions(!openOptions)} className="text-2xl text-white">Prefabricados</button>
             {openOptions && (
-              <section className=' w-full h-full  bg-white flex flex-wrap justify-center gap-5 px-5 pt-5'>
-                <button className='w-60 h-50 cursor-pointer group '>
+              <section className=' w-full h-full  bg-white flex flex-wrap py-5 justify-center gap-5 px-5 '>
+                <button className='w-60 h-40 cursor-pointer group flex flex-col '>
                   {/* imagen  */}
                   <Link href={"/bloques"} className='w-60 h-32  overflow-hidden'>
                     <Image src={"/bloque-m.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
@@ -121,7 +121,7 @@ export const Navar = () => {
                   {/* texto */}
                   <span className='text-xl font-semibold mt-2 text-slate-500 transition-all group-hover:text-slate-700'>Bloques</span>
                 </button>
-                <button className='w-60 h-50 group cursor-pointer'>
+                <button className='w-60 h-40 group cursor-pointer flex flex-col '>
                   {/* imagen  */}
                   <Link href={"/adoquines"} className='w-60 h-32  overflow-hidden'>
                     <Image src={"/adoquin-p.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
