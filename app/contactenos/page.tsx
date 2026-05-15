@@ -14,7 +14,7 @@ const page = () => {
             <Navar />
             <section className='w-full md:h-screen  pb-20 bg-linear-to-b overflow-hidden  from-black/20 to-transparent flex flex-col bg-white gap-5 md:justify-center '>
                 <div>
-                    <h1 className='text-7xl font-bold md:mt-0 mt-20 md:px-20 '>Contacto</h1>
+                    <h1 className='text-7xl font-bold md:mt-40 mt-20 md:px-20 '>Contacto</h1>
                     <p className='md:px-20 '>
                         ¿Tienes dudas sobre tu obra o necesitas apoyo con tu pedido?<br />
                         Nuestro equipo está listo para ayudarte a elegir, cotizar y coordinar tu entrega de forma clara y rápida.

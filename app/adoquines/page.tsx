@@ -193,7 +193,7 @@ const page = () => {
           <span className='text-2xl font-semibold text-center'>Adoquín peatonal</span>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
-            <span><span className="text-lg font-semibold">Alto:</span> 6 cm</span>
+            <span><span className="text-lg font-semibold">Medida:</span>6 × 10 × 20 cm</span>
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
@@ -218,7 +218,7 @@ const page = () => {
           <span className='text-2xl font-semibold text-center'>Adoquín vehicular</span>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
-            <span><span className="text-lg font-semibold">Alto:</span>8 cm</span>
+            <span><span className="text-lg font-semibold">Medida:</span>8 × 10 × 20 cm</span>
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
@@ -242,7 +242,7 @@ const page = () => {
         <Adoquin3d />
       </section>
       <section className="w-full h-screen overflow-hidden   ">
-        <div className="w-full h-full bg-black/50 absolute"></div>
+        <div className="w-full h-screen bg-black/50 absolute"></div>
         <video
           playsInline
           autoPlay

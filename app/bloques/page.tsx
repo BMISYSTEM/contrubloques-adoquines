@@ -192,7 +192,7 @@ const page = () => {
           <span className='text-2xl font-semibold text-center'>10 cm</span>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
-            <span><span className="text-lg font-semibold">Grosor:</span> 10 cm</span>
+            <span><span className="text-lg font-semibold">Medida:</span> 10 × 19 × 39 cm</span>
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
@@ -217,7 +217,7 @@ const page = () => {
           <span className='text-2xl font-semibold text-center'>12 cm</span>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
-            <span><span className="text-lg font-semibold">Grosor:</span> 12 cm</span>
+            <span><span className="text-lg font-semibold">Medida:</span>12 × 19 × 39 cm</span>
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
@@ -242,7 +242,7 @@ const page = () => {
           <span className='text-2xl font-semibold text-center'>14 cm</span>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
-            <span><span className="text-lg font-semibold">Grosor:</span> 14 cm</span>
+            <span><span className="text-lg font-semibold">Medida:</span>14 × 19 × 39 cm</span>
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
@@ -266,7 +266,7 @@ const page = () => {
         <Bloque3d />
       </section>
       <section className="w-full h-screen  overflow-hidden  ">
-        <div className="w-full h-full bg-black/50 absolute"></div>
+        <div className="w-full h-screen bg-black/50 absolute"></div>
         <video
           playsInline
           autoPlay

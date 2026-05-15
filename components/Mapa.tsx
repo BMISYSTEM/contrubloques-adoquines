@@ -5,7 +5,7 @@ import { ArrowRight, Calendar, MapPin } from 'lucide-react'
 export const Mapa = () => {
     return (
         <section className="md:px-10 w-full overflow-hidden  md:h-140 h-[150vh] flex md:flex-row flex-col  ">
-            <div className="md:w-96 w-full overflow-hidden md:h-full h-full bg-black flex flex-col text-white px-5 py-10 gap-5">
+            <div className="md:w-115 w-full overflow-hidden md:h-full h-full bg-black flex flex-col text-white px-5 py-10 gap-5">
                 <div className='md:w-100  items-start absolute px-10 flex flex-col gap-2 '>
                     <span className='text-xl uppercase text-[#FFD230]'>Nuestra planta</span>
                     <span className='md:text-2xl text-xl font-semibold text-white '>Producción <br /> que construye <br /> confianza <span className='text-[#FFD230]'>.</span></span>

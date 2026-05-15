@@ -34,7 +34,6 @@ const page = () => {
       </section>
       {/* quienes somos */}
       <section className="w-full overflow-hidden bg-[#F3EFE9] h-auto pt-10 flex flex-col items-center justify-center">
-        <h2 className="text-4xl font-bold mb-4">Quienes somos</h2>
         <p className="text-center md:w-1/2 px-2 text-2xl ">
           Cada estructura tiene un punto de partida.<br />
           El nuestro nació de la convicción de que la calidad no es un detalle, es la base.

@@ -11,7 +11,7 @@
               <button onClick={()=>setRender(1)} className={render === 1 ? "px-3 py-1 rounded bg-black text-white transition-all hover:opacity-80 cursor-pointer" :
                 "px-3 py-1 rounded bg-slate-300 text-slate-800 transition-all hover:opacity-80 cursor-pointer"
               }>
-                Adoquín peatonal.
+                Adoquín peatonal
               </button>
               <button onClick={()=>setRender(2)} 
               className={render === 2 ? "px-3 py-1 rounded bg-black text-white transition-all hover:opacity-80 cursor-pointer" :
