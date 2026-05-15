@@ -97,9 +97,9 @@ const page = () => {
           <div className="flex gap-10  items-center justify-center">
             <div className="grid grid-cols-4 grid-rows-2 items-center justify-center gap-4">
               {iconos.map((feature, index) => (
-                <div key={index} className="flex flex-col items-center gap-4 rounded-[28px]  p-5 ">
+                <div key={index} className="flex flex-col items-center justify-center gap-4 rounded-[28px]  p-5 ">
                   <Image src={feature.icon} alt="icono" width={200} height={200} className="w-10 h-10 " />
-                  <p className="text-sm font-semibold text-slate-900">{feature.title}</p>
+                  <p className="text-sm font-semibold text-slate-900 text-center">{feature.title}</p>
                 </div>
               ))}
             </div>
