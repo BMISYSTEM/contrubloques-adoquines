@@ -85,9 +85,6 @@ export const LogosCarrusel = () => {
         </div>
 
         {/* Indicador de navegación */}
-        <div className="flex justify-center gap-2 md:mt-8 ">
-          <div className="w-2 h-2 rounded-full bg-red-500"></div>
-        </div>
       </div>
 
       <style jsx>{`

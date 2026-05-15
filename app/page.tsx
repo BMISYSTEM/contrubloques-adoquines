@@ -75,18 +75,18 @@ export default function Home() {
           <div className="grid grid-cols-3 gap-1 px-12 md:px-16 lg:px-20 pb-10">
             <div className="flex flex-col">
               <div className="flex items-center   justify-center">
-                <h3 className="text-white font-semibold">Producción organizada</h3>
+                <h3 className="text-white font-semibold text-center">Producción organizada</h3>
               </div>
               <p className="text-gray-300 text-xs text-center">Bloques y adoquines vibroprensados.</p>
             </div>
             <div className="flex flex-col">
               <div className="flex items-center   justify-center">
-                <h3 className="text-white font-semibold">Entregas cumplidas</h3>
+                <h3 className="text-white font-semibold text-center">Entregas cumplidas</h3>
               </div>
               <p className="text-gray-300 text-xs text-center">Despachos programados en Cali y Valle del Cauca.</p>
             </div>
             <div className="flex flex-col">
-              <div className="flex items-center   justify-center">
+              <div className="flex items-center   justify-center text-center">
                 <h3 className="text-white font-semibold">Precisión estructural</h3>
               </div>
               <p className="text-gray-300 text-xs text-center">Fabricación uniforme para proyectos residenciales y comerciales.</p>
