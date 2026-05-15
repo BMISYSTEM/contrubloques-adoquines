@@ -191,23 +191,23 @@ const page = () => {
           <span className='text-2xl font-semibold text-center'>Adoquín peatonal</span>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
-            <span><span className="text-lg font-semibold">Grosor:</span> 10 cm</span>
+            <span><span className="text-lg font-semibold">Alto:</span> 6 cm</span>
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
-            <span><span className="text-lg font-semibold">Uso:</span> divisiones y cerramientos</span>
+            <span><span className="text-lg font-semibold">Uso:</span>  tránsito peatonal y zonas exteriores</span>
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Tipo.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
-            <span><span className="text-lg font-semibold">Tipo:</span> no estructural</span>
+            <span><span className="text-lg font-semibold">Tipo:</span>uso liviano</span>
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Rendimiento.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
-            <span><span className="text-lg font-semibold">Rendimiento:</span> 12.5 und/m²</span>
+            <span><span className="text-lg font-semibold">Rendimiento:</span>50 und/m²</span>
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Aplicacion.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
-            <span><span className="text-lg font-semibold">Aplicación:</span> muros livianos</span>
+            <span><span className="text-lg font-semibold">Aplicación:</span>andenes, patios y senderos</span>
           </div>
         </div>
         {/* columna */}
@@ -216,23 +216,23 @@ const page = () => {
           <span className='text-2xl font-semibold text-center'>Adoquín vehicular</span>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Grosor.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
-            <span><span className="text-lg font-semibold">Grosor:</span> 12 cm</span>
+            <span><span className="text-lg font-semibold">Alto:</span>8 cm</span>
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Uso.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
-            <span><span className="text-lg font-semibold">Uso:</span> vivienda general</span>
+            <span><span className="text-lg font-semibold">Uso:</span> tránsito vehicular y alto tráfico</span>
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Tipo.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
-            <span><span className="text-lg font-semibold">Tipo:</span> estructural</span>
+            <span><span className="text-lg font-semibold">Tipo:</span>carga pesada</span>
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Rendimiento.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
-            <span><span className="text-lg font-semibold">Rendimiento:</span> 12.5 und/m²</span>
+            <span><span className="text-lg font-semibold">Rendimiento:</span>50 und/m²</span>
           </div>
           <div className="flex flex-col items-center justify-center">
             <Image src={"/icon/Aplicacion.png"} alt="icono de grosor" width={100} height={100} className="w-15 " />
-            <span><span className="text-lg font-semibold">Aplicación:</span> muros principales</span>
+            <span><span className="text-lg font-semibold">Aplicación:</span>tránsito pesado y circulación vehicular</span>
           </div>
         </div>
       </section>
@@ -246,7 +246,7 @@ const page = () => {
           autoPlay
           muted
           loop
-          className="w-full h-full object-cover"
+          className="w-full h-screen object-cover"
           preload="metadata"
         >
           <source src="/video_2_sesion_adoquines.MOV" type="video/mp4" />

@@ -20,9 +20,9 @@ const page = () => {
                 </p>
                 <div className='flex md:flex-row w-full flex-col  md:gap-10 gap-20  justify-center  items-center absolute bottom-10 '>
                     <Link href={"https://wa.link/qi7fgb"} className='flex flex-col max-w-96 gap-5 bg-white px-5 py-3 relative'>
-                        <div className='w-20 h-20 bg-amber-800/80 rounded-4xl absolute left-[40%] -top-[50%] flex items-center justify-center'>
+                        {/* <div className='w-20 h-20 bg-amber-800/80 rounded-4xl absolute left-[40%] -top-[50%] flex items-center justify-center'>
                             <span className='text-5xl font-bold text-amber-300'>1</span>
-                        </div>
+                        </div> */}
                         <ChevronRight size={30} className='absolute bottom-3 right-3'/>
                         <h2 className='text-xl font-bold'>Solicitar cotización</h2>
                         <p>
@@ -31,9 +31,9 @@ const page = () => {
                         </p>
                     </Link>
                     <Link href={"https://wa.link/t26p1n"} className='flex flex-col max-w-96 gap-5 bg-white px-5 py-3 relative'>
-                        <div className='w-20 h-20 bg-amber-800/80 rounded-4xl absolute left-[40%] -top-[50%] flex items-center justify-center'>
+                        {/* <div className='w-20 h-20 bg-amber-800/80 rounded-4xl absolute left-[40%] -top-[50%] flex items-center justify-center'>
                             <span className='text-5xl font-bold text-amber-300'>2</span>
-                        </div>
+                        </div> */}
                         <h2 className='text-xl font-bold'>Seguimiento de pedido</h2>
                         <ChevronRight size={30} className='absolute bottom-3 right-3'/>
                         <p>
@@ -42,9 +42,9 @@ const page = () => {
                         </p>
                     </Link>
                     <Link href={"https://wa.link/vbqjkt"} className='flex flex-col max-w-96 gap-5 bg-white px-5 py-3 relative'>
-                        <div className='w-20 h-20 bg-amber-800/80 rounded-4xl absolute left-[40%] -top-[50%] flex items-center justify-center'>
+                        {/* <div className='w-20 h-20 bg-amber-800/80 rounded-4xl absolute left-[40%] -top-[50%] flex items-center justify-center'>
                             <span className='text-5xl font-bold text-amber-300'>3</span>
-                        </div>
+                        </div> */}
                         <ChevronRight size={30} className='absolute bottom-3 right-3'/>
                         <h2 className='text-xl font-bold'>Asesoría técnica</h2>
                         <p>

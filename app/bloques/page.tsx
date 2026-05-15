@@ -271,7 +271,7 @@ const page = () => {
           autoPlay
           muted
           loop
-          className="w-full h-full object-cover"
+          className="w-full h-screen object-cover"
           preload="metadata"
         >
           <source src="/contenido/video_2_sesión_bloque.MOV" type="video/mp4" />
