@@ -37,8 +37,7 @@ export const Calculadora = () => {
 
   const openWhatsapp = () => {
     const numero = "573106479481";
-    const mensaje = encodeURIComponent(`Quiero mas informacion para un proyecto con estas especificaciones,\n
-                      ${currentProduct?.name}\nLargo ${wallArea} m2 y de alto ${doorsArea} m2\n con un area neta de ${netArea} y unas unidades aproximadas de ${unitsNeeded}`)
+    const mensaje = encodeURIComponent(`Quiero mas informacion para un proyecto con estas especificaciones,\n${currentProduct?.name}\nLargo ${wallArea} m2 y de alto ${doorsArea} m2\n con un area neta de ${netArea} y unas unidades aproximadas de ${unitsNeeded}`)
     const link = `https://wa.me/${numero}?text=${mensaje}`;
     window.open(link,"_blanck");
   }
