@@ -4,6 +4,7 @@ import { Footer } from '@/components/Footer'
 import { Navar } from '@/components/Navar'
 import { ChevronRight } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
@@ -18,7 +19,7 @@ const page = () => {
                     Nuestro equipo está listo para ayudarte a elegir, cotizar y coordinar tu entrega de forma clara y rápida.
                 </p>
                 <div className='flex md:flex-row w-full flex-col  md:gap-10 gap-20  justify-center  items-center absolute bottom-10 '>
-                    <div className='flex flex-col max-w-96 gap-5 bg-white px-5 py-3 relative'>
+                    <Link href={"https://wa.link/qi7fgb"} className='flex flex-col max-w-96 gap-5 bg-white px-5 py-3 relative'>
                         <div className='w-20 h-20 bg-amber-800/80 rounded-4xl absolute left-[40%] -top-[50%] flex items-center justify-center'>
                             <span className='text-5xl font-bold text-amber-300'>1</span>
                         </div>
@@ -28,8 +29,8 @@ const page = () => {
                             ¿Estás iniciando tu proyecto?<br />
                             Recibe precios según cantidad, ubicación y tiempos de entrega.
                         </p>
-                    </div>
-                    <div className='flex flex-col max-w-96 gap-5 bg-white px-5 py-3 relative'>
+                    </Link>
+                    <Link href={"https://wa.link/t26p1n"} className='flex flex-col max-w-96 gap-5 bg-white px-5 py-3 relative'>
                         <div className='w-20 h-20 bg-amber-800/80 rounded-4xl absolute left-[40%] -top-[50%] flex items-center justify-center'>
                             <span className='text-5xl font-bold text-amber-300'>2</span>
                         </div>
@@ -39,8 +40,8 @@ const page = () => {
                             ¿Ya realizaste tu pedido?<br />
                             Consulta estado, tiempos de entrega o cualquier novedad de tu solicitud.
                         </p>
-                    </div>
-                    <div className='flex flex-col max-w-96 gap-5 bg-white px-5 py-3 relative'>
+                    </Link>
+                    <Link href={"https://wa.link/vbqjkt"} className='flex flex-col max-w-96 gap-5 bg-white px-5 py-3 relative'>
                         <div className='w-20 h-20 bg-amber-800/80 rounded-4xl absolute left-[40%] -top-[50%] flex items-center justify-center'>
                             <span className='text-5xl font-bold text-amber-300'>3</span>
                         </div>
@@ -50,7 +51,7 @@ const page = () => {
                             ¿No sabes qué material necesitas?<br />
                             Te ayudamos a elegir la referencia ideal según tu tipo de obra.
                         </p>
-                    </div>
+                    </Link>
                 </div>
             </section>
             <section className='mt-5 h-auto flex flex-col '>
