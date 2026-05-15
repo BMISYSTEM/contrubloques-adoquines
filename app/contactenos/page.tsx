@@ -12,13 +12,15 @@ const page = () => {
         <>
         <BottonWhatsapp/>
             <Navar />
-            <section className='w-full md:h-screen min-h-screen h-full bg-linear-to-b overflow-hidden  from-black/20 to-transparent flex flex-col bg-white gap-5 md:justify-center '>
-                <h1 className='text-7xl font-bold md:mt-0 mt-20 md:px-20 '>Contacto</h1>
-                <p className='md:px-20 '>
-                    ¿Tienes dudas sobre tu obra o necesitas apoyo con tu pedido?<br />
-                    Nuestro equipo está listo para ayudarte a elegir, cotizar y coordinar tu entrega de forma clara y rápida.
-                </p>
-                <div className='flex md:flex-row w-full flex-col  md:gap-10 gap-20  justify-center  items-center absolute bottom-10 '>
+            <section className='w-full md:h-screen  pb-20 bg-linear-to-b overflow-hidden  from-black/20 to-transparent flex flex-col bg-white gap-5 md:justify-center '>
+                <div>
+                    <h1 className='text-7xl font-bold md:mt-0 mt-20 md:px-20 '>Contacto</h1>
+                    <p className='md:px-20 '>
+                        ¿Tienes dudas sobre tu obra o necesitas apoyo con tu pedido?<br />
+                        Nuestro equipo está listo para ayudarte a elegir, cotizar y coordinar tu entrega de forma clara y rápida.
+                    </p>
+                </div>
+                <div className='flex md:flex-row w-full flex-col md:mt-0    md:gap-10 gap-20  justify-center  items-center mt-10  '>
                     <Link href={"https://wa.link/qi7fgb"} className='flex flex-col max-w-96 gap-5 bg-white px-5 py-3 relative'>
                         {/* <div className='w-20 h-20 bg-amber-800/80 rounded-4xl absolute left-[40%] -top-[50%] flex items-center justify-center'>
                             <span className='text-5xl font-bold text-amber-300'>1</span>
