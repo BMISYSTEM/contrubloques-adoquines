@@ -108,6 +108,7 @@ const page = () => {
           <div className="mt-10">
             <ImageCarousel />
             <h5 className="text-center text-2xl font-semibold">Presencia en obras de toda la region.</h5>
+            <p className="text-center">Calidad respaldada por certificación de laboratorio.</p>
           </div>
           <section className="w-full h-screen bg-black relative flex justify-center items-end ">
             <div className="w-full h-full absolute bg-black/50"></div>
