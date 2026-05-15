@@ -10,7 +10,7 @@ import { RiInstagramFill } from 'react-icons/ri'
 
 export const Footer = () => {
   return (
-    <footer className="w-full bg-[url(/fondofooter.png)] bg-cover object-cover  h-auto  relative snap-start  ">
+    <footer className="w-full overflow-hidden bg-[url(/fondofooter.png)] bg-cover object-cover  h-auto  relative snap-start  ">
       <div className="w-full h-full flex flex-col bg-black/70 backdrop-blur-sm py-10  items-center justify-center px-5">
         <div className="md:w-5/6 w-full md:h-full h-auto flex md:flex-row flex-col md:items-start   md:justify-between md:gap-0 gap-5 ">
           <div className="md:w-1/3 flex flex-col md:gap-5 gap-1 ">
@@ -48,7 +48,7 @@ export const Footer = () => {
             <span className="md:text-2xl text-xl font-semibold text-white ">Contacto</span>
             <div className="flex flex-row gap-2 items-center">
               <FiMapPin size={30} color="orange" />
-              <span className="text-slate-300">Calle 45 #23-67, Zona Industrial</span>
+              <span className="text-slate-300">La Buitrera Cali, km 3 vía principal Sector vagón</span>
             </div>
             <div className="flex flex-row gap-2 items-center">
               <BsTelephonePlus size={30} color="orange" />
@@ -56,7 +56,7 @@ export const Footer = () => {
             </div>
             <div className="flex flex-row gap-2 items-center">
               <MdOutgoingMail size={30} color="orange" />
-              <span className="text-slate-300">info@construbloques.com</span>
+              <span className="text-slate-300 text-xs">comercial.bloques@construbloques.co</span>
             </div>
           </div>
         </div>
@@ -65,9 +65,7 @@ export const Footer = () => {
           <span className="text-sm text-white md:my-2">Desarrollado por:   <a href={"https:://syprods.com"} target='_blank'><span className='text-orange-300 border-b'>SyProd</span></a></span>
         </div>
       </div>
-      <Link href={"/"} id="logo-nav" className="w-30 absolute bottom-[40%] right-5  md:flex items-center justify-center">
-        <Image src={"/logo.png"} alt="Logo contru bloques " width={100} height={100} className="object-contain" />
-      </Link>
+      
     </footer>
   )
 }

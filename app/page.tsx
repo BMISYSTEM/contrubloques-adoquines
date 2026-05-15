@@ -52,7 +52,7 @@ export default function Home() {
 
           {/* Main Heading */}
           <h1 className="text-white text-3xl md:text-6xl lg:text-6xl font-bold mb-6 leading-tight max-w-2xl " style={{ lineHeight: 0.8 }}>
-            La Construcción
+            La construcción
             <br />
             reinventada
           </h1>
@@ -65,7 +65,7 @@ export default function Home() {
           {/* CTA Buttons */}
           <div className="flex md:gap-6 gap-2">
             <Link href={"/#productos"} className="bg-white text-black md:px-8 text-center px-3 md:py-3  rounded-full font-semibold hover:bg-gray-100 transition">
-              Descubrir Productos
+              Descubrir productos
             </Link>
           </div>
         </div>

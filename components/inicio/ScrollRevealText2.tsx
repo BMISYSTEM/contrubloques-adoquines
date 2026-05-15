@@ -7,7 +7,7 @@ export const ScrollRevealText2 = () => {
   const textRef = useRef<HTMLDivElement>(null)
   const [progress, setProgress] = useState(0)
 
-  const text = "Hecho para resistir \n Diseñado para Construir"
+  const text = "Hecho para resistir \n Diseñado para construir"
 
   useEffect(() => {
   const handleScroll = () => {

@@ -33,7 +33,7 @@ export const StickyVideoSection = () => {
 
           {/* Title */}
           <h2 className="text-5xl md:text-7xl font-bold text-white text-center mb-12 leading-tight max-w-3xl">
-            No es solo producción es sistema.
+            No es solo producción, es sistema.
           </h2>
 
           {/* Features Grid */}
@@ -78,9 +78,9 @@ export const StickyVideoSection = () => {
           </p>
           {/* CTA Button */}
           <Link href={"https://wa.link/okhbn0"} className="bg-white hover:bg-gray-100 text-slate-900 px-10 py-4 rounded-full font-semibold transition-all shadow-lg hover:shadow-xl">
-            Solicitar Cotización
+            Solicitar cotización
           </Link>
-          <p className='mt-5 text-slate-200'>Dejanos tus datos y te contactamos </p>
+          <p className='mt-5 text-slate-200'>Déjanos tus datos y te contactamos </p>
           <a className='text-blue-200 border-b' href="https://mail.google.com/mail/?view=cm&to=comercial.bloques@construbloques.co&su=Asunto&body=Mensaje" target="_blank">
             Enviar correo
           </a>

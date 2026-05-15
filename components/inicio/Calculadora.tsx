@@ -48,7 +48,6 @@ export const Calculadora = () => {
       setSelectedReference("bloque-10")
     }else{
       setSelectedReference("adoquin-peatonal")
-
     }
   },[productType])
   return (
@@ -137,7 +136,7 @@ export const Calculadora = () => {
                   ¿ Quieres cotizar esta cantidad ?
                 </p>
                 <button onClick={()=>openWhatsapp()} className='px-3 py-1 text-sm text-white bg-green-500 rounded-sm hover:opacity-90'>
-                  <span>Solicita cotizacion por Whatsapp</span>
+                  <span>Solicita cotización por WhatsApp</span>
                 </button>
               </div>
             }

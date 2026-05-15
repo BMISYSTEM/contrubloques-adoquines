@@ -40,7 +40,8 @@ export const Navar = () => {
   }, [])
   return (
     <>
-      <section className={` ${(scrollPantalla + 50) >= pantalla ? "bg-black/50  backdrop-blur-md  " : ""} w-full fixed  top-0 flex items-center justify-center pt-2 z-50 `}>
+      <section className={` ${(scrollPantalla + 50) >= pantalla ? "bg-black/50  backdrop-blur-md  " : 
+        pathname === "/contactenos" ? "bg-black/50  backdrop-blur-md " : ""}  w-full fixed  top-0 flex items-center justify-center pt-2 z-50 `}>
         <section className="md:w-5/6 w-full z-50 ">
           <nav id="navegacion-desktop" className=" flex flex-row px-5 justify-between md:gap-2  w-full  h-15    z-50 rounded-[80px]">
             <Link href={"/"} id="logo-nav" className="hidden w-30 h-full md:flex items-center justify-center">
@@ -51,7 +52,7 @@ export const Navar = () => {
                 <span className={openOptions ? "text-slate-500 text-sm cursor-pointer" : "cursor-pointer text-slate-200 text-sm"}>Prefabricados</span>
               </button>
               <Link href={"/quienes-somos"} >
-                <span className={openOptions ? "text-slate-500 text-sm" : "text-slate-200 text-sm"}>Quienes somos</span>
+                <span className={openOptions ? "text-slate-500 text-sm" : "text-slate-200 text-sm"}>Quiénes somos</span>
               </Link>
               <Link href={"/nuestro-servicio"} >
                 <span className={openOptions ? "text-slate-500 text-sm" : "text-slate-200 text-sm"}>Nuestro servicio</span>
@@ -59,7 +60,7 @@ export const Navar = () => {
             </div>
             <div className="flex items-center gap-3">
               <Link href={"/contactenos"} className="hidden md:inline-flex bg-[#FFD230] h-10 items-center justify-center px-3 py-1 rounded-[80px] transition-all hover:opacity-80">
-                <span className="text-sm">Contactanos</span>
+                <span className="text-sm">Contáctenos</span>
               </Link>
 
               <button
@@ -111,28 +112,28 @@ export const Navar = () => {
             <Link href={"/"} onClick={() => setOpen(false)} className="text-2xl text-white">Inicio</Link>
             <button  onClick={() => setOpenOptions(!openOptions)} className="text-2xl text-white">Prefabricados</button>
             {openOptions && (
-              <section className=' w-full md:h-90 bg-white flex flex-wrap justify-center gap-10 px-5 pt-20'>
-                <button className='w-60 h-60 cursor-pointer group '>
+              <section className=' w-full h-full  bg-white flex flex-wrap justify-center gap-5 px-5 pt-5'>
+                <button className='w-60 h-50 cursor-pointer group '>
                   {/* imagen  */}
                   <Link href={"/bloques"} className='w-60 h-32  overflow-hidden'>
-                    <Image src={"/bloque.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
+                    <Image src={"/bloque-m.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
                   </Link>
                   {/* texto */}
                   <span className='text-xl font-semibold mt-2 text-slate-500 transition-all group-hover:text-slate-700'>Bloques</span>
                 </button>
-                <button className='w-60 h-60 group cursor-pointer'>
+                <button className='w-60 h-50 group cursor-pointer'>
                   {/* imagen  */}
                   <Link href={"/adoquines"} className='w-60 h-32  overflow-hidden'>
-                    <Image src={"/adoquin.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
+                    <Image src={"/adoquin-p.png"} width={1000} height={500} alt='Imagen de bloque ' className='w-full h-full object-contain transition-all group-hover:scale-105' />
                   </Link>
                   {/* texto */}
                   <span className='text-xl font-semibold mt-2 text-slate-500 transition-all group-hover:text-slate-700'>Adoquines</span>
                 </button>
               </section>
             )}
-            <Link href={"/quienes-somos"} onClick={() => setOpen(false)} className="text-2xl text-white">Quienes somos</Link>
+            <Link href={"/quienes-somos"} onClick={() => setOpen(false)} className="text-2xl text-white">Quiénes somos</Link>
             <Link href={"/nuestro-servicio"} onClick={() => setOpen(false)} className="text-2xl text-white">Nuestros Servicio</Link>
-            <Link href={"/contactenos"} onClick={() => setOpen(false)} className="mt-4 bg-[#FFD230] px-6 py-2 rounded-full text-black font-medium">Contactanos</Link>
+            <Link href={"/contactenos"} onClick={() => setOpen(false)} className="mt-4 bg-[#FFD230] px-6 py-2 rounded-full text-black font-medium">Contáctenos</Link>
           </div>
         </div>
       )}

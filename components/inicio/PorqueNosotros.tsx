@@ -31,7 +31,7 @@ export const PorqueNosotros = () => {
           </div>
           <div className='group w-100 h-32 bg-white rounded-lg flex flex-row justify-center items-end '>
             <div className=' flex flex-row justify-between items-center w-full px-4 py-2'>
-              <span className='text-2xl'>Contactanos</span>
+              <span className='text-2xl'>Contáctanos</span>
               <button className='bg-slate-300 group-hover:text-white rounded-full transition-all group-hover:bg-black'>
                 <ChevronRight size={30} />
               </button>

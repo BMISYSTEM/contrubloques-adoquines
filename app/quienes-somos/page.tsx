@@ -68,19 +68,19 @@ const page = () => {
       </section>
       <section className="w-full overflow-hidden h-[140vh] bg-black relative flex justify-center">
         <div className="w-full h-full bg-black/50 absolute"></div>
-        <h3 className="md:text-8xl text-6xl px-6  absolute top-20 text-white ">Estandares internos</h3>
+        <h3 className="md:text-8xl text-6xl px-6  absolute top-20 text-white ">Estándares internos</h3>
         <Image src={"/contenido/IMG_2_QUIENES_SOMOS.webp"}
           alt="Imagen de nosotros "
           width={1080}
           height={1080}
           className="w-full h-full object-cover" />
         <h4 className="absolute bottom-40 right-10 text-white text-2xl w-60 border-b border-slate-200">Rigor en cada detalle</h4>
-        <p className="absolute bottom-10 right-10 text-white text-xl w-60">Orden como metodo, Cumplimiento conciente, Evolucion Constante.</p>
+        <p className="absolute bottom-10 right-10 text-white text-xl w-60">Orden como método, Cumplimiento consciente, Evolución constante.</p>
       </section>
       <section className="w-full overflow-hidden h-screen bg-black relative flex justify-center">
         <div className="w-full h-full bg-black/50 absolute"></div>
         <div className="absolute left-10 top-[30%] md:w-96 w-full">
-          <span className="text-2xl font-semibold text-white">Detras de cada<br/>bloque hay<br/>un estandar<br/>humano.</span>
+          <span className="text-2xl font-semibold text-white">Detrás de cada<br/>bloque hay<br/>un estándar<br/>humano.</span>
         </div>
         <Image src={"/contenido/IMG_3_SESION_QUIENES_SOMOS.png"}
           alt="Imagen de nosotros "

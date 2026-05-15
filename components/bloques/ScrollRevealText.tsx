@@ -6,7 +6,7 @@ export const ScrollRevealText = () => {
   const textRef = useRef<HTMLDivElement>(null)
   const [progress, setProgress] = useState(0)
 
-  const text = "Diseñado para alineación precisa, resistencia estructural y acabado uniforme en cada unidad"
+  const text = "Diseñado para alta resistencia, ajuste uniforme y acabados precisos en cada pieza."
 
   useEffect(() => {
   const handleScroll = () => {
@@ -35,7 +35,7 @@ export const ScrollRevealText = () => {
   const visibleLetters = Math.floor((progress + 0.3) * letters.length)
 
   return (
-    <section className="w-full  py-24 bg-white">
+    <section className="w-full  py-24 bg-white overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 md:px-12 flex items-center justify-center h-1/2">
         <div ref={textRef} className="text-center">
           <h2 className="text-2xl md:text-7xl lg:text-3xl leading-tight">

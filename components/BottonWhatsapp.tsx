@@ -5,7 +5,8 @@ export const BottonWhatsapp = () => {
   return (
     <FloatingWhatsApp phoneNumber="573106479481" placeholder="" accountName="Contrubloques" 
       avatar='/logo.png'
-      chatMessage={"Mucho gusto como te puedo ayudar el dia de hoy ? "}
+      statusMessage="Hace 1 minuto."
+      chatMessage={"Mucho gusto, cómo te puedo ayudar el día de hoy ? "}
       />
   )
 }

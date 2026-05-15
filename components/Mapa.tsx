@@ -4,9 +4,9 @@ import { ArrowRight, Calendar, MapPin } from 'lucide-react'
 
 export const Mapa = () => {
     return (
-        <section className="md:px-10 w-full  h-140 flex md:flex-row flex-col  ">
-            <div className="md:w-96 w-full md:h-full h-full bg-black flex flex-col text-white px-5 py-10 gap-5">
-                <div className='md:w-100 w-full px-2 items-start absolute left-10 flex flex-col gap-2 '>
+        <section className="md:px-10 w-full overflow-hidden  md:h-140 h-screen flex md:flex-row flex-col  ">
+            <div className="md:w-96 w-full overflow-hidden md:h-full h-full bg-black flex flex-col text-white px-5 py-10 gap-5">
+                <div className='md:w-100  items-start absolute px-10 flex flex-col gap-2 '>
                     <span className='text-xl uppercase text-amber-500'>Nuestra planta</span>
                     <span className='md:text-2xl text-xl font-semibold text-white '>Producción <br /> que construye <br /> confianza <span className='text-amber-500'>.</span></span>
                     <span className=' text-white'>Tecnología, control y experiencia <br />para entregar prefabricados de<br /> alta calidad en cada proyecto.</span>
@@ -21,7 +21,7 @@ export const Mapa = () => {
                     <div className='mt-10 flex md:flex-col flex-col gap-5 '>
                         <button onClick={() => {
                             window.open("https://maps.app.goo.gl/Bvh6b8ZnfapyaqbS9", "_blanck")
-                        }} className='px-5 py-2 flex flex-row gap-5 items-center bg-amber-500 rounded-2xl'>
+                        }} className='px-5 py-2 flex flex-row gap-5 items-center bg-[#FFD230] rounded-2xl'>
                             <ArrowRight size={20} />
                             <span>Abrir Ubicación</span>
                         </button>

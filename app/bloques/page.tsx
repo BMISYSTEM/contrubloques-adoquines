@@ -178,8 +178,8 @@ const page = () => {
       </section>
       <Mapa/>
       <section className="flex flex-col gap-5 mt-10 pb-10 text-center items-center justify-center  pt-10">
-        <h6 className="text-3xl font-bold">¿No estas seguro de que medida es la adecuada para tu obra?</h6>
-        <p className="text-xl  max-w-120">Te ayudamos a elegir la referencia adecuada Segun tu proyecto.</p>
+        <h6 className="text-3xl font-bold">¿No estás seguro de qué medida es la adecuada para tu obra?</h6>
+        <p className="text-xl  max-w-120">Te ayudamos a elegir la referencia adecuada según tu proyecto.</p>
         <a href="https://wa.link/okhbn0" className="px-5 py-2 rounded-xl bg-black hover:opacity-80 cursor-pointer text-white transition-all">
           <span>Asesoria por Whatssap</span>
         </a>

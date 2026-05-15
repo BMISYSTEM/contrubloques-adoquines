@@ -42,9 +42,8 @@ export const Bloque3d = () => {
   }, [valorScroll])
 
   return (
-    <div className='w-full h-full  items-center justify-center flex flex-col'>
-      <span className='text-center text-2xl font-semibold mt-10'>Render De Bloque</span>
-      <span className='text-center   flex flex-row items-center justify-center mt-2 gap-5 md:text-9xl text-6xl font-bold'>Explora el bloque </span>
+    <div className='w-full md:h-screen h-screen  items-center justify-center flex flex-col'>
+      <span className='text-center   flex flex-row items-center justify-center mt-2 gap-5 md:text-9xl text-4xl font-bold'>Explora el bloque </span>
       <span className='flex flex-row gap-3 items-center mt-3'><RefreshCcw size={20}/> Rotar</span>
       <Canvas
         className='rounded-sm backdrop-blur-lg transition-all'
@@ -53,7 +52,7 @@ export const Bloque3d = () => {
           height: "50%",
           background: "transparent"
         }}
-        camera={{ position: [0, 0, 5], fov: 45 }}
+        camera={{ position: [15, 25, 5], fov: 7 }}
       >
         <ambientLight intensity={0.5} />
 
