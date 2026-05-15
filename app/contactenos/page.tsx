@@ -20,7 +20,7 @@ const page = () => {
                         Nuestro equipo está listo para ayudarte a elegir, cotizar y coordinar tu entrega de forma clara y rápida.
                     </p>
                 </div>
-                <div className='flex md:flex-row w-full flex-col md:mt-0    md:gap-10 gap-20  justify-center  items-center mt-10  '>
+                <div className='flex md:flex-row w-full flex-col md:mt-30    md:gap-10 gap-20  md:justify-between md:px-20 justify-center  items-center mt-10  '>
                     <Link href={"https://wa.link/qi7fgb"} className='flex flex-col max-w-96 gap-5 bg-white px-5 py-3 relative'>
                         {/* <div className='w-20 h-20 bg-amber-800/80 rounded-4xl absolute left-[40%] -top-[50%] flex items-center justify-center'>
                             <span className='text-5xl font-bold text-amber-300'>1</span>
