@@ -4,7 +4,7 @@ import { ArrowRight, Calendar, MapPin } from 'lucide-react'
 
 export const Mapa = () => {
     return (
-        <section className="md:px-10 w-full overflow-hidden  md:h-140 h-screen flex md:flex-row flex-col  ">
+        <section className="md:px-10 w-full overflow-hidden  md:h-140 h-[150vh] flex md:flex-row flex-col  ">
             <div className="md:w-96 w-full overflow-hidden md:h-full h-full bg-black flex flex-col text-white px-5 py-10 gap-5">
                 <div className='md:w-100  items-start absolute px-10 flex flex-col gap-2 '>
                     <span className='text-xl uppercase text-[#FFD230]'>Nuestra planta</span>
@@ -22,8 +22,8 @@ export const Mapa = () => {
                         <button onClick={() => {
                             window.open("https://maps.app.goo.gl/Bvh6b8ZnfapyaqbS9", "_blanck")
                         }} className='px-5 py-2 flex flex-row gap-5 items-center bg-[#FFD230] rounded-2xl'>
-                            <ArrowRight size={20} />
-                            <span>Abrir Ubicación</span>
+                            <ArrowRight size={20} color='black' />
+                            <span className='text-black'>Abrir Ubicación</span>
                         </button>
                         <button onClick={() => {
                             window.open("https://wa.link/s33z6v", "_blanck")

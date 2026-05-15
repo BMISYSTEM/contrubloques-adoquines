@@ -26,8 +26,8 @@ export const Visitanos = () => {
                 <button onClick={()=>{
                     window.open("https://maps.app.goo.gl/Bvh6b8ZnfapyaqbS9","_blanck")
                 }} className='px-5 py-2 flex flex-row gap-5 items-center bg-[#FFD230] rounded-2xl'>
-                    <ArrowRight size={20}/>
-                    <span>Abrir Ubicación</span>
+                    <ArrowRight size={20} color='black'/>
+                    <span className='text-black'>Abrir Ubicación</span>
                 </button>
                 <button onClick={()=>{
                     window.open("https://wa.link/s33z6v","_blanck")
