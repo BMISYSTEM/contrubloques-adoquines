@@ -26,7 +26,7 @@ const page = () => {
         <div className="w-full h-full bg-black/50 absolute"></div>
         <h1 className="md:text-8xl text-6xl absolute top-20 text-white px-5">Origen Estructural</h1>
         
-        <Image src={"/contenido/IMG_1_SESION_QUIENES_SOMOS.png"}
+        <Image src={"/contenido/IMG_1_SESION_QUIENES_SOMOS.jpg"}
           alt="Imagen de nosotros "
           width={1080}
           height={1080}
@@ -68,7 +68,7 @@ const page = () => {
       <section className="w-full overflow-hidden h-[140vh] bg-black relative flex justify-center">
         <div className="w-full h-full bg-black/50 absolute"></div>
         <h3 className="md:text-8xl text-6xl px-6  absolute top-20 text-white ">Estándares internos</h3>
-        <Image src={"/contenido/IMG_2_QUIENES_SOMOS.webp"}
+        <Image src={"/contenido/IMG_2_QUIENES_SOMOS.jpg"}
           alt="Imagen de nosotros "
           width={1080}
           height={1080}
